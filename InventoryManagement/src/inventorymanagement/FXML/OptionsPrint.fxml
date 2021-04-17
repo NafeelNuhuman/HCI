@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="700.0" style="-fx-background-color: #ff0000;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="152.0" layoutY="-1.0" prefHeight="426.0" prefWidth="550.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="152.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="-1.0" />
+      <AnchorPane layoutY="1.0" prefHeight="433.0" prefWidth="150.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="152.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="-1.0">
+         <children>
+            <Pane prefHeight="51.0" prefWidth="150.0" style="-fx-background-color: #000000;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
