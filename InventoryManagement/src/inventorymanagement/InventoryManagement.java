@@ -5,20 +5,25 @@
  */
 package inventorymanagement;
 
+import java.io.IOException;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 /**
  *
  * @author User
  */
-public class InventoryManagement extends Application {
+
+    
+   public class InventoryManagement extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {
+
         Parent root = FXMLLoader.load(getClass().getResource("FXML/SalesReport.fxml"));
         
         Scene scene = new Scene(root);
@@ -33,5 +38,4 @@ public class InventoryManagement extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-    
 }

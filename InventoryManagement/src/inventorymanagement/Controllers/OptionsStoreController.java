@@ -15,7 +15,7 @@ import javafx.fxml.Initializable;
  *
  * @author Dino
  */
-public class OptionsController implements Initializable {
+public class OptionsStoreController implements Initializable {
 
     /**
      * Initializes the controller class.

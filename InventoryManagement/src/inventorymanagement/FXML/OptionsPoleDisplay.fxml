@@ -57,65 +57,6 @@
             </AnchorPane>
          </children>
       </HBox>
-      <VBox layoutX="10.0" layoutY="74.0" prefHeight="736.0" prefWidth="210.0" style="-fx-background-color: #222831; -fx-border-color: grey;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="64.0">
-         <children>
-            <Label prefHeight="45.0" prefWidth="72.0" text="Options" textFill="WHITE" VBox.vgrow="ALWAYS">
-               <font>
-                  <Font size="18.0" />
-               </font>
-               <VBox.margin>
-                  <Insets left="125.0" top="12.0" />
-               </VBox.margin>
-            </Label>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="235.0" style="-fx-background-color: #30475E;" text="BACKUP" textFill="WHITE" VBox.vgrow="ALWAYS">
-               <opaqueInsets>
-                  <Insets />
-               </opaqueInsets>
-               <VBox.margin>
-                  <Insets bottom="5.0" left="3.0" right="4.0" />
-               </VBox.margin>
-            </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="235.0" style="-fx-background-color: #30475E;" text="GROUPS" textFill="WHITE" VBox.vgrow="ALWAYS">
-               <opaqueInsets>
-                  <Insets />
-               </opaqueInsets>
-               <VBox.margin>
-                  <Insets bottom="5.0" left="3.0" right="4.0" />
-               </VBox.margin>
-            </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="235.0" style="-fx-background-color: #30475E;" text="INVENTORY" textFill="WHITE" VBox.vgrow="ALWAYS">
-               <opaqueInsets>
-                  <Insets />
-               </opaqueInsets>
-               <VBox.margin>
-                  <Insets bottom="5.0" left="3.0" right="4.0" />
-               </VBox.margin>
-            </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="235.0" style="-fx-background-color: #30475E;" text="NON INVENTORY" textFill="WHITE" VBox.vgrow="ALWAYS">
-               <opaqueInsets>
-                  <Insets />
-               </opaqueInsets>
-               <VBox.margin>
-                  <Insets bottom="5.0" left="3.0" right="4.0" />
-               </VBox.margin>
-            </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="226.0" style="-fx-background-color: #30475E;" text="RECIEPTS &amp; INVOICES" textFill="WHITE" VBox.vgrow="ALWAYS">
-               <VBox.margin>
-                  <Insets bottom="5.0" left="3.0" right="4.0" />
-               </VBox.margin>
-            </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="226.0" style="-fx-background-color: #30475E;" text="THEME" textFill="WHITE" VBox.vgrow="ALWAYS">
-               <VBox.margin>
-                  <Insets bottom="5.0" left="3.0" right="4.0" />
-               </VBox.margin>
-            </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="226.0" style="-fx-background-color: #30475E;" text="USER" textFill="WHITE" VBox.vgrow="ALWAYS">
-               <VBox.margin>
-                  <Insets bottom="5.0" left="3.0" right="4.0" />
-               </VBox.margin>
-            </Button>
-         </children>
-      </VBox>
       <VBox layoutX="210.0" layoutY="68.0" prefHeight="736.0" prefWidth="330.0" style="-fx-background-color: #222831;" AnchorPane.bottomAnchor="-4.0" AnchorPane.leftAnchor="210.0" AnchorPane.rightAnchor="740.0" AnchorPane.topAnchor="68.0">
          <children>
             <AnchorPane prefHeight="719.0" prefWidth="330.0">
@@ -187,6 +128,80 @@
                   </ScrollPane>
                </children>
             </AnchorPane>
+         </children>
+      </VBox>
+      <VBox fillWidth="false" layoutX="40.0" layoutY="104.0" prefHeight="736.0" prefWidth="210.0" style="-fx-background-color: #222831; -fx-border-color: grey;" AnchorPane.bottomAnchor="-0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1070.0" AnchorPane.topAnchor="70.0">
+         <children>
+            <Label prefHeight="45.0" prefWidth="72.0" text="Options" textFill="WHITE" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="125.0" top="12.0" />
+               </VBox.margin>
+            </Label>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="235.0" style="-fx-background-color: #30475E;" text="BACKUP" textFill="WHITE" VBox.vgrow="ALWAYS">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="3.0" right="4.0" />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="235.0" style="-fx-background-color: #30475E;" text="GROUPS" textFill="WHITE" VBox.vgrow="ALWAYS">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="3.0" right="4.0" />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="235.0" style="-fx-background-color: #30475E;" text="INVENTORY" textFill="WHITE" VBox.vgrow="ALWAYS">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="3.0" right="4.0" />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="235.0" style="-fx-background-color: #30475E;" text="NON INVENTORY" textFill="WHITE" VBox.vgrow="ALWAYS">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="3.0" right="4.0" />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="226.0" style="-fx-background-color: GREY;" text="POLE DISPLAY SETTINGS" textFill="WHITE" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="3.0" right="4.0" />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="226.0" style="-fx-background-color: #30475E;" text="RECIEPTS &amp; INVOICES" textFill="WHITE" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="3.0" right="4.0" />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="226.0" style="-fx-background-color: #30475E;" text="STORE" textFill="WHITE" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="3.0" right="4.0" />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="226.0" style="-fx-background-color: #30475E;" text="TAX" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="3.0" right="4.0" />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="226.0" style="-fx-background-color: #30475E;" text="THEME" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="3.0" right="4.0" />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="226.0" style="-fx-background-color: #30475E;" text="USERS" textFill="WHITE">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="3.0" right="4.0" />
+               </VBox.margin>
+            </Button>
          </children>
       </VBox>
    </children>
