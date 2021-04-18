@@ -17,7 +17,7 @@
    <children>
       <ImageView fitHeight="181.0" fitWidth="192.0" layoutX="808.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: FFFFFF;" AnchorPane.rightAnchor="96.65428161621094" AnchorPane.topAnchor="87.0">
          <image>
-            <Image url="@../Icons/image.png" />
+            <Image url="@../Icons/test%20image.png" />
          </image>
       </ImageView>
       <Button layoutX="837.0" layoutY="290.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="106.0" style="-fx-background-color: #F05454;" text="UPLOAD IMAGE" textFill="WHITE" AnchorPane.rightAnchor="138.0" AnchorPane.topAnchor="290.0" />
