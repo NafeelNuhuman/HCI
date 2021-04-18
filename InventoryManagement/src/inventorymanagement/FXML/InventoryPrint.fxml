@@ -10,7 +10,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="623.0" prefWidth="1338.0" style="-fx-background-color: #222831;" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller=".InventoryPrintController">
+<AnchorPane id="AnchorPane" prefHeight="623.0" prefWidth="1338.0" style="-fx-background-color: #222831;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller=".InventoryPrintController">
     <stylesheets>
         <URL value="@inventoryprint.css" />
     </stylesheets>
@@ -81,92 +81,92 @@
                            <children>
                               <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="8.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../../../../PROTOT~1/HCI/INVENT~1/src/INVENT~1/Icons/687474~1.PNG" />
+                                    <Image url="@../Icons/test%20image.png" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="154.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../../../../PROTOT~1/HCI/INVENT~1/src/INVENT~1/Icons/687474~1.PNG" />
+                                    <Image url="@../Icons/test%20image.png" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="300.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../../../../PROTOT~1/HCI/INVENT~1/src/INVENT~1/Icons/687474~1.PNG" />
+                                    <Image url="@../Icons/test%20image.png" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="450.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../../../../PROTOT~1/HCI/INVENT~1/src/INVENT~1/Icons/687474~1.PNG" />
+                                    <Image url="@../Icons/test%20image.png" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="597.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../../../../PROTOT~1/HCI/INVENT~1/src/INVENT~1/Icons/687474~1.PNG" />
+                                    <Image url="@../Icons/test%20image.png" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="754.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../../../../PROTOT~1/HCI/INVENT~1/src/INVENT~1/Icons/687474~1.PNG" />
+                                    <Image url="@../Icons/test%20image.png" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="903.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../../../../PROTOT~1/HCI/INVENT~1/src/INVENT~1/Icons/687474~1.PNG" />
+                                    <Image url="@../Icons/test%20image.png" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="1044.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../../../../PROTOT~1/HCI/INVENT~1/src/INVENT~1/Icons/687474~1.PNG" />
+                                    <Image url="@../Icons/test%20image.png" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="1186.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../../../../PROTOT~1/HCI/INVENT~1/src/INVENT~1/Icons/687474~1.PNG" />
+                                    <Image url="@../Icons/test%20image.png" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="8.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../../../../PROTOT~1/HCI/INVENT~1/src/INVENT~1/Icons/687474~1.PNG" />
+                                    <Image url="@../Icons/test%20image.png" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="154.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../../../../PROTOT~1/HCI/INVENT~1/src/INVENT~1/Icons/687474~1.PNG" />
+                                    <Image url="@../Icons/test%20image.png" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="300.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../../../../PROTOT~1/HCI/INVENT~1/src/INVENT~1/Icons/687474~1.PNG" />
+                                    <Image url="@../Icons/test%20image.png" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="450.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../../../../PROTOT~1/HCI/INVENT~1/src/INVENT~1/Icons/687474~1.PNG" />
+                                    <Image url="@../Icons/test%20image.png" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="597.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../../../../PROTOT~1/HCI/INVENT~1/src/INVENT~1/Icons/687474~1.PNG" />
+                                    <Image url="@../Icons/test%20image.png" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="754.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../../../../PROTOT~1/HCI/INVENT~1/src/INVENT~1/Icons/687474~1.PNG" />
+                                    <Image url="@../Icons/test%20image.png" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="903.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../../../../PROTOT~1/HCI/INVENT~1/src/INVENT~1/Icons/687474~1.PNG" />
+                                    <Image url="@../Icons/test%20image.png" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="1044.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../../../../PROTOT~1/HCI/INVENT~1/src/INVENT~1/Icons/687474~1.PNG" />
+                                    <Image url="@../Icons/test%20image.png" />
                                  </image>
                               </ImageView>
                               <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="1186.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../../../../PROTOT~1/HCI/INVENT~1/src/INVENT~1/Icons/687474~1.PNG" />
+                                    <Image url="@../Icons/test%20image.png" />
                                  </image>
                               </ImageView>
                            </children>

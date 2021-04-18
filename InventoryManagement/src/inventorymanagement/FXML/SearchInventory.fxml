@@ -15,8 +15,7 @@
         <URL value="@addinventory.css" />
     </stylesheets>
    <children>
-      <HBox prefHeight="53.0" prefWidth="600.0" style="-fx-background-color: #30475E;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-      <HBox layoutX="9.0" layoutY="71.0" prefHeight="363.0" prefWidth="278.0" style="-fx-background-color: #30475E;" AnchorPane.bottomAnchor="276.0" AnchorPane.leftAnchor="9.0" AnchorPane.topAnchor="71.0">
+      <HBox layoutX="9.0" layoutY="81.0" prefHeight="353.0" prefWidth="278.0" style="-fx-background-color: #30475E;" AnchorPane.bottomAnchor="276.0" AnchorPane.leftAnchor="9.0" AnchorPane.topAnchor="81.0">
          <children>
             <Label text="PRODUCT" textFill="WHITE">
                <HBox.margin>
@@ -31,7 +30,7 @@
                   <Insets left="-115.0" top="175.0" />
                </HBox.margin>
                <image>
-                  <Image url="@../../../../../../PROTOT~1/HCI/INVENT~1/Icons/687474~1.PNG" />
+                  <Image url="@../Icons/test%20image.png" />
                </image>
             </ImageView>
          </children>
@@ -47,7 +46,7 @@
                            <children>
                               <ImageView fitHeight="131.0" fitWidth="128.0" layoutX="21.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../../../../PROTOT~1/HCI/INVENT~1/Icons/687474~1.PNG" />
+                                    <Image url="@../Icons/test%20image.png" />
                                  </image>
                               </ImageView>
                               <Label layoutX="204.0" layoutY="14.0" text="Description" textFill="WHITE">
@@ -71,7 +70,7 @@
                            <children>
                               <ImageView fitHeight="137.0" fitWidth="128.0" layoutX="22.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../../../../PROTOT~1/HCI/INVENT~1/Icons/687474~1.PNG" />
+                                    <Image url="@../Icons/test%20image.png" />
                                  </image>
                               </ImageView>
                               <Label layoutX="204.0" layoutY="14.0" text="Description" textFill="WHITE">
@@ -95,7 +94,7 @@
                            <children>
                               <ImageView fitHeight="137.0" fitWidth="128.0" layoutX="23.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../../../../PROTOT~1/HCI/INVENT~1/Icons/687474~1.PNG" />
+                                    <Image url="@../Icons/test%20image.png" />
                                  </image>
                               </ImageView>
                               <Label layoutX="204.0" layoutY="14.0" text="Description" textFill="WHITE">
@@ -119,7 +118,7 @@
                            <children>
                               <ImageView fitHeight="137.0" fitWidth="128.0" layoutX="23.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../../../../../../PROTOT~1/HCI/INVENT~1/Icons/687474~1.PNG" />
+                                    <Image url="@../Icons/test%20image.png" />
                                  </image>
                               </ImageView>
                               <Label layoutX="204.0" layoutY="14.0" text="Description" textFill="WHITE">
@@ -204,7 +203,7 @@
                         <Font size="18.0" />
                      </font>
                   </Button>
-                  <Button layoutX="239.0" layoutY="43.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #2A70B5;" textFill="WHITE">
+                  <Button layoutX="239.0" layoutY="43.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #2A70B5;" text="DEL" textFill="WHITE">
                      <font>
                         <Font size="18.0" />
                      </font>
@@ -254,7 +253,7 @@
                         <Font size="18.0" />
                      </font>
                   </Button>
-                  <Button layoutX="239.0" layoutY="203.0" mnemonicParsing="false" prefHeight="147.0" prefWidth="62.0" style="-fx-background-color: #F05454;" textFill="WHITE">
+                  <Button layoutX="239.0" layoutY="203.0" mnemonicParsing="false" prefHeight="147.0" prefWidth="62.0" style="-fx-background-color: #F05454;" text="ENT" textFill="WHITE">
                      <font>
                         <Font size="18.0" />
                      </font>
@@ -263,6 +262,51 @@
             </Pane>
          </children>
       </VBox>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="3.0" prefHeight="75.0" prefWidth="1405.0" style="-fx-background-color: #222831;" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="3.0">
+         <children>
+            <AnchorPane prefHeight="68.0" prefWidth="1336.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <ImageView fitHeight="64.0" fitWidth="93.0" layoutX="8.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="4.0" AnchorPane.topAnchor="4.0">
+                     <image>
+                        <Image url="@../Icons/Logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="405.0" layoutY="22.0" text="Time" textFill="WHITE" />
+                  <Label layoutX="207.0" layoutY="22.0" text="Date" textAlignment="CENTER" textFill="WHITE" />
+                  <HBox alignment="CENTER_RIGHT" layoutX="1080.0" layoutY="12.0" prefHeight="64.0" prefWidth="210.0" spacing="29.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/home.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/info.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/settings.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/profile.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="25.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
    </children>
     
 </AnchorPane>
