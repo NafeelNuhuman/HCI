@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1280.0" style="-fx-background-color: #222831;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="43.0" prefWidth="1300.0" style="-fx-background-color: #222831;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="103.0" prefWidth="1210.0" style="-fx-border-color: grey;" HBox.hgrow="ALWAYS">
+               <children>
+                  <ImageView fitHeight="64.0" fitWidth="93.0" layoutX="8.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="4.0" AnchorPane.topAnchor="4.0">
+                     <image>
+                        <Image url="@../Icons/Logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="405.0" layoutY="22.0" text="Time" textFill="WHITE" />
+                  <Label layoutX="207.0" layoutY="22.0" text="Date" textAlignment="CENTER" textFill="WHITE" />
+                  <HBox alignment="CENTER_RIGHT" layoutX="1080.0" layoutY="12.0" prefHeight="64.0" prefWidth="210.0" spacing="29.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/home.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/info.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/settings.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/profile.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="25.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <VBox layoutX="10.0" layoutY="74.0" prefHeight="736.0" prefWidth="210.0" style="-fx-background-color: #222831; -fx-border-color: grey;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="64.0">
+         <children>
+            <Label prefHeight="45.0" prefWidth="72.0" text="Options" textFill="WHITE" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="125.0" top="12.0" />
+               </VBox.margin>
+            </Label>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="235.0" style="-fx-background-color: #30475E;" text="BACKUP" textFill="WHITE" VBox.vgrow="ALWAYS">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="3.0" right="4.0" />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="235.0" style="-fx-background-color: #30475E;" text="GROUPS" textFill="WHITE" VBox.vgrow="ALWAYS">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="3.0" right="4.0" />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="235.0" style="-fx-background-color: #30475E;" text="INVENTORY" textFill="WHITE" VBox.vgrow="ALWAYS">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="3.0" right="4.0" />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="235.0" style="-fx-background-color: #30475E;" text="NON INVENTORY" textFill="WHITE" VBox.vgrow="ALWAYS">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="3.0" right="4.0" />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="226.0" style="-fx-background-color: #30475E;" text="RECIEPTS &amp; INVOICES" textFill="WHITE" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="3.0" right="4.0" />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="226.0" style="-fx-background-color: #30475E;" text="THEME" textFill="WHITE" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="3.0" right="4.0" />
+               </VBox.margin>
+            </Button>
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="226.0" style="-fx-background-color: #30475E;" text="USER" textFill="WHITE" VBox.vgrow="ALWAYS">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="3.0" right="4.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="210.0" layoutY="68.0" prefHeight="900.0" prefWidth="570.0" style="-fx-background-color: #222831;" AnchorPane.bottomAnchor="-4.0" AnchorPane.leftAnchor="210.0" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="68.0">
+         <children>
+            <AnchorPane prefHeight="819.0" prefWidth="570.0">
+               <children>
+                  <ImageView fitHeight="110.0" fitWidth="102.0" layoutX="58.0" layoutY="171.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="58.0" AnchorPane.rightAnchor="410.0" AnchorPane.topAnchor="171.0">
+                     <image>
+                        <Image url="@../Icons/Logo.png" />
+                     </image>
+                  </ImageView>
+                  <Button alignment="CENTER" layoutX="198.0" layoutY="207.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="120.0" style="-fx-background-color: #30475E;" text="Browse" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+                  <Label layoutX="17.0" layoutY="24.0" prefHeight="45.0" prefWidth="375.0" text="Pole Display Settings" textFill="WHITE" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="349.0" AnchorPane.topAnchor="24.0">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                     <padding>
+                        <Insets left="20.0" />
+                     </padding>
+                  </Label>
+                  <CheckBox layoutX="37.0" layoutY="125.0" mnemonicParsing="false" text="Use pole display" textFill="WHITE" />
+                  <Text fill="#c3baba" layoutX="37.0" layoutY="107.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Include">
+                     <font>
+                        <Font name="System Italic" size="18.0" />
+                     </font>
+                  </Text>
+                  <CheckBox layoutX="37.0" layoutY="305.0" mnemonicParsing="false" text="Bye line" textFill="WHITE" />
+                  <TextField layoutX="58.0" layoutY="343.0" prefHeight="31.0" prefWidth="304.0" />
+                  <CheckBox layoutX="37.0" layoutY="478.0" mnemonicParsing="false" text="Store email" textFill="WHITE" />
+                  <CheckBox layoutX="37.0" layoutY="392.0" mnemonicParsing="false" text="Customer details" textFill="WHITE" />
+                  <CheckBox layoutX="37.0" layoutY="436.0" mnemonicParsing="false" text="Store telephone" textFill="WHITE" />
+                  <CheckBox layoutX="37.0" layoutY="517.0" mnemonicParsing="false" text="Justify items centered (Default)" textFill="WHITE" />
+                  <CheckBox layoutX="37.0" layoutY="561.0" mnemonicParsing="false" text="Ntx total" textFill="WHITE" />
+                  <CheckBox layoutX="38.0" layoutY="602.0" mnemonicParsing="false" text="Items inclusive of tax (with sub total)" textFill="WHITE" />
+                  <CheckBox layoutX="37.0" layoutY="641.0" mnemonicParsing="false" text="Location" textFill="WHITE" />
+                  <TextField layoutX="162.0" layoutY="671.0" prefHeight="31.0" prefWidth="192.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <VBox layoutX="780.0" layoutY="68.0" prefHeight="900.0" prefWidth="500.0" style="-fx-background-color: #222831;" AnchorPane.leftAnchor="780.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="68.0">
+         <children>
+            <AnchorPane prefHeight="731.0" prefWidth="760.0" style="-fx-background-color: #222831;">
+               <children>
+                  <AnchorPane prefHeight="900.0" prefWidth="700.0" style="-fx-background-color: #222831;">
+                     <children>
+                        <Text fill="WHITE" layoutX="31.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Serial Port" wrappingWidth="341.6708984375" AnchorPane.leftAnchor="31.0" />
+                        <ComboBox layoutX="213.0" layoutY="131.0" prefHeight="31.0" prefWidth="271.0" AnchorPane.leftAnchor="213.0" />
+                        <ComboBox layoutX="213.0" layoutY="188.0" prefHeight="31.0" prefWidth="271.0" AnchorPane.leftAnchor="213.0" />
+                        <Text fill="WHITE" layoutX="31.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Baud Rate" wrappingWidth="341.6708984375" AnchorPane.leftAnchor="31.0" />
+                        <Text fill="WHITE" layoutX="31.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data Bits" wrappingWidth="341.6708984375" AnchorPane.leftAnchor="31.0" />
+                        <ComboBox layoutX="213.0" layoutY="244.0" prefHeight="31.0" prefWidth="271.0" AnchorPane.leftAnchor="213.0" />
+                        <ComboBox layoutX="213.0" layoutY="305.0" prefHeight="31.0" prefWidth="271.0" AnchorPane.leftAnchor="213.0" />
+                        <Text fill="WHITE" layoutX="31.0" layoutY="326.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stop Bits" wrappingWidth="341.6708984375" AnchorPane.leftAnchor="31.0" />
+                        <Text fill="WHITE" layoutX="34.0" layoutY="427.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Position cursor line 1" wrappingWidth="341.6708984375" AnchorPane.leftAnchor="31.0" />
+                        <ComboBox layoutX="216.0" layoutY="406.0" prefHeight="31.0" prefWidth="271.0" AnchorPane.leftAnchor="213.0" />
+                        <ComboBox layoutX="217.0" layoutY="463.0" prefHeight="31.0" prefWidth="271.0" AnchorPane.leftAnchor="213.0" />
+                        <Text fill="WHITE" layoutX="35.0" layoutY="484.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Position cursor line 2" wrappingWidth="341.6708984375" AnchorPane.leftAnchor="31.0" />
+                        <Text fill="WHITE" layoutX="34.0" layoutY="539.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Clear display" wrappingWidth="341.6708984375" AnchorPane.leftAnchor="31.0" />
+                        <ComboBox layoutX="216.0" layoutY="518.0" prefHeight="31.0" prefWidth="271.0" AnchorPane.leftAnchor="213.0" />
+                        <Text fill="#dad2d2" layoutX="36.0" layoutY="554.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Unique to model" AnchorPane.leftAnchor="31.0">
+                           <font>
+                              <Font name="System Italic" size="10.0" />
+                           </font>
+                        </Text>
+                        <Text fill="WHITE" layoutX="31.0" layoutY="616.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Passive text" wrappingWidth="341.6708984375" AnchorPane.leftAnchor="31.0" />
+                        <TextArea layoutX="30.0" layoutY="633.0" prefHeight="68.0" prefWidth="321.0" />
+                        <Button alignment="CENTER" layoutX="43.0" layoutY="745.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="120.0" style="-fx-background-color: #F05454;" text="Save" textFill="WHITE">
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+      <TextField layoutX="414.0" layoutY="780.0" prefHeight="31.0" prefWidth="192.0" />
+   </children>
+</AnchorPane>
