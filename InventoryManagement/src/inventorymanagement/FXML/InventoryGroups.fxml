@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.net.*?>
 <?import java.util.*?>
@@ -7,8 +12,476 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller=".InventoryGroupsController">
-    <stylesheets>
-        <URL value="@inventorygroups.css"/>
-    </stylesheets>
+<AnchorPane id="AnchorPane" prefHeight="1034.0" prefWidth="1919.0" style="-fx-background-color: #222831;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inventorymanagement.Controllers.SalesReportController">
+   <children>
+      <Label layoutX="83.0" layoutY="109.0" prefHeight="35.0" prefWidth="502.0" text="Inventory Groups" textFill="WHITE" AnchorPane.rightAnchor="1334.0" AnchorPane.topAnchor="109.0">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Line endX="600.0" layoutX="201.0" layoutY="161.0" startX="-100.0" stroke="#30475e" AnchorPane.rightAnchor="1130.5" AnchorPane.topAnchor="160.5" />
+      <ImageView fitHeight="35.0" fitWidth="30.0" layoutX="14.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1875.0" AnchorPane.topAnchor="118.0">
+         <image>
+            <Image url="@../Icons/backward.png" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER_LEFT" layoutX="-1.0" layoutY="-4.0" prefHeight="68.0" prefWidth="1781.0" style="-fx-background-color: #222831;">
+         <children>
+            <AnchorPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="68.0" prefWidth="2034.0" style="-fx-border-color: grey;" HBox.hgrow="ALWAYS">
+               <children>
+                  <ImageView fitHeight="64.0" fitWidth="93.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1855.0" AnchorPane.topAnchor="2.0">
+                     <image>
+                        <Image url="@../Icons/Logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="405.0" layoutY="22.0" text="Time" textFill="WHITE" />
+                  <Label layoutX="207.0" layoutY="22.0" text="Date" textAlignment="CENTER" textFill="WHITE" />
+                  <HBox alignment="CENTER_RIGHT" layoutX="1080.0" layoutY="12.0" prefHeight="64.0" prefWidth="210.0" spacing="29.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/home.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/info.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/settings.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/profile.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="25.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <Pane layoutX="86.0" layoutY="218.0" prefHeight="335.0" prefWidth="260.0" style="-fx-background-color: #30475E;" AnchorPane.rightAnchor="1573.0" AnchorPane.topAnchor="218.0">
+         <children>
+            <ImageView fitHeight="146.0" fitWidth="238.0" layoutX="11.0" layoutY="11.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Icons/beauty.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="36.0" layoutY="164.0" prefHeight="38.0" prefWidth="189.0" text="Beauty Items" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Line endX="130.0" layoutX="115.0" layoutY="202.0" startX="-100.0" stroke="#161b54" />
+            <Line endX="-20.0" layoutX="190.0" layoutY="242.0" rotate="90.0" startX="-100.0" stroke="#161b54" />
+            <Label layoutX="56.0" layoutY="210.0" text="01" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="174.0" layoutY="210.0" text="12" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="241.0" text="Group No" textFill="#f2f2f2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="149.0" layoutY="241.0" text="No of Items" textFill="#f2f2f2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button layoutY="287.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="260.0" style="-fx-background-color: #F05454;" text="VIEW MORE" textFill="#f2efef">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="448.0" layoutY="218.0" prefHeight="335.0" prefWidth="260.0" style="-fx-background-color: #30475E;" AnchorPane.rightAnchor="1211.0" AnchorPane.topAnchor="218.0">
+         <children>
+            <ImageView fitHeight="146.0" fitWidth="238.0" layoutX="11.0" layoutY="11.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Icons/stationary.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="36.0" layoutY="164.0" prefHeight="38.0" prefWidth="189.0" text="Stationeries" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Line endX="130.0" layoutX="115.0" layoutY="202.0" startX="-100.0" stroke="#161b54" />
+            <Line endX="-20.0" layoutX="190.0" layoutY="242.0" rotate="90.0" startX="-100.0" stroke="#161b54" />
+            <Label layoutX="56.0" layoutY="210.0" text="02" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="174.0" layoutY="210.0" text="23" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="241.0" text="Group No" textFill="#f2f2f2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="149.0" layoutY="241.0" text="No of Items" textFill="#f2f2f2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button layoutY="287.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="260.0" style="-fx-background-color: #F05454;" text="VIEW MORE" textFill="#f2efef">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="817.0" layoutY="218.0" prefHeight="335.0" prefWidth="260.0" style="-fx-background-color: #30475E;" AnchorPane.rightAnchor="842.0" AnchorPane.topAnchor="218.0">
+         <children>
+            <ImageView fitHeight="146.0" fitWidth="238.0" layoutX="11.0" layoutY="11.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Icons/clothing.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="36.0" layoutY="164.0" prefHeight="38.0" prefWidth="189.0" text="Clothing" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Line endX="130.0" layoutX="115.0" layoutY="202.0" startX="-100.0" stroke="#161b54" />
+            <Line endX="-20.0" layoutX="190.0" layoutY="242.0" rotate="90.0" startX="-100.0" stroke="#161b54" />
+            <Label layoutX="56.0" layoutY="210.0" text="03" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="174.0" layoutY="210.0" text="13" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="241.0" text="Group No" textFill="#f2f2f2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="149.0" layoutY="241.0" text="No of Items" textFill="#f2f2f2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button layoutY="287.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="260.0" style="-fx-background-color: #F05454;" text="VIEW MORE" textFill="#f2efef">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="1176.0" layoutY="218.0" prefHeight="335.0" prefWidth="260.0" style="-fx-background-color: #30475E;">
+         <children>
+            <ImageView fitHeight="146.0" fitWidth="238.0" layoutX="11.0" layoutY="11.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Icons/electrical.jpg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="36.0" layoutY="164.0" prefHeight="38.0" prefWidth="189.0" text="Electrical" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Line endX="130.0" layoutX="115.0" layoutY="202.0" startX="-100.0" stroke="#161b54" />
+            <Line endX="-20.0" layoutX="190.0" layoutY="242.0" rotate="90.0" startX="-100.0" stroke="#161b54" />
+            <Label layoutX="56.0" layoutY="210.0" text="04" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="174.0" layoutY="210.0" text="07" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="241.0" text="Group No" textFill="#f2f2f2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="149.0" layoutY="241.0" text="No of Items" textFill="#f2f2f2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button layoutY="287.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="260.0" style="-fx-background-color: #F05454;" text="VIEW MORE" textFill="#f2efef">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="1541.0" layoutY="218.0" prefHeight="335.0" prefWidth="260.0" style="-fx-background-color: #30475E;">
+         <children>
+            <ImageView fitHeight="146.0" fitWidth="238.0" layoutX="11.0" layoutY="11.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Icons/computer.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="36.0" layoutY="164.0" prefHeight="38.0" prefWidth="189.0" text="Computer" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Line endX="130.0" layoutX="115.0" layoutY="202.0" startX="-100.0" stroke="#161b54" />
+            <Line endX="-20.0" layoutX="190.0" layoutY="242.0" rotate="90.0" startX="-100.0" stroke="#161b54" />
+            <Label layoutX="56.0" layoutY="210.0" text="05" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="174.0" layoutY="210.0" text="18" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="241.0" text="Group No" textFill="#f2f2f2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="149.0" layoutY="241.0" text="No of Items" textFill="#f2f2f2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button layoutY="287.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="260.0" style="-fx-background-color: #F05454;" text="VIEW MORE" textFill="#f2efef">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="1538.0" layoutY="600.0" prefHeight="335.0" prefWidth="260.0" style="-fx-background-color: #30475E;">
+         <children>
+            <ImageView fitHeight="146.0" fitWidth="238.0" layoutX="11.0" layoutY="11.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Icons/food.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="36.0" layoutY="164.0" prefHeight="38.0" prefWidth="189.0" text="Food" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Line endX="130.0" layoutX="115.0" layoutY="202.0" startX="-100.0" stroke="#161b54" />
+            <Line endX="-20.0" layoutX="190.0" layoutY="242.0" rotate="90.0" startX="-100.0" stroke="#161b54" />
+            <Label layoutX="56.0" layoutY="210.0" text="10" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="174.0" layoutY="210.0" text="23" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="241.0" text="Group No" textFill="#f2f2f2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="149.0" layoutY="241.0" text="No of Items" textFill="#f2f2f2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button layoutY="287.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="260.0" style="-fx-background-color: #F05454;" text="VIEW MORE" textFill="#f2efef">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="1173.0" layoutY="600.0" prefHeight="335.0" prefWidth="260.0" style="-fx-background-color: #30475E;">
+         <children>
+            <ImageView fitHeight="146.0" fitWidth="238.0" layoutX="11.0" layoutY="11.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Icons/health.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="36.0" layoutY="164.0" prefHeight="38.0" prefWidth="189.0" text="Health" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Line endX="130.0" layoutX="115.0" layoutY="202.0" startX="-100.0" stroke="#161b54" />
+            <Line endX="-20.0" layoutX="190.0" layoutY="242.0" rotate="90.0" startX="-100.0" stroke="#161b54" />
+            <Label layoutX="56.0" layoutY="210.0" text="09" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="174.0" layoutY="210.0" text="13" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="241.0" text="Group No" textFill="#f2f2f2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="149.0" layoutY="241.0" text="No of Items" textFill="#f2f2f2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button layoutY="287.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="260.0" style="-fx-background-color: #F05454;" text="VIEW MORE" textFill="#f2efef">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="814.0" layoutY="600.0" prefHeight="335.0" prefWidth="260.0" style="-fx-background-color: #30475E;">
+         <children>
+            <ImageView fitHeight="146.0" fitWidth="238.0" layoutX="11.0" layoutY="11.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Icons/toy.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="36.0" layoutY="164.0" prefHeight="38.0" prefWidth="189.0" text="Toys" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Line endX="130.0" layoutX="115.0" layoutY="202.0" startX="-100.0" stroke="#161b54" />
+            <Line endX="-20.0" layoutX="190.0" layoutY="242.0" rotate="90.0" startX="-100.0" stroke="#161b54" />
+            <Label layoutX="56.0" layoutY="210.0" text="08" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="174.0" layoutY="210.0" text="23" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="241.0" text="Group No" textFill="#f2f2f2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="149.0" layoutY="241.0" text="No of Items" textFill="#f2f2f2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button layoutY="287.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="260.0" style="-fx-background-color: #F05454;" text="VIEW MORE" textFill="#f2efef">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="445.0" layoutY="600.0" prefHeight="335.0" prefWidth="260.0" style="-fx-background-color: #30475E;">
+         <children>
+            <ImageView fitHeight="146.0" fitWidth="238.0" layoutX="11.0" layoutY="11.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Icons/sports.jpeg" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="36.0" layoutY="164.0" prefHeight="38.0" prefWidth="189.0" text="Sports" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Line endX="130.0" layoutX="115.0" layoutY="202.0" startX="-100.0" stroke="#161b54" />
+            <Line endX="-20.0" layoutX="190.0" layoutY="242.0" rotate="90.0" startX="-100.0" stroke="#161b54" />
+            <Label layoutX="56.0" layoutY="210.0" text="07" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="174.0" layoutY="210.0" text="23" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="241.0" text="Group No" textFill="#f2f2f2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="149.0" layoutY="241.0" text="No of Items" textFill="#f2f2f2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button layoutY="287.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="260.0" style="-fx-background-color: #F05454;" text="VIEW MORE" textFill="#f2efef">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <Pane layoutX="83.0" layoutY="600.0" prefHeight="335.0" prefWidth="260.0" style="-fx-background-color: #30475E;">
+         <children>
+            <ImageView fitHeight="146.0" fitWidth="238.0" layoutX="11.0" layoutY="11.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../Icons/jewellary.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="36.0" layoutY="164.0" prefHeight="38.0" prefWidth="189.0" text="Jewellery" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Line endX="130.0" layoutX="115.0" layoutY="202.0" startX="-100.0" stroke="#161b54" />
+            <Line endX="-20.0" layoutX="190.0" layoutY="242.0" rotate="90.0" startX="-100.0" stroke="#161b54" />
+            <Label layoutX="56.0" layoutY="210.0" text="06" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="174.0" layoutY="210.0" text="22" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="31.0" layoutY="241.0" text="Group No" textFill="#f2f2f2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="149.0" layoutY="241.0" text="No of Items" textFill="#f2f2f2">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Button layoutY="287.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="260.0" style="-fx-background-color: #F05454;" text="VIEW MORE" textFill="#f2efef">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+   <stylesheets>
+      <URL value="@salesreport.css" />
+   </stylesheets>
 </AnchorPane>
