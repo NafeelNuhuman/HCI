@@ -13,9 +13,9 @@ import javafx.fxml.Initializable;
 /**
  * FXML Controller class
  *
- * @author Dino
+ * @author Dil
  */
-public class OptionsController implements Initializable {
+public class InventoryGroupsController implements Initializable {
 
     /**
      * Initializes the controller class.

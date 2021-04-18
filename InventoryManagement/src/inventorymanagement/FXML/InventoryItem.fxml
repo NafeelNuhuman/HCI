@@ -194,7 +194,7 @@
          </font>
       </Label>
       <Line endX="600.0" layoutX="201.0" layoutY="161.0" startX="-100.0" stroke="#30475e" AnchorPane.rightAnchor="1130.5" AnchorPane.topAnchor="160.5" />
-      <ImageView fitHeight="35.0" fitWidth="30.0" layoutX="14.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1875.0" AnchorPane.topAnchor="110.0">
+      <ImageView fitHeight="35.0" fitWidth="30.0" layoutX="14.0" layoutY="118.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1875.0" AnchorPane.topAnchor="118.0">
          <image>
             <Image url="@../Icons/backward.png" />
          </image>

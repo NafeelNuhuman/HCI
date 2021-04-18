@@ -17,12 +17,11 @@
    <children>
       <ImageView fitHeight="181.0" fitWidth="192.0" layoutX="808.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: FFFFFF;" AnchorPane.rightAnchor="96.65428161621094" AnchorPane.topAnchor="87.0">
          <image>
-            <Image url="@../../../../../../images%20and%20icons/68747470733a2f2f662e636c6f75642e6769746875622e636f6d2f6173736574732f323037383234352f3235393331332f35653833313336322d386362612d313165322d38.png" />
+            <Image url="@../Icons/test%20image.png" />
          </image>
       </ImageView>
       <Button layoutX="837.0" layoutY="290.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="106.0" style="-fx-background-color: #F05454;" text="UPLOAD IMAGE" textFill="WHITE" AnchorPane.rightAnchor="138.0" AnchorPane.topAnchor="290.0" />
-      <HBox prefHeight="45.0" prefWidth="600.0" style="-fx-background-color: #30475E;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
-      <Text fill="WHITE" layoutX="14.0" layoutY="69.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD INVENTORY" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="56.0">
+      <Text fill="WHITE" layoutX="14.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD INVENTORY" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="67.78515625">
          <font>
             <Font size="28.0" />
          </font>
@@ -33,7 +32,7 @@
          <children>
             <VBox prefHeight="213.0" prefWidth="236.0">
                <children>
-                  <Label text="Label" textFill="#ffeeee">
+                  <Label text="RETAIL PRICE" textFill="#ffeeee">
                      <VBox.margin>
                         <Insets left="10.0" top="60.0" />
                      </VBox.margin>
@@ -47,7 +46,7 @@
             </VBox>
             <VBox prefHeight="208.0" prefWidth="249.0">
                <children>
-                  <Label text="Label" textFill="WHITE">
+                  <Label text="XOST PRICE" textFill="WHITE">
                      <VBox.margin>
                         <Insets left="10.0" top="60.0" />
                      </VBox.margin>
@@ -61,7 +60,7 @@
             </VBox>
             <VBox prefHeight="213.0" prefWidth="278.0">
                <children>
-                  <Label text="Label" textFill="WHITE">
+                  <Label text="TRADE PRICE" textFill="WHITE">
                      <VBox.margin>
                         <Insets left="10.0" top="60.0" />
                      </VBox.margin>
@@ -79,7 +78,7 @@
          <children>
             <VBox prefHeight="204.0" prefWidth="228.0">
                <children>
-                  <Label text="Label" textFill="WHITE">
+                  <Label text="QUANTITY" textFill="WHITE">
                      <VBox.margin>
                         <Insets left="10.0" top="25.0" />
                      </VBox.margin>
@@ -93,7 +92,7 @@
             </VBox>
             <VBox prefHeight="204.0" prefWidth="257.0">
                <children>
-                  <Label text="Label" textFill="WHITE">
+                  <Label text="TAX" textFill="WHITE">
                      <VBox.margin>
                         <Insets left="10.0" top="25.0" />
                      </VBox.margin>
@@ -107,7 +106,7 @@
             </VBox>
             <VBox prefHeight="204.0" prefWidth="274.0">
                <children>
-                  <Label text="Label" textFill="WHITE">
+                  <Label text="GROUP" textFill="WHITE">
                      <VBox.margin>
                         <Insets left="10.0" top="25.0" />
                      </VBox.margin>
@@ -125,7 +124,7 @@
          <children>
             <VBox prefHeight="132.0" prefWidth="239.0">
                <children>
-                  <Label text="Label" textFill="WHITE">
+                  <Label text="NAME" textFill="WHITE">
                      <VBox.margin>
                         <Insets left="10.0" top="25.0" />
                      </VBox.margin>
@@ -136,10 +135,13 @@
                      </VBox.margin>
                   </TextField>
                </children>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
             </VBox>
             <VBox prefHeight="132.0" prefWidth="241.0">
                <children>
-                  <Label text="Label" textFill="WHITE">
+                  <Label text="NUMBER" textFill="WHITE">
                      <VBox.margin>
                         <Insets left="10.0" top="25.0" />
                      </VBox.margin>
@@ -153,7 +155,7 @@
             </VBox>
             <VBox prefHeight="132.0" prefWidth="272.0">
                <children>
-                  <Label text="Label" textFill="WHITE">
+                  <Label text="BARCODE" textFill="WHITE">
                      <VBox.margin>
                         <Insets top="25.0" />
                      </VBox.margin>
@@ -164,6 +166,51 @@
                   <Insets left="10.0" />
                </HBox.margin>
             </VBox>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" layoutX="5.0" prefHeight="43.0" prefWidth="1300.0" style="-fx-background-color: #222831;" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="68.0" prefWidth="1313.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <ImageView fitHeight="64.0" fitWidth="93.0" layoutX="8.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="4.0" AnchorPane.topAnchor="4.0">
+                     <image>
+                        <Image url="@../Icons/Logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="405.0" layoutY="22.0" text="Time" textFill="WHITE" />
+                  <Label layoutX="207.0" layoutY="22.0" text="Date" textAlignment="CENTER" textFill="WHITE" />
+                  <HBox alignment="CENTER_RIGHT" layoutX="1080.0" layoutY="12.0" prefHeight="64.0" prefWidth="210.0" spacing="29.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/home.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/info.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/settings.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/profile.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="25.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
          </children>
       </HBox>
    </children>

@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
 <?import java.lang.*?>
 <?import java.net.*?>
 <?import java.util.*?>
@@ -7,8 +10,245 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller=".InventoryPrintController">
+<AnchorPane id="AnchorPane" prefHeight="623.0" prefWidth="1338.0" style="-fx-background-color: #222831;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller=".InventoryPrintController">
     <stylesheets>
-        <URL value="@inventoryprint.css"/>
+        <URL value="@inventoryprint.css" />
     </stylesheets>
+   <children>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="68.0" prefWidth="1321.0" style="-fx-background-color: #222831;">
+         <children>
+            <AnchorPane prefHeight="103.0" prefWidth="1210.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <ImageView fitHeight="64.0" fitWidth="93.0" layoutX="8.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="4.0" AnchorPane.topAnchor="4.0">
+                     <image>
+                        <Image url="@../Icons/Logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="405.0" layoutY="22.0" text="Time" textFill="WHITE" />
+                  <Label layoutX="207.0" layoutY="22.0" text="Date" textAlignment="CENTER" textFill="WHITE" />
+                  <HBox alignment="CENTER_RIGHT" layoutX="1080.0" layoutY="12.0" prefHeight="64.0" prefWidth="219.0" spacing="29.0" AnchorPane.rightAnchor="-9.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/home.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/info.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/settings.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/profile.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="25.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <VBox layoutX="-3.0" layoutY="78.0" prefHeight="507.0" prefWidth="1336.0">
+         <children>
+            <Label text="SELECT ITEMS TO PRINT" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="25.0" />
+               </VBox.margin>
+            </Label>
+            <ScrollPane prefHeight="279.0" prefWidth="1331.0">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="278.0" prefWidth="1314.0">
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                     <children>
+                        <Pane prefHeight="279.0" prefWidth="1321.0">
+                           <children>
+                              <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="8.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icons/test%20image.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="154.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icons/test%20image.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="300.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icons/test%20image.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="450.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icons/test%20image.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="597.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icons/test%20image.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="754.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icons/test%20image.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="903.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icons/test%20image.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="1044.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icons/test%20image.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="1186.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icons/test%20image.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="8.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icons/test%20image.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="154.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icons/test%20image.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="300.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icons/test%20image.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="450.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icons/test%20image.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="597.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icons/test%20image.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="754.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icons/test%20image.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="903.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icons/test%20image.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="1044.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icons/test%20image.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="1186.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icons/test%20image.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+              </content>
+               <VBox.margin>
+                  <Insets left="5.0" top="10.0" />
+               </VBox.margin>
+            </ScrollPane>
+            <Label text="DETAILS TO PRINT" textFill="WHITE">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="25.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets top="30.0" />
+               </padding>
+            </Label>
+            <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="129.0" style="-fx-background-color: #F05454;" text="PRINT" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="1100.0" top="25.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Button>
+            <CheckBox mnemonicParsing="false" text="Number" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="15.0" top="-15.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox mnemonicParsing="false" text="Description" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="15.0" top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox mnemonicParsing="false" text="Price" textFill="WHITE">
+               <VBox.margin>
+                  <Insets left="15.0" top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox mnemonicParsing="false" text="Barcode ID" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="250.0" top="-90.0" />
+               </VBox.margin>
+            </CheckBox>
+            <CheckBox mnemonicParsing="false" text="Tax rate" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="250.0" top="15.0" />
+               </VBox.margin>
+            </CheckBox>
+            <CheckBox mnemonicParsing="false" text="Quantity" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="250.0" top="15.0" />
+               </VBox.margin>
+            </CheckBox>
+         </children>
+         <padding>
+            <Insets bottom="-30.0" top="10.0" />
+         </padding>
+      </VBox>
+   </children>
 </AnchorPane>
