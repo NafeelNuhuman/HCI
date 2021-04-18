@@ -42,7 +42,7 @@
                               <Image url="@../Icons/info.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="options" fitHeight="35.0" fitWidth="20.0" onMouseClicked="#handleButtonClicks" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../Icons/settings.png" />
                            </image>
@@ -111,7 +111,7 @@
                   <Insets left="11.0" top="12.0" />
                </VBox.margin>
             </Label>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="37.0" prefWidth="226.0" style="-fx-background-color: #30475E;" text="Add Inventory" textFill="WHITE" VBox.vgrow="ALWAYS">
+            <Button fx:id="btnAddInventory" alignment="BASELINE_LEFT" mnemonicParsing="false" onMouseClicked="#handleButtonClicks" prefHeight="37.0" prefWidth="226.0" style="-fx-background-color: #30475E;" text="Add Inventory" textFill="WHITE" VBox.vgrow="ALWAYS">
                <VBox.margin>
                   <Insets bottom="5.0" left="3.0" right="4.0" top="8.0" />
                </VBox.margin>
@@ -350,7 +350,7 @@
          <children>
             <AnchorPane prefHeight="320.0" prefWidth="603.0" HBox.hgrow="ALWAYS">
                <children>
-                  <VBox layoutX="316.0" layoutY="27.0" prefHeight="242.0" prefWidth="249.0" spacing="20.0" AnchorPane.bottomAnchor="51.0" AnchorPane.leftAnchor="314.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="27.0">
+                  <VBox layoutX="316.0" layoutY="27.0" prefHeight="242.0" prefWidth="287.0" spacing="20.0" AnchorPane.bottomAnchor="51.0" AnchorPane.leftAnchor="314.0" AnchorPane.rightAnchor="2.0" AnchorPane.topAnchor="27.0">
                      <padding>
                         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
                      </padding>
