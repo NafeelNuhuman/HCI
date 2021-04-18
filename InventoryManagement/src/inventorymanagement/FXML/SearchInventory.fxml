@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
 <?import java.lang.*?>
 <?import java.net.*?>
 <?import java.util.*?>
@@ -7,8 +10,259 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inventorymanagement.SearchInventoryController">
+<AnchorPane id="AnchorPane" prefHeight="710.0" prefWidth="1420.0" style="-fx-background-color: #222831;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller=".AddInventoryController">
     <stylesheets>
-        <URL value="@searchinventory.css"/>
+        <URL value="@addinventory.css" />
     </stylesheets>
+   <children>
+      <HBox prefHeight="53.0" prefWidth="600.0" style="-fx-background-color: #30475E;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <HBox layoutX="9.0" layoutY="71.0" prefHeight="363.0" prefWidth="278.0" style="-fx-background-color: #30475E;" AnchorPane.bottomAnchor="276.0" AnchorPane.leftAnchor="9.0" AnchorPane.topAnchor="71.0">
+         <children>
+            <Label text="PRODUCT" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="95.0" top="75.0" />
+               </HBox.margin>
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="180.0" fitWidth="151.0" pickOnBounds="true" preserveRatio="true">
+               <HBox.margin>
+                  <Insets left="-115.0" top="175.0" />
+               </HBox.margin>
+               <image>
+                  <Image url="@../../../../../../PROTOT~1/HCI/INVENT~1/Icons/687474~1.PNG" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox layoutX="294.0" layoutY="160.0" prefHeight="425.0" prefWidth="280.0" style="-fx-background-color: #30475E;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="294.0" AnchorPane.rightAnchor="326.0" AnchorPane.topAnchor="160.0">
+         <children>
+            <HBox />
+            <ScrollPane prefHeight="550.0" prefWidth="806.0">
+               <content>
+                  <AnchorPane prefHeight="591.0" prefWidth="832.0">
+                     <children>
+                        <Pane layoutX="6.0" layoutY="6.0" prefHeight="138.0" prefWidth="826.0" style="-fx-background-color: #30475E;" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="6.0">
+                           <children>
+                              <ImageView fitHeight="131.0" fitWidth="128.0" layoutX="21.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../PROTOT~1/HCI/INVENT~1/Icons/687474~1.PNG" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="204.0" layoutY="14.0" text="Description" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="204.0" layoutY="52.0" text="Price" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="204.0" layoutY="91.0" text="Quantity" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="5.0" layoutY="153.0" prefHeight="138.0" prefWidth="807.0" style="-fx-background-color: #30475E;">
+                           <children>
+                              <ImageView fitHeight="137.0" fitWidth="128.0" layoutX="22.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../PROTOT~1/HCI/INVENT~1/Icons/687474~1.PNG" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="204.0" layoutY="14.0" text="Description" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="204.0" layoutY="52.0" text="Price" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="204.0" layoutY="91.0" text="Quantity" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="5.0" layoutY="302.0" prefHeight="138.0" prefWidth="817.0" style="-fx-background-color: #30475E;">
+                           <children>
+                              <ImageView fitHeight="137.0" fitWidth="128.0" layoutX="23.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../PROTOT~1/HCI/INVENT~1/Icons/687474~1.PNG" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="204.0" layoutY="14.0" text="Description" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="204.0" layoutY="52.0" text="Price" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="204.0" layoutY="91.0" text="Quantity" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="6.0" layoutY="453.0" prefHeight="138.0" prefWidth="826.0" style="-fx-background-color: #30475E;">
+                           <children>
+                              <ImageView fitHeight="137.0" fitWidth="128.0" layoutX="23.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../../../../../../PROTOT~1/HCI/INVENT~1/Icons/687474~1.PNG" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="204.0" layoutY="14.0" text="Description" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="204.0" layoutY="52.0" text="Price" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="204.0" layoutY="91.0" text="Quantity" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </children>
+      </HBox>
+      <Pane layoutX="9.0" layoutY="433.0" prefHeight="273.0" prefWidth="278.0" style="-fx-background-color: #30475E;">
+         <children>
+            <Label layoutX="46.0" layoutY="42.0" text="Name" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="46.0" layoutY="80.0" text="Barcode" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="46.0" layoutY="121.0" text="Tax" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="48.0" layoutY="164.0" text="Quantity" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <VBox layoutX="1094.0" layoutY="53.0" prefHeight="650.0" prefWidth="328.0" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="53.0">
+         <children>
+            <Label text="SEARCH" textFill="WHITE">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="110.0" top="75.0" />
+               </VBox.margin>
+            </Label>
+            <TextArea prefHeight="46.0" prefWidth="286.0">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="75.0" />
+               </VBox.margin>
+            </TextArea>
+            <Pane prefHeight="393.0" prefWidth="321.0" style="-fx-background-color: #ffff;">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="15.0" />
+               </VBox.margin>
+               <children>
+                  <Button layoutX="14.0" layoutY="43.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #222831;" text="1" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="92.0" layoutY="43.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #222831;" text="2" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="165.0" layoutY="43.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #222831;" text="3" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="239.0" layoutY="43.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #2A70B5;" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="14.0" layoutY="122.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #222831;" text="4" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="92.0" layoutY="122.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #222831;" text="5" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="165.0" layoutY="122.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #222831;" text="6" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="14.0" layoutY="197.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #222831;" text="7" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="239.0" layoutY="128.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #2A70B5;" text="abc" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="92.0" layoutY="197.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #222831;" text="8" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="165.0" layoutY="197.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #222831;" text="9" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="165.0" layoutY="281.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #2A70B5;" text="." textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="14.0" layoutY="281.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="138.0" style="-fx-background-color: #222831;" text="0" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="239.0" layoutY="203.0" mnemonicParsing="false" prefHeight="147.0" prefWidth="62.0" style="-fx-background-color: #F05454;" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+    
 </AnchorPane>

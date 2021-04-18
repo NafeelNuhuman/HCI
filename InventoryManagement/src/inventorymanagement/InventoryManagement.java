@@ -23,7 +23,8 @@ import javafx.stage.Stage;
     
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("FXML/OptionsPrint.fxml"));
+
+        Parent root = FXMLLoader.load(getClass().getResource("FXML/SalesReport.fxml"));
         
         Scene scene = new Scene(root);
         
