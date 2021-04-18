@@ -11,7 +11,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inventorymanagement.Controllers.HomeController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: #222831;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inventorymanagement.Controllers.HomeController">
     <stylesheets>
         <URL value="@../CSS/home.css" />
     </stylesheets>
@@ -151,7 +151,7 @@
             </Button>
          </children>
       </VBox>
-      <VBox layoutX="173.0" layoutY="63.0" prefHeight="358.0" prefWidth="336.0" style="-fx-background-color: #222831; -fx-border-color: grey;" AnchorPane.bottomAnchor="378.0" AnchorPane.leftAnchor="173.0" AnchorPane.rightAnchor="771.0" AnchorPane.topAnchor="64.0">
+      <VBox layoutX="173.0" layoutY="63.0" prefHeight="358.0" prefWidth="317.0" style="-fx-background-color: #222831; -fx-border-color: grey;" AnchorPane.bottomAnchor="378.0" AnchorPane.leftAnchor="173.0" AnchorPane.rightAnchor="790.0" AnchorPane.topAnchor="64.0">
          <children>
             <AnchorPane prefHeight="395.0" prefWidth="334.0">
                <children>
@@ -164,7 +164,7 @@
             </AnchorPane>
          </children>
       </VBox>
-      <VBox layoutX="172.0" layoutY="420.0" prefHeight="382.0" prefWidth="336.0">
+      <VBox layoutX="172.0" layoutY="420.0" prefHeight="382.0" prefWidth="317.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="172.0">
          <children>
             <AnchorPane prefHeight="382.0" prefWidth="336.0" VBox.vgrow="ALWAYS">
                <children>
@@ -257,7 +257,7 @@
             </AnchorPane>
          </children>
       </VBox>
-      <VBox layoutX="509.0" layoutY="64.0" prefHeight="736.0" prefWidth="187.0" style="-fx-background-color: #222831; -fx-border-color: grey;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="509.0" AnchorPane.rightAnchor="584.0" AnchorPane.topAnchor="64.0">
+      <VBox layoutX="488.0" layoutY="64.0" prefHeight="736.0" prefWidth="188.0" style="-fx-background-color: #222831; -fx-border-color: grey;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="488.0" AnchorPane.rightAnchor="604.0" AnchorPane.topAnchor="64.0">
          <children>
             <Label prefHeight="45.0" prefWidth="199.0" text="Groups" textFill="WHITE">
                <font>
@@ -267,10 +267,23 @@
                   <Insets left="13.0" />
                </VBox.margin>
             </Label>
-            <ListView fx:id="groupList" prefHeight="691.0" prefWidth="191.0" style="-fx-background-color: #222831; -fx-border-color: grey;" VBox.vgrow="ALWAYS" />
+            <ScrollPane hbarPolicy="NEVER" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #222831;" vbarPolicy="ALWAYS" VBox.vgrow="ALWAYS">
+               <content>
+                  <VBox prefHeight="779.0" prefWidth="167.0" spacing="2.0" style="-fx-background-color: #222831;">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="73.0" prefWidth="167.0" style="-fx-background-color: #30475E; -fx-border-color: GREY;" text="Chocolates" textFill="WHITE" />
+                        <Button mnemonicParsing="false" prefHeight="73.0" prefWidth="167.0" style="-fx-background-color: #30475E; -fx-border-color: GREY;" text="Clothing" textFill="WHITE" />
+                        <Button mnemonicParsing="false" prefHeight="73.0" prefWidth="167.0" style="-fx-background-color: #30475E; -fx-border-color: GREY;" text="Cosmetics" textFill="WHITE" />
+                        <Button mnemonicParsing="false" prefHeight="73.0" prefWidth="167.0" style="-fx-background-color: #30475E; -fx-border-color: GREY;" text="Dairy" textFill="WHITE" />
+                        <Button mnemonicParsing="false" prefHeight="73.0" prefWidth="167.0" style="-fx-background-color: #30475E; -fx-border-color: GREY;" text="Electronics" textFill="WHITE" />
+                        <Button mnemonicParsing="false" prefHeight="73.0" prefWidth="167.0" style="-fx-background-color: grey; -fx-border-color: GREY;" text="Food" />
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
          </children>
       </VBox>
-      <VBox layoutX="696.0" layoutY="64.0" prefHeight="431.0" prefWidth="309.0" style="-fx-background-color: #222831; -fx-border-color: grey;" AnchorPane.bottomAnchor="305.0" AnchorPane.leftAnchor="696.0" AnchorPane.rightAnchor="275.0" AnchorPane.topAnchor="64.0">
+      <VBox layoutX="675.0" layoutY="64.0" prefHeight="431.0" prefWidth="305.0" style="-fx-background-color: #222831; -fx-border-color: grey;" AnchorPane.bottomAnchor="305.0" AnchorPane.leftAnchor="675.0" AnchorPane.topAnchor="64.0">
          <children>
             <HBox alignment="CENTER" prefHeight="46.0" prefWidth="307.0" spacing="20.0">
                <children>
@@ -278,8 +291,119 @@
                   <ComboBox prefWidth="150.0" promptText="Barcode" />
                </children>
             </HBox>
+            <ScrollPane hbarPolicy="NEVER" pannable="true" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #222831;" vbarPolicy="ALWAYS" VBox.vgrow="ALWAYS">
+               <content>
+                  <HBox prefHeight="343.0" prefWidth="286.0" style="-fx-background-color: #222831;">
+                     <children>
+                        <Button mnemonicParsing="false" prefHeight="73.0" prefWidth="167.0" style="-fx-background-color: #30475E; -fx-border-color: GREY;" text="Pizza" textFill="WHITE" />
+                        <Button mnemonicParsing="false" prefHeight="73.0" prefWidth="167.0" style="-fx-background-color: #30475E; -fx-border-color: GREY;" text="Burger" textFill="WHITE" />
+                        <Button mnemonicParsing="false" prefHeight="73.0" prefWidth="167.0" style="-fx-background-color: #30475E; -fx-border-color: GREY;" text="Pasta" textFill="WHITE" />
+                     </children>
+                  </HBox>
+               </content>
+            </ScrollPane>
+            <HBox prefHeight="37.0" prefWidth="336.0">
+               <children>
+                  <TextField prefHeight="67.0" prefWidth="218.0" />
+                  <Button alignment="CENTER" mnemonicParsing="false" prefHeight="40.0" prefWidth="105.0" style="-fx-background-color: #F05454; -fx-border-color: grey;" text="Add" textFill="WHITE" HBox.hgrow="ALWAYS">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+            </HBox>
          </children></VBox>
-      <VBox layoutX="1005.0" layoutY="64.0" prefHeight="431.0" prefWidth="277.0" style="-fx-background-color: #222831; -fx-border-color: grey;" AnchorPane.bottomAnchor="305.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="64.0" />
-      <HBox layoutX="696.0" layoutY="495.0" prefHeight="305.0" prefWidth="585.0" style="-fx-background-color: #222831; -fx-border-color: grey;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="695.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="495.0" />
+      <VBox layoutX="977.0" layoutY="64.0" prefHeight="431.0" prefWidth="303.0" style="-fx-background-color: #222831; -fx-border-color: grey;" AnchorPane.bottomAnchor="305.0" AnchorPane.leftAnchor="977.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="64.0">
+         <children>
+            <ScrollPane hbarPolicy="NEVER" prefHeight="392.0" prefWidth="301.0" style="-fx-background-color: #222831;" vbarPolicy="ALWAYS" VBox.vgrow="ALWAYS">
+               <padding>
+                  <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+               </padding>
+               <content>
+                  <VBox prefHeight="390.0" prefWidth="282.0" style="-fx-background-color: #222831;">
+                     <children>
+                        <HBox alignment="BASELINE_LEFT" prefHeight="31.0" prefWidth="279.0" spacing="38.0" style="-fx-background-color: #30475E;">
+                           <children>
+                              <Label text="Pizza" textFill="WHITE" />
+                              <Label text="X 1" textFill="WHITE">
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </Label>
+                              <Label prefHeight="14.0" prefWidth="61.0" text="Rs. 00.00" textFill="WHITE" />
+                              <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="44.0" text="X" />
+                           </children>
+                           <padding>
+                              <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+            </ScrollPane>
+            <Button mnemonicParsing="false" prefHeight="36.0" prefWidth="300.0" style="-fx-background-color: #F05454; -fx-border-color: grey;" text="Empty Basket" textFill="WHITE" />
+         </children></VBox>
+      <HBox layoutX="675.0" layoutY="495.0" prefHeight="305.0" prefWidth="605.0" style="-fx-background-color: #222831; -fx-border-color: grey;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="675.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="495.0">
+         <children>
+            <AnchorPane prefHeight="320.0" prefWidth="603.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <VBox layoutX="316.0" layoutY="27.0" prefHeight="242.0" prefWidth="249.0" spacing="20.0" AnchorPane.bottomAnchor="51.0" AnchorPane.leftAnchor="314.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="27.0">
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                     <children>
+                        <Label text="Payment" textFill="WHITE">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <Button alignment="BOTTOM_LEFT" mnemonicParsing="false" prefHeight="31.0" prefWidth="242.0" style="-fx-background-color: #30475E;" text="Cash" textFill="WHITE" />
+                        <Button alignment="BOTTOM_LEFT" mnemonicParsing="false" prefHeight="31.0" prefWidth="242.0" style="-fx-background-color: #30475E;" text="Cheque" textFill="WHITE" />
+                        <Button alignment="BOTTOM_LEFT" mnemonicParsing="false" prefHeight="31.0" prefWidth="242.0" style="-fx-background-color: #30475E;" text="Other" textFill="WHITE" />
+                     </children>
+                  </VBox>
+                  <HBox layoutX="32.0" layoutY="33.0" prefHeight="175.0" prefWidth="260.0" AnchorPane.bottomAnchor="85.0" AnchorPane.leftAnchor="32.0" AnchorPane.rightAnchor="291.0" AnchorPane.topAnchor="33.0">
+                     <children>
+                        <VBox prefHeight="249.0" prefWidth="133.0" spacing="10.0">
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                           <children>
+                              <Label prefHeight="21.0" prefWidth="73.0" text="NTX" textFill="WHITE" />
+                              <Label prefHeight="21.0" prefWidth="73.0" text="TX" textFill="WHITE" />
+                              <Label prefHeight="21.0" prefWidth="73.0" text="Sub Total" textFill="WHITE" />
+                              <Label prefHeight="21.0" prefWidth="73.0" text="VAT 1" textFill="WHITE" />
+                              <Label prefHeight="21.0" prefWidth="73.0" text="VAT 2" textFill="WHITE" />
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="249.0" prefWidth="133.0" spacing="10.0">
+                           <children>
+                              <Label alignment="CENTER_RIGHT" prefHeight="21.0" prefWidth="73.0" text="XXX" textFill="WHITE" />
+                              <Label alignment="CENTER_RIGHT" prefHeight="21.0" prefWidth="73.0" text="XXX" textFill="WHITE" />
+                              <Label alignment="CENTER_RIGHT" prefHeight="21.0" prefWidth="73.0" text="XXX" textFill="WHITE" />
+                              <Label alignment="CENTER_RIGHT" prefHeight="21.0" prefWidth="73.0" text="XXX" textFill="WHITE" />
+                              <Label alignment="CENTER_RIGHT" prefHeight="21.0" prefWidth="73.0" text="XXX" textFill="WHITE" />
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="26.0" layoutY="230.0" prefHeight="61.0" prefWidth="280.0" spacing="80.0" AnchorPane.bottomAnchor="29.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="297.0" AnchorPane.topAnchor="230.0">
+                     <padding>
+                        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                     </padding>
+                     <children>
+                        <Label prefHeight="21.0" prefWidth="58.0" text="Total" textFill="WHITE" />
+                        <Label alignment="CENTER_RIGHT" prefHeight="21.0" prefWidth="73.0" text="XXX" textFill="WHITE" />
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children></HBox>
    </children>
 </AnchorPane>
