@@ -17,16 +17,16 @@
         <URL value="@salesreport.css" />
     </stylesheets>
    <children>
-      <ScrollPane layoutX="119.0" layoutY="182.0" prefHeight="762.0" prefWidth="330.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="182.0">
+      <ScrollPane layoutX="119.0" layoutY="182.0" prefHeight="769.0" prefWidth="330.0" AnchorPane.rightAnchor="21.0" AnchorPane.topAnchor="182.0">
         <content>
-            <AnchorPane prefHeight="673.0" prefWidth="308.0">
+            <AnchorPane prefHeight="850.0" prefWidth="329.0">
                <children>
                   <ListView prefHeight="795.0" prefWidth="316.0" />
                   <Pane layoutX="-2.0" prefHeight="144.0" prefWidth="330.0" style="-fx-background-color: #30475E;">
                      <children>
                         <ImageView fitHeight="113.0" fitWidth="126.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true">
                            <image>
-                              <Image url="@../../../../../../../Pictures/Default_Image_Thumbnail.png" />
+                              <Image url="@../Icons/image.png" />
                            </image>
                         </ImageView>
                         <Text fill="WHITE" layoutX="182.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item No" wrappingWidth="77.3603515625" />
@@ -42,7 +42,7 @@
                      <children>
                         <ImageView fitHeight="113.0" fitWidth="126.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true">
                            <image>
-                              <Image url="@../../../../../../../Pictures/Default_Image_Thumbnail.png" />
+                              <Image url="@../Icons/image.png" />
                            </image>
                         </ImageView>
                         <Text fill="WHITE" layoutX="182.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item No" wrappingWidth="77.3603515625" />
@@ -58,7 +58,7 @@
                      <children>
                         <ImageView fitHeight="113.0" fitWidth="126.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true">
                            <image>
-                              <Image url="@../../../../../../../Pictures/Default_Image_Thumbnail.png" />
+                              <Image url="@../Icons/image.png" />
                            </image>
                         </ImageView>
                         <Text fill="WHITE" layoutX="182.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item No" wrappingWidth="77.3603515625" />
@@ -74,7 +74,7 @@
                      <children>
                         <ImageView fitHeight="113.0" fitWidth="126.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true">
                            <image>
-                              <Image url="@../../../../../../../Pictures/Default_Image_Thumbnail.png" />
+                              <Image url="@../Icons/image.png" />
                            </image>
                         </ImageView>
                         <Text fill="WHITE" layoutX="182.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item No" wrappingWidth="77.3603515625" />
@@ -90,7 +90,7 @@
                      <children>
                         <ImageView fitHeight="113.0" fitWidth="126.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true">
                            <image>
-                              <Image url="@../../../../../../../Pictures/Default_Image_Thumbnail.png" />
+                              <Image url="@../Icons/image.png" />
                            </image>
                         </ImageView>
                         <Text fill="WHITE" layoutX="182.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item No" wrappingWidth="77.3603515625" />
@@ -101,7 +101,7 @@
                            <children>
                               <ImageView fitHeight="113.0" fitWidth="126.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true">
                                  <image>
-                                    <Image url="@../../../../../../../Pictures/Default_Image_Thumbnail.png" />
+                                    <Image url="@../Icons/image.png" />
                                  </image>
                               </ImageView>
                               <Text fill="WHITE" layoutX="182.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item No" wrappingWidth="77.3603515625" />
@@ -512,22 +512,22 @@
             <Image url="@../Icons/backward.png" />
          </image>
       </ImageView>
-      <Button layoutX="507.0" layoutY="911.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="182.0" style="-fx-background-color: #F05454;" text="DISPLAY" textFill="#fcfcfc" AnchorPane.rightAnchor="1232.0" AnchorPane.topAnchor="911.0">
+      <Button layoutX="402.0" layoutY="911.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="182.0" style="-fx-background-color: #F05454;" text="PRINT REPORT" textFill="#fcfcfc" AnchorPane.rightAnchor="1337.0" AnchorPane.topAnchor="911.0">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>
       </Button>
-      <Button layoutX="753.0" layoutY="911.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="169.0" style="-fx-background-color: #F05454;" text="DISPLAY" textFill="#fcfcfc" AnchorPane.rightAnchor="999.0" AnchorPane.topAnchor="911.0">
+      <Button layoutX="617.0" layoutY="911.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="265.0" style="-fx-background-color: #F05454;" text="EXPORT XML TRANSACTIONS" textFill="#fcfcfc" AnchorPane.rightAnchor="1039.0" AnchorPane.topAnchor="911.0">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>
       </Button>
-      <Button layoutX="984.0" layoutY="911.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="169.0" style="-fx-background-color: #F05454;" text="DISPLAY" textFill="#fcfcfc" AnchorPane.rightAnchor="768.0" AnchorPane.topAnchor="911.0">
+      <Button layoutX="911.0" layoutY="911.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="265.0" style="-fx-background-color: #F05454;" text="EXPORT XML LIST OF ITEMS" textFill="#fcfcfc" AnchorPane.rightAnchor="745.0" AnchorPane.topAnchor="911.0">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>
       </Button>
-      <Button layoutX="1208.0" layoutY="911.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="169.0" style="-fx-background-color: #F05454;" text="DISPLAY" textFill="#fcfcfc" AnchorPane.rightAnchor="544.0" AnchorPane.topAnchor="911.0">
+      <Button layoutX="1208.0" layoutY="911.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="265.0" style="-fx-background-color: #F05454;" text="EXPORT CSV LIST OF ITEMS" textFill="#fcfcfc" AnchorPane.rightAnchor="448.0" AnchorPane.topAnchor="911.0">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>

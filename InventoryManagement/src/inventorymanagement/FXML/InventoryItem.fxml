@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
 <?import java.lang.*?>
 <?import java.net.*?>
 <?import java.util.*?>
@@ -7,8 +12,510 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller=".InventoryItemController">
-    <stylesheets>
-        <URL value="@inventoryitem.css"/>
-    </stylesheets>
+<AnchorPane id="AnchorPane" prefHeight="1034.0" prefWidth="1919.0" style="-fx-background-color: #222831;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inventorymanagement.Controllers.SalesReportController">
+   <children>
+      <Label layoutX="1569.0" layoutY="129.0" prefHeight="26.0" prefWidth="281.0" text="Apple" textFill="#fcfcfc" AnchorPane.rightAnchor="69.0" AnchorPane.topAnchor="129.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#30475e" height="814.0" layoutX="1385.0" layoutY="162.0" stroke="#30475e" strokeType="INSIDE" width="7.0" AnchorPane.rightAnchor="398.0" AnchorPane.topAnchor="162.0" />
+      <Pane layoutX="59.0" layoutY="257.0" prefHeight="241.0" prefWidth="1358.0" style="-fx-background-color: #30475E;" AnchorPane.rightAnchor="502.0" AnchorPane.topAnchor="257.0">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <HBox layoutX="8.0" prefHeight="241.0" prefWidth="1358.0">
+               <children>
+                  <VBox prefHeight="241.0" prefWidth="187.0">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="198.0" text="Item Number:" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="198.0" text="Group Category:" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="198.0" text="Cost Price:" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="198.0" text="Offer:" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="241.0" prefWidth="202.0">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="64.0" text="0007" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="64.0" text="Food" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="72.0" text="\$20.00" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="200.0" text="Buy one get one free" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="241.0" prefWidth="95.0" />
+                  <VBox prefHeight="241.0" prefWidth="171.0">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="198.0" text="Barcode:" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="198.0" text="Group Number:" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="198.0" text="Trade Price:" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets left="20.0" top="20.0" />
+                           </padding>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="241.0" prefWidth="151.0">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="118.0" text="0002432" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="64.0" text="0020" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="83.0" text="\$25.00" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="241.0" prefWidth="95.0" />
+                  <VBox prefHeight="241.0" prefWidth="171.0">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="198.0" text="Tax:" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets left="20.0" top="20.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets left="20.0" top="100.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="241.0" prefWidth="151.0">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="83.0" text="\$5.00" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="120.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+      </Pane>
+      <Label layoutX="83.0" layoutY="109.0" prefHeight="35.0" prefWidth="502.0" text="Inventory Item" textFill="WHITE" AnchorPane.rightAnchor="1334.0" AnchorPane.topAnchor="109.0">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Line endX="600.0" layoutX="201.0" layoutY="161.0" startX="-100.0" stroke="#30475e" AnchorPane.rightAnchor="1130.5" AnchorPane.topAnchor="160.5" />
+      <ImageView fitHeight="35.0" fitWidth="30.0" layoutX="14.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1875.0" AnchorPane.topAnchor="110.0">
+         <image>
+            <Image url="@../Icons/backward.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="1707.0" layoutY="812.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="169.0" style="-fx-background-color: #F05454;" text="ADD TO BASKET" textFill="#fcfcfc" AnchorPane.rightAnchor="43.0" AnchorPane.topAnchor="812.0">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <HBox alignment="CENTER_LEFT" layoutX="-1.0" layoutY="-4.0" prefHeight="68.0" prefWidth="1781.0" style="-fx-background-color: #222831;">
+         <children>
+            <AnchorPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="68.0" prefWidth="2034.0" style="-fx-border-color: grey;" HBox.hgrow="ALWAYS">
+               <children>
+                  <ImageView fitHeight="64.0" fitWidth="93.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1855.0" AnchorPane.topAnchor="2.0">
+                     <image>
+                        <Image url="@../Icons/Logo.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="405.0" layoutY="22.0" text="Time" textFill="WHITE" />
+                  <Label layoutX="207.0" layoutY="22.0" text="Date" textAlignment="CENTER" textFill="WHITE" />
+                  <HBox alignment="CENTER_RIGHT" layoutX="1080.0" layoutY="12.0" prefHeight="64.0" prefWidth="210.0" spacing="29.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/home.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/info.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/settings.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/profile.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="25.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <Pane layoutX="59.0" layoutY="538.0" prefHeight="241.0" prefWidth="1358.0" style="-fx-background-color: #30475E;">
+         <children>
+            <HBox layoutX="8.0" prefHeight="241.0" prefWidth="1358.0">
+               <children>
+                  <VBox prefHeight="241.0" prefWidth="235.0">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="198.0" text="Stock Keeping Units:" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="198.0" text="Reorder Level:" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="198.0" text="Supplier Name:" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="198.0" text="Web URL:" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="241.0" prefWidth="209.0">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="64.0" text="003" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="70.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="162.0" text="Mr. S Perera" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="200.0" text="www.abc.com/index.php" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="241.0" prefWidth="95.0" />
+                  <VBox prefHeight="241.0" prefWidth="194.0">
+                     <children>
+                        <ComboBox prefHeight="38.0" prefWidth="94.0" promptText="1">
+                           <VBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </VBox.margin>
+                        </ComboBox>
+                        <Label prefHeight="30.0" prefWidth="198.0" text="Minimum Order:" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="198.0" text="Order Code:" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="241.0" prefWidth="151.0">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="118.0" text="0001" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="64.0" text="10" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                        <Label prefHeight="30.0" prefWidth="114.0" text="002A02H" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="241.0" prefWidth="95.0" />
+                  <VBox prefHeight="241.0" prefWidth="171.0">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="198.0" text="Location:" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <padding>
+                              <Insets left="20.0" top="20.0" />
+                           </padding>
+                           <VBox.margin>
+                              <Insets left="20.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <VBox prefHeight="241.0" prefWidth="151.0">
+                     <children>
+                        <Label prefHeight="30.0" prefWidth="83.0" text="\$5.00" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="20.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="20.0" top="20.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+               </children>
+            </HBox>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </Pane>
+      <ImageView fitHeight="186.0" fitWidth="257.0" layoutX="1605.0" layoutY="191.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="79.47825622558594" AnchorPane.topAnchor="191.0">
+         <image>
+            <Image url="@../Icons/image.png" />
+         </image>
+      </ImageView>
+      <VBox layoutX="1569.0" layoutY="418.0" prefHeight="186.0" prefWidth="307.0" AnchorPane.rightAnchor="43.0" AnchorPane.topAnchor="418.0">
+         <children>
+            <HBox prefHeight="45.0" prefWidth="307.0">
+               <children>
+                  <Label prefHeight="26.0" prefWidth="155.0" text="Retail Price:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label prefHeight="26.0" prefWidth="123.0" text="\$400.00" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="45.0" prefWidth="307.0">
+               <children>
+                  <Label prefHeight="26.0" prefWidth="155.0" text="Quantity:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label prefHeight="26.0" prefWidth="123.0" text="16" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="45.0" prefWidth="307.0">
+               <children>
+                  <Label prefHeight="26.0" prefWidth="155.0" text="Total Sold:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label prefHeight="26.0" prefWidth="123.0" text="150" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="45.0" prefWidth="307.0">
+               <children>
+                  <Label prefHeight="26.0" prefWidth="155.0" text="Remaining:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" />
+                     </HBox.margin>
+                  </Label>
+                  <Label prefHeight="26.0" prefWidth="123.0" text="260" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <TextArea layoutX="1569.0" layoutY="598.0" opacity="0.59" prefHeight="121.0" prefWidth="307.0" style="-fx-background-color: #30475E;" text="Notes&#10;" AnchorPane.rightAnchor="43.0" AnchorPane.topAnchor="598.0" />
+      <Label layoutX="1678.0" layoutY="741.0" prefHeight="28.0" prefWidth="102.0" text="Date Added:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="1784.0" layoutY="741.0" prefHeight="28.0" prefWidth="114.0" text="12/03/2021" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="1785.0" layoutY="769.0" prefHeight="28.0" prefWidth="114.0" text="26/03/2021" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="1679.0" layoutY="769.0" prefHeight="28.0" prefWidth="102.0" text="Last Used:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Button layoutX="1742.0" layoutY="874.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="134.0" style="-fx-background-color: #F05454;" text="EDIT" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="1742.0" layoutY="936.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="134.0" style="-fx-background-color: #F05454;" text="DELETE" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+   </children>
+   <stylesheets>
+      <URL value="@salesreport.css" />
+   </stylesheets>
 </AnchorPane>
