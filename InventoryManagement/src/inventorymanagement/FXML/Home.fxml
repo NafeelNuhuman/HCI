@@ -42,7 +42,7 @@
                               <Image url="@../Icons/info.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="btnOptions" fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@../Icons/settings.png" />
                            </image>
