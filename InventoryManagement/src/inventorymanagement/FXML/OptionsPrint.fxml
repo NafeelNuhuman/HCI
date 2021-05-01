@@ -150,14 +150,20 @@
       </HBox>
       <VBox fillWidth="false" layoutX="50.0" layoutY="114.0" prefHeight="736.0" prefWidth="210.0" style="-fx-background-color: #222831; -fx-border-color: grey;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="70.0">
          <children>
-            <Label prefHeight="45.0" prefWidth="72.0" text="Options" textFill="WHITE" VBox.vgrow="ALWAYS">
-               <font>
-                  <Font size="18.0" />
-               </font>
-               <VBox.margin>
-                  <Insets left="125.0" top="12.0" />
-               </VBox.margin>
-            </Label>
+            <HBox alignment="CENTER" prefHeight="52.0" prefWidth="208.0" spacing="90.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/backward.png" />
+                     </image>
+                  </ImageView>
+                  <Label prefHeight="45.0" prefWidth="72.0" text="Options" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
             <Button id="btnBackup" alignment="BASELINE_LEFT" defaultButton="true" mnemonicParsing="false" prefHeight="50.0" prefWidth="235.0" style="-fx-background-color: #30475E;" text="BACKUP" textFill="WHITE" VBox.vgrow="ALWAYS">
                <opaqueInsets>
                   <Insets />
