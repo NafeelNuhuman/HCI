@@ -480,6 +480,14 @@
             </Button>
          </children>
       </Pane>
+      <TextField layoutX="1306.0" layoutY="138.0" prefHeight="26.0" prefWidth="195.0" promptText="Search Here" AnchorPane.rightAnchor="418.0" AnchorPane.topAnchor="138.0" />
+      <ComboBox layoutX="1541.0" layoutY="138.0" prefWidth="150.0" promptText="Sort" />
+      <Line endX="-50.0" layoutX="1597.0" layoutY="160.0" rotate="90.0" startX="-100.0" stroke="#9a9797" />
+      <Button layoutX="1710.0" layoutY="138.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="74.0" style="-fx-background-color: #F05454;" text="VIEW" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
    </children>
    <stylesheets>
       <URL value="@salesreport.css" />
