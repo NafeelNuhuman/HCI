@@ -11,9 +11,18 @@ import inventorymanagement.Models.Item;
 import java.awt.Insets;
 import java.io.IOException;
 import java.net.URL;
+import java.text.SimpleDateFormat;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.ResourceBundle;
+import javafx.animation.Animation;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.beans.value.ChangeListener;
 import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
@@ -26,14 +35,23 @@ import javafx.scene.layout.GridPane;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Background;
+import javafx.scene.layout.BackgroundFill;
+import javafx.scene.layout.CornerRadii;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
+import javafx.scene.paint.Color;
+import javafx.scene.paint.Paint;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 
 
 /**
@@ -66,10 +84,17 @@ public class HomeController implements Initializable {
     @FXML
     private  GridPane itemGrid;
     
-
+    @FXML
+    private ComboBox cbSortBy;
     
     @FXML
     private TextField qty2;
+    
+    @FXML
+    private Label time,date;
+    
+    @FXML
+    private VBox basket;
             
     Group group1,group2;
     
@@ -107,17 +132,21 @@ public class HomeController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
         loadData();
-        qty2.textProperty().addListener(new ChangeListener<String>() {
-        @Override
-        public void changed(ObservableValue<? extends String> observable, String oldValue, 
-        String newValue) {
-        if (!newValue.matches("\\d*")) {
-            qty2.setText(newValue.replaceAll("[^\\d]", ""));
-        }
+        
+        cbSortBy.getItems().addAll("Barcode","Description","Unique ID");
+        cbSortBy.setValue("Barcode");
+        
+        Timeline clock = new Timeline(new KeyFrame(Duration.ZERO, e -> {        
+        LocalTime currentTime = LocalTime.now();
+        time.setText(currentTime.getHour() + ":" + currentTime.getMinute() + ":" + currentTime.getSecond());
+        }),
+             new KeyFrame(Duration.seconds(1))
+        );
+        clock.setCycleCount(Animation.INDEFINITE);
+        clock.play();
+        
+        date.setText(LocalDate.now().toString());
     }
-});
-       
-    }    
     
     private void loadStage(String fxml) {
         try {
@@ -136,30 +165,34 @@ public class HomeController implements Initializable {
         
         List<Item> list = new ArrayList<Item>();
         
-        Item item1 = new Item("Ritzbury",1,25);
-        Item item2 = new Item("Kandos",2,27);
-        Item item3 = new Item("Revello",3,30);
+        Item item1 = new Item("Toblerone",1,25);
+        Item item2 = new Item("Snickers",2,27);
+        Item item3 = new Item("Mars",3,30);
         Item item4 = new Item("Ferrero",4,50);
+        Item item5 = new Item("Hersheys",4,50);
+        Item item6 = new Item("Cadbury",4,50);
         
         list.add(item1);
         list.add(item2);
         list.add(item3);
         list.add(item4);
-  
+        list.add(item5);
+        list.add(item6);
+        
         group1 = new Group("Chocolates",list);
         
-        Item item5 = new Item("Carrot",5,25);
+        /*Item item5 = new Item("Carrot",5,25);
         Item item6 = new Item("Tomato",6,27);
         Item item7 = new Item("Potato",7,30);
         Item item8 = new Item("Broccoli",8,50);
         
         list.clear();
-        list.add(item8);
         list.add(item5);
         list.add(item6);
         list.add(item7);
+        list.add(item8);
   
-        group2 = new Group("Vegetables",list);
+        group2 = new Group("Vegetables",list);*/
     }
     
     public void showItems(){
@@ -176,9 +209,8 @@ public class HomeController implements Initializable {
         btn.setText(name);
         btn.setMaxWidth(264);
         btn.setMaxHeight(344);
-      
         itemGrid.add(btn,col,row);
- 
+        btn.addEventHandler(MouseEvent.MOUSE_CLICKED, addToBasket);
         ++col;
         if (col == 3){
             col = 0;
@@ -187,10 +219,31 @@ public class HomeController implements Initializable {
     }
     }
     
-    public void addToBasket(String name,String price,String qty){
-        HBox hbox = new HBox();
-        
-    }
+    
+    
+    EventHandler<MouseEvent> addToBasket = new EventHandler<MouseEvent>() {
+        @Override
+        public void handle(MouseEvent event) {
+            HBox hbox = new HBox();
+            Label lblName = new Label();
+            Label lblQty =  new Label();
+            Label lblPrice = new Label();
+            Button btnRemove = new Button();
+            
+            lblName.setText("hi");
+            lblQty.setText("X2");
+            lblPrice.setText("21.00");
+            btnRemove.setText("X");
+            
+            hbox.setStyle("-fx-background-color:  #30475E;");
+            hbox.setSpacing(21);
+            hbox.setPadding(new javafx.geometry.Insets(3));
+            hbox.getChildren().addAll(lblName,lblQty,lblPrice,btnRemove);
+
+            basket.getChildren().add(hbox);
+        }
+    };
+
 }
 
 //width 264 height 344
