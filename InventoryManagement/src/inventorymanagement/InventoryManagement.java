@@ -24,9 +24,11 @@ import javafx.stage.Stage;
     @Override
     public void start(Stage stage) throws Exception {
 
-       //Parent root = FXMLLoader.load(getClass().getResource("FXML/SearchInventory.fxml"));    
-       //Parent root = FXMLLoader.load(getClass().getResource("FXML/AddInventory.fxml"));    
-        Parent root = FXMLLoader.load(getClass().getResource("FXML/InventoryPrint.fxml"));    
+        Parent root = FXMLLoader.load(getClass().getResource("FXML/Home.fxml"));    
+        //Parent root = FXMLLoader.load(getClass().getResource("FXML/AddGroup.fxml"));    
+        //Parent root = FXMLLoader.load(getClass().getResource("FXML/AmendGroup.fxml"));    
+        //Parent root = FXMLLoader.load(getClass().getResource("FXML/CatergoryList.fxml"));    
+
         Scene scene = new Scene(root);
         
         stage.setScene(scene);
