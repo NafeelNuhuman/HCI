@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: #222831;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inventorymanagement.Controllers.AddGroupController">
+    <stylesheets>
+        <URL value="@../CSS/addgroup.css" />
+    </stylesheets>
+    <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <HBox alignment="CENTER_LEFT" prefHeight="43.0" prefWidth="1300.0" style="-fx-background-color: #222831; -fx-border-color: grey;" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane prefHeight="103.0" prefWidth="1210.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="405.0" layoutY="22.0" text="Time" textFill="WHITE" />
+                        <Label layoutX="207.0" layoutY="22.0" text="Date" textAlignment="CENTER" textFill="WHITE" />
+                        <HBox alignment="CENTER_RIGHT" layoutX="1080.0" layoutY="12.0" prefHeight="64.0" prefWidth="210.0" spacing="29.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icons/home.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icons/info.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icons/settings.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icons/profile.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets right="25.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </HBox>
+         </top>
+         <left>
+            <VBox prefHeight="736.0" prefWidth="210.0" style="-fx-background-color: #222831; -fx-border-color: grey;" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="52.0" prefWidth="208.0" spacing="90.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/backward.png" />
+                           </image>
+                        </ImageView>
+                        <Label prefHeight="45.0" prefWidth="72.0" text="Options" textFill="WHITE">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="235.0" style="-fx-border-color: grey;" text="BACKUP" textFill="WHITE" VBox.vgrow="ALWAYS">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="3.0" right="4.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="235.0" style="-fx-border-color: grey;" text="GROUPS" textFill="WHITE" VBox.vgrow="ALWAYS">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="3.0" right="4.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="235.0" style="-fx-border-color: grey;" text="INVENTORY" textFill="WHITE" VBox.vgrow="ALWAYS">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="3.0" right="4.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="235.0" style="-fx-border-color: grey;" text="NON INVENTORY" textFill="WHITE" VBox.vgrow="ALWAYS">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="3.0" right="4.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="226.0" style="-fx-border-color: grey;" text="RECIEPTS &amp; INVOICES" textFill="WHITE" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="3.0" right="4.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="226.0" style="-fx-border-color: grey;" text="THEME" textFill="WHITE" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="3.0" right="4.0" />
+                     </VBox.margin>
+                  </Button>
+                  <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="226.0" style="-fx-border-color: grey;" text="USER" textFill="WHITE" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="3.0" right="4.0" />
+                     </VBox.margin>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="38.0" layoutY="20.0" text="Add Group" textFill="WHITE">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="39.0" layoutY="74.0" text="Unique ID" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="BASELINE_RIGHT" layoutX="456.0" layoutY="74.0" prefHeight="27.0" prefWidth="77.0" text="XXX" textAlignment="RIGHT" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="38.0" layoutY="115.0" text="Description" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="38.0" layoutY="157.0" prefHeight="31.0" prefWidth="497.0" />
+                  <Label layoutX="38.0" layoutY="209.0" text="Select Image" textFill="WHITE">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="image" fitHeight="148.0" fitWidth="247.0" layoutX="163.0" layoutY="242.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/electronics.jpg" />
+                     </image>
+                  </ImageView>
+                  <ScrollPane hbarPolicy="ALWAYS" layoutX="72.0" layoutY="406.0" prefHeight="115.0" prefWidth="430.0" vbarPolicy="NEVER">
+                     <content>
+                        <HBox prefHeight="94.0" prefWidth="751.0" spacing="5.0" style="-fx-background-color: #222831;">
+                           <children>
+                              <ImageView fx:id="imgElectro" fitHeight="84.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icons/electronics.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="84.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icons/vegetables.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="84.0" fitWidth="142.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icons/cosmetics.jpg" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="84.0" fitWidth="142.0" layoutX="305.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../Icons/vegetables.jpg" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                           <padding>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </padding>
+                        </HBox>
+                     </content>
+                  </ScrollPane>
+                  <Button layoutX="199.0" layoutY="546.0" mnemonicParsing="false" style="-fx-border-color: grey;" text="Upload Custom Picture" />
+                  <Button layoutX="117.0" layoutY="640.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="339.0" styleClass="orangeBtn" text="Save" />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -19,11 +19,6 @@
          <children>
             <AnchorPane prefHeight="103.0" prefWidth="1210.0" style="-fx-border-color: grey;" HBox.hgrow="ALWAYS">
                <children>
-                  <ImageView fitHeight="64.0" fitWidth="93.0" layoutX="8.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="4.0" AnchorPane.topAnchor="4.0">
-                     <image>
-                        <Image url="@../Icons/Logo.png" />
-                     </image>
-                  </ImageView>
                   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="405.0" layoutY="22.0" text="Time" textFill="WHITE" />
                   <Label layoutX="207.0" layoutY="22.0" text="Date" textAlignment="CENTER" textFill="WHITE" />
                   <HBox alignment="CENTER_RIGHT" layoutX="1080.0" layoutY="12.0" prefHeight="64.0" prefWidth="210.0" spacing="29.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -72,13 +67,22 @@
                   <Image url="@../Icons/electronics.jpg" />
                </image>
             </ImageView>
-            <VBox prefHeight="120.0" prefWidth="128.0" spacing="5.0">
+            <VBox prefHeight="130.0" prefWidth="95.0" spacing="5.0">
                <children>
                   <Label text="Unique ID" textFill="WHITE" />
                   <Label text="Barcode" textFill="WHITE" />
                   <Label text="Description" textFill="WHITE" />
                   <Label text="Retail Price" textFill="WHITE" />
                   <Label text="Quantity" textFill="WHITE" />
+               </children>
+            </VBox>
+            <VBox prefHeight="130.0" prefWidth="95.0" spacing="5.0">
+               <children>
+                  <Label text=": 01" textFill="WHITE" />
+                  <Label text=": 01" textFill="WHITE" />
+                  <Label text=": Laptop" textFill="WHITE" />
+                  <Label text=": 25,000 /=" textFill="WHITE" />
+                  <Label text=": 10" textFill="WHITE" />
                </children>
             </VBox>
          </children>
@@ -200,13 +204,13 @@
       <HBox alignment="CENTER" layoutX="476.0" layoutY="151.0" prefHeight="31.0" prefWidth="392.0" spacing="10.0" AnchorPane.leftAnchor="476.0" AnchorPane.topAnchor="151.0">
          <children>
             <Label text="Search" textFill="WHITE" />
-            <TextField prefHeight="31.0" prefWidth="254.0" />
+            <TextField prefHeight="31.0" prefWidth="254.0" promptText="Enter Description" />
          </children>
       </HBox>
       <HBox alignment="CENTER" layoutX="861.0" layoutY="151.0" prefHeight="31.0" prefWidth="277.0" spacing="10.0" AnchorPane.leftAnchor="861.0" AnchorPane.rightAnchor="162.0" AnchorPane.topAnchor="151.0">
          <children>
             <Label prefHeight="21.0" prefWidth="58.0" text="Sort By" textFill="WHITE" />
-            <ComboBox prefWidth="150.0" promptText="Barcode" visibleRowCount="2" />
+            <ComboBox fx:id="cbSortBy" prefWidth="150.0" promptText="Barcode" visibleRowCount="2" />
          </children>
       </HBox>
    </children>
