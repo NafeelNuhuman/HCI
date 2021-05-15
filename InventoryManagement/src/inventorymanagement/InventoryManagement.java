@@ -28,6 +28,7 @@ import javafx.stage.Stage;
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/AddGroup.fxml"));    
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/AmendGroup.fxml"));    
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/CatergoryList.fxml"));    
+
         Scene scene = new Scene(root);
         
         stage.setScene(scene);
