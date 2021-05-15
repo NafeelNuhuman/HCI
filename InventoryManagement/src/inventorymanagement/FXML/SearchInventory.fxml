@@ -10,14 +10,14 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="710.0" prefWidth="1420.0" style="-fx-background-color: #222831;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller=".AddInventoryController">
+<AnchorPane id="AnchorPane" prefHeight="710.0" prefWidth="1420.0" style="-fx-background-color: #222831;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inventorymanagement.Controllers.SearchInventoryController">
     <stylesheets>
         <URL value="@addinventory.css" />
     </stylesheets>
    <children>
       <HBox layoutX="9.0" layoutY="81.0" prefHeight="353.0" prefWidth="278.0" style="-fx-background-color: #30475E;" AnchorPane.bottomAnchor="276.0" AnchorPane.leftAnchor="9.0" AnchorPane.topAnchor="81.0">
          <children>
-            <Label text="PRODUCT" textFill="WHITE">
+            <Label text="Product" textFill="WHITE">
                <HBox.margin>
                   <Insets left="95.0" top="75.0" />
                </HBox.margin>
@@ -27,7 +27,7 @@
             </Label>
             <ImageView fitHeight="180.0" fitWidth="151.0" pickOnBounds="true" preserveRatio="true">
                <HBox.margin>
-                  <Insets left="-115.0" top="175.0" />
+                  <Insets left="-110.0" top="120.0" />
                </HBox.margin>
                <image>
                   <Image url="@../Icons/test%20image.png" />
@@ -38,9 +38,9 @@
       <HBox layoutX="294.0" layoutY="160.0" prefHeight="425.0" prefWidth="280.0" style="-fx-background-color: #30475E;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="294.0" AnchorPane.rightAnchor="326.0" AnchorPane.topAnchor="160.0">
          <children>
             <HBox />
-            <ScrollPane prefHeight="550.0" prefWidth="806.0">
+            <ScrollPane prefHeight="550.0" prefWidth="806.0" style="-fx-background-color: #222831; -fx-border-color: grey;">
                <content>
-                  <AnchorPane prefHeight="591.0" prefWidth="832.0">
+                  <AnchorPane prefHeight="591.0" prefWidth="832.0" style="-fx-background-color: #222831;">
                      <children>
                         <Pane layoutX="6.0" layoutY="6.0" prefHeight="138.0" prefWidth="826.0" style="-fx-background-color: #30475E;" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="6.0">
                            <children>
@@ -144,7 +144,7 @@
             </ScrollPane>
          </children>
       </HBox>
-      <Pane layoutX="9.0" layoutY="433.0" prefHeight="273.0" prefWidth="278.0" style="-fx-background-color: #30475E;">
+      <Pane layoutX="9.0" layoutY="378.0" prefHeight="320.0" prefWidth="278.0" style="-fx-background-color: #30475E;">
          <children>
             <Label layoutX="46.0" layoutY="42.0" text="Name" textFill="WHITE">
                <font>
@@ -166,11 +166,16 @@
                   <Font size="14.0" />
                </font>
             </Label>
+            <Label layoutX="48.0" layoutY="203.0" text="Description" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
          </children>
       </Pane>
       <VBox layoutX="1094.0" layoutY="53.0" prefHeight="650.0" prefWidth="328.0" AnchorPane.bottomAnchor="7.0" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="53.0">
          <children>
-            <Label text="SEARCH" textFill="WHITE">
+            <Label text="Search" textFill="WHITE">
                <font>
                   <Font size="24.0" />
                </font>
@@ -178,82 +183,85 @@
                   <Insets left="110.0" top="75.0" />
                </VBox.margin>
             </Label>
-            <TextArea prefHeight="46.0" prefWidth="286.0">
+            <TextField fx:id="SearchField" prefHeight="24.0" prefWidth="308.0">
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
                <VBox.margin>
-                  <Insets left="10.0" right="10.0" top="75.0" />
+                  <Insets left="10.0" right="10.0" top="50.0" />
                </VBox.margin>
-            </TextArea>
-            <Pane prefHeight="393.0" prefWidth="321.0" style="-fx-background-color: #ffff;">
+            </TextField>
+            <Pane prefHeight="394.0" prefWidth="308.0" style="-fx-background-color: #ffff;">
                <VBox.margin>
                   <Insets bottom="10.0" left="10.0" right="10.0" top="15.0" />
                </VBox.margin>
                <children>
-                  <Button layoutX="14.0" layoutY="43.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #222831;" text="1" textFill="WHITE">
+                  <Button fx:id="Btn1" layoutX="14.0" layoutY="43.0" mnemonicParsing="false" onAction="#BtnClickHandler" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #222831;" text="1" textFill="WHITE">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Button>
-                  <Button layoutX="92.0" layoutY="43.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #222831;" text="2" textFill="WHITE">
+                  <Button fx:id="Btn2" layoutX="92.0" layoutY="43.0" mnemonicParsing="false" onAction="#BtnClickHandler" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #222831;" text="2" textFill="WHITE">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Button>
-                  <Button layoutX="165.0" layoutY="43.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #222831;" text="3" textFill="WHITE">
+                  <Button fx:id="Btn3" layoutX="165.0" layoutY="43.0" mnemonicParsing="false" onAction="#BtnClickHandler" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #222831;" text="3" textFill="WHITE">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Button>
-                  <Button layoutX="239.0" layoutY="43.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #2A70B5;" text="DEL" textFill="WHITE">
+                  <Button fx:id="BtnDel" layoutX="239.0" layoutY="43.0" mnemonicParsing="false" onAction="#BtnClickHandler" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #2A70B5;" text="DEL" textFill="WHITE">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Button>
-                  <Button layoutX="14.0" layoutY="122.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #222831;" text="4" textFill="WHITE">
+                  <Button fx:id="Btn4" layoutX="14.0" layoutY="122.0" mnemonicParsing="false" onAction="#BtnClickHandler" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #222831;" text="4" textFill="WHITE">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Button>
-                  <Button layoutX="92.0" layoutY="122.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #222831;" text="5" textFill="WHITE">
+                  <Button fx:id="Btn5" layoutX="92.0" layoutY="122.0" mnemonicParsing="false" onAction="#BtnClickHandler" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #222831;" text="5" textFill="WHITE">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Button>
-                  <Button layoutX="165.0" layoutY="122.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #222831;" text="6" textFill="WHITE">
+                  <Button fx:id="Btn6" layoutX="165.0" layoutY="122.0" mnemonicParsing="false" onAction="#BtnClickHandler" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #222831;" text="6" textFill="WHITE">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Button>
-                  <Button layoutX="14.0" layoutY="197.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #222831;" text="7" textFill="WHITE">
+                  <Button fx:id="Btn7" layoutX="14.0" layoutY="197.0" mnemonicParsing="false" onAction="#BtnClickHandler" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #222831;" text="7" textFill="WHITE">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Button>
-                  <Button layoutX="239.0" layoutY="128.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #2A70B5;" text="abc" textFill="WHITE">
+                  <Button layoutX="239.0" layoutY="128.0" mnemonicParsing="false" onAction="#BtnClickHandler" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #2A70B5;" text="abc" textFill="WHITE">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Button>
-                  <Button layoutX="92.0" layoutY="197.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #222831;" text="8" textFill="WHITE">
+                  <Button fx:id="Btn8" layoutX="92.0" layoutY="197.0" mnemonicParsing="false" onAction="#BtnClickHandler" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #222831;" text="8" textFill="WHITE">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Button>
-                  <Button layoutX="165.0" layoutY="197.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #222831;" text="9" textFill="WHITE">
+                  <Button fx:id="Btn9" layoutX="165.0" layoutY="197.0" mnemonicParsing="false" onAction="#BtnClickHandler" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #222831;" text="9" textFill="WHITE">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Button>
-                  <Button layoutX="165.0" layoutY="281.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #2A70B5;" text="." textFill="WHITE">
+                  <Button fx:id="Btndot" layoutX="165.0" layoutY="281.0" mnemonicParsing="false" onAction="#BtnClickHandler" prefHeight="61.0" prefWidth="62.0" style="-fx-background-color: #2A70B5;" text="." textFill="WHITE">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Button>
-                  <Button layoutX="14.0" layoutY="281.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="138.0" style="-fx-background-color: #222831;" text="0" textFill="WHITE">
+                  <Button fx:id="Btn0" layoutX="14.0" layoutY="281.0" mnemonicParsing="false" onAction="#BtnClickHandler" prefHeight="61.0" prefWidth="138.0" style="-fx-background-color: #222831;" text="0" textFill="WHITE">
                      <font>
                         <Font size="18.0" />
                      </font>
                   </Button>
-                  <Button layoutX="239.0" layoutY="203.0" mnemonicParsing="false" prefHeight="147.0" prefWidth="62.0" style="-fx-background-color: #F05454;" text="ENT" textFill="WHITE">
+                  <Button fx:id="BtnEnt" layoutX="239.0" layoutY="203.0" mnemonicParsing="false" onAction="#BtnClickHandler" prefHeight="147.0" prefWidth="62.0" style="-fx-background-color: #F05454;" text="ENT" textFill="WHITE">
                      <font>
                         <Font size="18.0" />
                      </font>
@@ -266,11 +274,6 @@
          <children>
             <AnchorPane prefHeight="68.0" prefWidth="1336.0" HBox.hgrow="ALWAYS">
                <children>
-                  <ImageView fitHeight="64.0" fitWidth="93.0" layoutX="8.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="4.0" AnchorPane.topAnchor="4.0">
-                     <image>
-                        <Image url="@../Icons/Logo.png" />
-                     </image>
-                  </ImageView>
                   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="405.0" layoutY="22.0" text="Time" textFill="WHITE" />
                   <Label layoutX="207.0" layoutY="22.0" text="Date" textAlignment="CENTER" textFill="WHITE" />
                   <HBox alignment="CENTER_RIGHT" layoutX="1080.0" layoutY="12.0" prefHeight="64.0" prefWidth="210.0" spacing="29.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -307,6 +310,11 @@
             </AnchorPane>
          </children>
       </HBox>
+      <Label layoutX="517.0" layoutY="78.0" text="Search Inventory" textFill="WHITE">
+         <font>
+            <Font size="44.0" />
+         </font>
+      </Label>
    </children>
     
 </AnchorPane>
