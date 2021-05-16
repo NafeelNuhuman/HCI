@@ -39,9 +39,9 @@ import javafx.stage.Stage;
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/OptionsTax.fxml")); 
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/OptionsStore.fxml")); 
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/OptionsPrint.fxml")); 
-        //Parent root = FXMLLoader.load(getClass().getResource("FXML/OptionsPoleDisplay.fxml")); 
+        //Parent root = FXMLLoader.load(getClass().getResource("FXML/OptionsPoleDisplay.fxml"));  
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/OptionsInventory.fxml"));    
-        
+            
         //Hassan H M N
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/AddInventory.fxml"));
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/InventoryPrint.fxml"));
@@ -51,6 +51,7 @@ import javafx.stage.Stage;
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/SalesReport.fxml"));
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/InventoryItem.fxml")); 
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/InventoryGroups.fxml")); 
+
 
         Scene scene = new Scene(root);
         
