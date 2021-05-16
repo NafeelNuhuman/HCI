@@ -24,16 +24,15 @@
                   <ListView prefHeight="795.0" prefWidth="316.0" />
                   <Pane layoutX="-2.0" prefHeight="144.0" prefWidth="330.0" style="-fx-background-color: #30475E;">
                      <children>
-                        <ImageView fx:id="item1" fitHeight="113.0" fitWidth="126.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true">
+                        <ImageView fitHeight="113.0" fitWidth="126.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true">
                            <image>
                               <Image url="@../Icons/image.png" />
                            </image>
                         </ImageView>
-                        <!--<Text fx:id="item1No" fill="WHITE" layoutX="182.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item No" wrappingWidth="77.3603515625" />-->
-                        <Text fx:id="item1Name" fill="WHITE" layoutX="182.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Name" wrappingWidth="95.3603515625" />
-                        <Text fx:id="qty1" fill="WHITE" layoutX="182.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qty" wrappingWidth="95.3603515625" />
-                        <Text fx:id="total1" fill="WHITE" layoutX="182.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total" wrappingWidth="95.3603515625" />
-                        <Text fx:id="item1No" fill="WHITE" layoutX="182.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item No" wrappingWidth="77.3603515625" />
+                        <Text fill="WHITE" layoutX="182.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item No" wrappingWidth="77.3603515625" />
+                        <Text fill="WHITE" layoutX="182.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Name" wrappingWidth="95.3603515625" />
+                        <Text fill="WHITE" layoutX="182.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qty" wrappingWidth="95.3603515625" />
+                        <Text fill="WHITE" layoutX="182.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total" wrappingWidth="95.3603515625" />
                      </children>
                      <effect>
                         <DropShadow />
@@ -41,15 +40,15 @@
                   </Pane>
                   <Pane layoutX="-1.0" layoutY="144.0" prefHeight="144.0" prefWidth="330.0" style="-fx-background-color: #30475E;">
                      <children>
-                        <ImageView fx:id="item2" fitHeight="113.0" fitWidth="126.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true">
+                        <ImageView fitHeight="113.0" fitWidth="126.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true">
                            <image>
                               <Image url="@../Icons/image.png" />
                            </image>
                         </ImageView>
-                        <Text fx:id="item2No" fill="WHITE" layoutX="182.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item No" wrappingWidth="77.3603515625" />
-                        <Text fx:id="item2Name" fill="WHITE" layoutX="182.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Name" wrappingWidth="95.3603515625" />
-                        <Text fx:id="qty2" fill="WHITE" layoutX="182.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qty" wrappingWidth="95.3603515625" />
-                        <Text fx:id="total2" fill="WHITE" layoutX="182.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total" wrappingWidth="95.3603515625" />
+                        <Text fill="WHITE" layoutX="182.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item No" wrappingWidth="77.3603515625" />
+                        <Text fill="WHITE" layoutX="182.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Name" wrappingWidth="95.3603515625" />
+                        <Text fill="WHITE" layoutX="182.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qty" wrappingWidth="95.3603515625" />
+                        <Text fill="WHITE" layoutX="182.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total" wrappingWidth="95.3603515625" />
                      </children>
                      <effect>
                         <DropShadow />
@@ -57,15 +56,15 @@
                   </Pane>
                   <Pane layoutX="-1.0" layoutY="288.0" prefHeight="144.0" prefWidth="330.0" style="-fx-background-color: #30475E;">
                      <children>
-                        <ImageView fx:id="item3" fitHeight="113.0" fitWidth="126.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true">
+                        <ImageView fitHeight="113.0" fitWidth="126.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true">
                            <image>
                               <Image url="@../Icons/image.png" />
                            </image>
                         </ImageView>
-                        <Text fx:id="item3No" fill="WHITE" layoutX="182.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item No" wrappingWidth="77.3603515625" />
-                        <Text fx:id="item3Name" fill="WHITE" layoutX="182.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Name" wrappingWidth="95.3603515625" />
-                        <Text fx:id="qty3" fill="WHITE" layoutX="182.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qty" wrappingWidth="95.3603515625" />
-                        <Text fx:id="total3" fill="WHITE" layoutX="182.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total" wrappingWidth="95.3603515625" />
+                        <Text fill="WHITE" layoutX="182.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item No" wrappingWidth="77.3603515625" />
+                        <Text fill="WHITE" layoutX="182.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Name" wrappingWidth="95.3603515625" />
+                        <Text fill="WHITE" layoutX="182.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qty" wrappingWidth="95.3603515625" />
+                        <Text fill="WHITE" layoutX="182.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total" wrappingWidth="95.3603515625" />
                      </children>
                      <effect>
                         <DropShadow />
@@ -73,15 +72,15 @@
                   </Pane>
                   <Pane layoutX="-1.0" layoutY="432.0" prefHeight="144.0" prefWidth="330.0" style="-fx-background-color: #30475E;">
                      <children>
-                        <ImageView fx:id="item4" fitHeight="113.0" fitWidth="126.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true">
+                        <ImageView fitHeight="113.0" fitWidth="126.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true">
                            <image>
                               <Image url="@../Icons/image.png" />
                            </image>
                         </ImageView>
-                        <Text fx:id="item4No" fill="WHITE" layoutX="182.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item No" wrappingWidth="77.3603515625" />
-                        <Text fx:id="item4Name" fill="WHITE" layoutX="182.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Name" wrappingWidth="95.3603515625" />
-                        <Text fx:id="qty4" fill="WHITE" layoutX="182.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qty" wrappingWidth="95.3603515625" />
-                        <Text fx:id="total4" fill="WHITE" layoutX="182.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total" wrappingWidth="95.3603515625" />
+                        <Text fill="WHITE" layoutX="182.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item No" wrappingWidth="77.3603515625" />
+                        <Text fill="WHITE" layoutX="182.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Name" wrappingWidth="95.3603515625" />
+                        <Text fill="WHITE" layoutX="182.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qty" wrappingWidth="95.3603515625" />
+                        <Text fill="WHITE" layoutX="182.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total" wrappingWidth="95.3603515625" />
                      </children>
                      <effect>
                         <DropShadow />
@@ -89,26 +88,26 @@
                   </Pane>
                   <Pane layoutX="-2.0" layoutY="570.0" prefHeight="144.0" prefWidth="330.0" style="-fx-background-color: #30475E;">
                      <children>
-                        <ImageView fx:id="item5" fitHeight="113.0" fitWidth="126.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true">
+                        <ImageView fitHeight="113.0" fitWidth="126.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true">
                            <image>
                               <Image url="@../Icons/image.png" />
                            </image>
                         </ImageView>
-                        <Text fx:id="item5No" fill="WHITE" layoutX="182.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item No" wrappingWidth="77.3603515625" />
-                        <Text fx:id="item5Name" fill="WHITE" layoutX="182.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Name" wrappingWidth="95.3603515625" />
-                        <Text fx:id="qty5" fill="WHITE" layoutX="182.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qty" wrappingWidth="95.3603515625" />
-                        <Text fx:id="total5" fill="WHITE" layoutX="182.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total" wrappingWidth="95.3603515625" />
+                        <Text fill="WHITE" layoutX="182.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item No" wrappingWidth="77.3603515625" />
+                        <Text fill="WHITE" layoutX="182.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Name" wrappingWidth="95.3603515625" />
+                        <Text fill="WHITE" layoutX="182.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qty" wrappingWidth="95.3603515625" />
+                        <Text fill="WHITE" layoutX="182.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total" wrappingWidth="95.3603515625" />
                         <Pane layoutX="1.0" layoutY="136.0" prefHeight="144.0" prefWidth="330.0" style="-fx-background-color: #30475E;">
                            <children>
-                              <ImageView fx:id="item6" fitHeight="113.0" fitWidth="126.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true">
+                              <ImageView fitHeight="113.0" fitWidth="126.0" layoutX="14.0" layoutY="16.0" pickOnBounds="true">
                                  <image>
                                     <Image url="@../Icons/image.png" />
                                  </image>
                               </ImageView>
-                              <Text fx:id="item6No" fill="WHITE" layoutX="182.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item No" wrappingWidth="77.3603515625" />
-                              <Text fx:id="item6Name" fill="WHITE" layoutX="182.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Name" wrappingWidth="95.3603515625" />
-                              <Text fx:id="qty6" fill="WHITE" layoutX="182.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qty" wrappingWidth="95.3603515625" />
-                              <Text fx:id="total6" fill="WHITE" layoutX="182.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total" wrappingWidth="95.3603515625" />
+                              <Text fill="WHITE" layoutX="182.0" layoutY="35.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item No" wrappingWidth="77.3603515625" />
+                              <Text fill="WHITE" layoutX="182.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item Name" wrappingWidth="95.3603515625" />
+                              <Text fill="WHITE" layoutX="182.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qty" wrappingWidth="95.3603515625" />
+                              <Text fill="WHITE" layoutX="182.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total" wrappingWidth="95.3603515625" />
                            </children>
                            <effect>
                               <DropShadow />
@@ -142,7 +141,7 @@
                   <Font name="System Bold" size="20.0" />
                </font>
             </Label>
-            <Label id="transactionLabel" fx:id="transactionLabel" layoutX="139.0" layoutY="52.0" prefHeight="26.0" prefWidth="212.0" textAlignment="CENTER" textFill="WHITE">
+            <Label layoutX="139.0" layoutY="52.0" prefHeight="26.0" prefWidth="212.0" text="4" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
@@ -165,7 +164,7 @@
                   <Font name="System Bold" size="20.0" />
                </font>
             </Label>
-            <Label id="itemLabel" fx:id="itemLabel" layoutX="139.0" layoutY="52.0" prefHeight="26.0" prefWidth="212.0" textAlignment="CENTER" textFill="WHITE">
+            <Label layoutX="139.0" layoutY="52.0" prefHeight="26.0" prefWidth="212.0" text="7" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
@@ -188,7 +187,7 @@
                   <Font name="System Bold" size="20.0" />
                </font>
             </Label>
-            <Label id="subTotalLabel" fx:id="subTotalLabel" layoutX="139.0" layoutY="52.0" prefHeight="30.0" prefWidth="64.0" textAlignment="CENTER" textFill="WHITE">
+            <Label layoutX="139.0" layoutY="52.0" prefHeight="30.0" prefWidth="64.0" text="\$230" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
@@ -199,7 +198,7 @@
                   <Font size="16.0" />
                </font>
             </Label>
-            <Label id="taxableLabel" fx:id="taxableLabel" layoutX="291.0" layoutY="37.0" prefHeight="30.0" prefWidth="124.0" textAlignment="CENTER" textFill="WHITE">
+            <Label layoutX="291.0" layoutY="37.0" prefHeight="30.0" prefWidth="124.0" text="\$210" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
@@ -209,7 +208,7 @@
                   <Font size="16.0" />
                </font>
             </Label>
-            <Label id="nonTaxableLabel" fx:id="nonTaxableLabel" layoutX="291.0" layoutY="93.0" prefHeight="30.0" prefWidth="124.0" textAlignment="CENTER" textFill="WHITE">
+            <Label layoutX="291.0" layoutY="93.0" prefHeight="30.0" prefWidth="124.0" text="\$20" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
@@ -232,7 +231,7 @@
                   <Font name="System Bold" size="20.0" />
                </font>
             </Label>
-            <Label id="totalLabel" fx:id="totalLabel" layoutX="139.0" layoutY="52.0" prefHeight="30.0" prefWidth="89.0" textAlignment="CENTER" textFill="WHITE">
+            <Label layoutX="139.0" layoutY="52.0" prefHeight="30.0" prefWidth="89.0" text="\$230.80" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
@@ -243,7 +242,7 @@
                   <Font size="16.0" />
                </font>
             </Label>
-            <Label id="vat1Label" fx:id="vat1Label" layoutX="291.0" layoutY="37.0" prefHeight="30.0" prefWidth="124.0" textAlignment="CENTER" textFill="WHITE">
+            <Label layoutX="291.0" layoutY="37.0" prefHeight="30.0" prefWidth="124.0" text="\$0.80" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
@@ -253,7 +252,7 @@
                   <Font size="16.0" />
                </font>
             </Label>
-            <Label id="vat2Label" fx:id="vat2Label" layoutX="291.0" layoutY="93.0" prefHeight="30.0" prefWidth="124.0" textAlignment="CENTER" textFill="WHITE">
+            <Label layoutX="291.0" layoutY="93.0" prefHeight="30.0" prefWidth="124.0" text="\$0.00" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
@@ -276,7 +275,7 @@
                   <Font name="System Bold" size="20.0" />
                </font>
             </Label>
-            <Label id="salesLabel" fx:id="salesLabel" layoutX="139.0" layoutY="52.0" prefHeight="30.0" prefWidth="89.0" textAlignment="CENTER" textFill="WHITE">
+            <Label layoutX="139.0" layoutY="52.0" prefHeight="30.0" prefWidth="64.0" text="\$230" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
@@ -287,12 +286,12 @@
                   <Font size="16.0" />
                </font>
             </Label>
-            <Label id="sCashLabel" fx:id="ScashLabel" layoutX="400.0" layoutY="15.0" prefHeight="30.0" prefWidth="64.0" textAlignment="CENTER" textFill="WHITE">
+            <Label layoutX="400.0" layoutY="15.0" prefHeight="30.0" prefWidth="64.0" text="\$30.00" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
             </Label>
-            <Label id="sEFTLabel" fx:id="SEFTLabel" layoutX="558.0" layoutY="16.0" prefHeight="30.0" prefWidth="64.0" textAlignment="CENTER" textFill="WHITE">
+            <Label layoutX="558.0" layoutY="16.0" prefHeight="30.0" prefWidth="64.0" text="\$100.00" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
@@ -302,7 +301,7 @@
                   <Font size="16.0" />
                </font>
             </Label>
-            <Label id="sVoucherLabel" fx:id="SvoucherLabel" layoutX="746.0" layoutY="16.0" prefHeight="30.0" prefWidth="64.0" textAlignment="CENTER" textFill="WHITE">
+            <Label layoutX="746.0" layoutY="16.0" prefHeight="30.0" prefWidth="64.0" text="\$0.00" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
@@ -317,12 +316,12 @@
                   <Font size="16.0" />
                </font>
             </Label>
-            <Label id="sCreditLable" fx:id="SCreditLabel" layoutX="559.0" layoutY="49.0" prefHeight="30.0" prefWidth="64.0" textAlignment="CENTER" textFill="WHITE">
+            <Label layoutX="559.0" layoutY="49.0" prefHeight="30.0" prefWidth="64.0" text="\$0.00" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
             </Label>
-            <Label id="sLoyaltyLabel" fx:id="SlotaltyLabel" layoutX="400.0" layoutY="48.0" prefHeight="30.0" prefWidth="64.0" textAlignment="CENTER" textFill="WHITE">
+            <Label layoutX="400.0" layoutY="48.0" prefHeight="30.0" prefWidth="64.0" text="\$0.00" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
@@ -330,11 +329,6 @@
             <Label layoutX="339.0" layoutY="49.0" prefHeight="30.0" prefWidth="64.0" text="Loyalty:" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="16.0" />
-               </font>
-            </Label>
-            <Label layoutX="536.0" layoutY="95.0" prefHeight="26.0" prefWidth="365.0" style="-fx-border-color: grey; -fx-border-radius: 5; -fx-border-width: 2;" text="    Sales = Cash + EFT + Voucher + Loyalty + Credit" textFill="#b5aeae">
-               <font>
-                  <Font name="System Italic" size="15.0" />
                </font>
             </Label>
          </children>
@@ -355,7 +349,7 @@
                   <Font name="System Bold" size="20.0" />
                </font>
             </Label>
-            <Label id="refundLabel" fx:id="refundLabel" layoutX="139.0" layoutY="52.0" prefHeight="30.0" prefWidth="64.0" textAlignment="CENTER" textFill="WHITE">
+            <Label layoutX="139.0" layoutY="52.0" prefHeight="30.0" prefWidth="64.0" text="\$0.00" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="20.0" />
                </font>
@@ -366,12 +360,12 @@
                   <Font size="16.0" />
                </font>
             </Label>
-            <Label id="rCashLabel" fx:id="RCashLabel" layoutX="400.0" layoutY="15.0" prefHeight="30.0" prefWidth="64.0" textAlignment="CENTER" textFill="WHITE">
+            <Label layoutX="400.0" layoutY="15.0" prefHeight="30.0" prefWidth="64.0" text="\$0.00" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
             </Label>
-            <Label id="rEFTLabel" fx:id="REFTLabel" layoutX="558.0" layoutY="16.0" prefHeight="30.0" prefWidth="64.0" textAlignment="CENTER" textFill="WHITE">
+            <Label layoutX="558.0" layoutY="16.0" prefHeight="30.0" prefWidth="64.0" text="\$00.00" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
@@ -381,7 +375,7 @@
                   <Font size="16.0" />
                </font>
             </Label>
-            <Label id="rVoucherLabel" fx:id="RVoucherLabel" layoutX="746.0" layoutY="16.0" prefHeight="30.0" prefWidth="64.0" textAlignment="CENTER" textFill="WHITE">
+            <Label layoutX="746.0" layoutY="16.0" prefHeight="30.0" prefWidth="64.0" text="\$0.00" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
@@ -396,12 +390,12 @@
                   <Font size="16.0" />
                </font>
             </Label>
-            <Label id="rCreditLable" fx:id="RCreditLabel" layoutX="559.0" layoutY="49.0" prefHeight="30.0" prefWidth="64.0" textAlignment="CENTER" textFill="WHITE">
+            <Label layoutX="559.0" layoutY="49.0" prefHeight="30.0" prefWidth="64.0" text="\$0.00" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
             </Label>
-            <Label id="rLoyaltyLabel" fx:id="RLoyalLabel" layoutX="400.0" layoutY="48.0" prefHeight="30.0" prefWidth="64.0" textAlignment="CENTER" textFill="WHITE">
+            <Label layoutX="400.0" layoutY="48.0" prefHeight="30.0" prefWidth="64.0" text="\$0.00" textAlignment="CENTER" textFill="WHITE">
                <font>
                   <Font size="16.0" />
                </font>
@@ -411,17 +405,36 @@
                   <Font size="16.0" />
                </font>
             </Label>
-            <Label layoutX="541.0" layoutY="96.0" prefHeight="26.0" prefWidth="365.0" style="-fx-border-color: grey; -fx-border-radius: 5; -fx-border-width: 2;" text="   Refund = Cash + EFT + Voucher + Loyalty + Credit" textFill="#b5aeae">
-               <font>
-                  <Font name="System Italic" size="15.0" />
-               </font>
-            </Label>
          </children>
          <effect>
             <DropShadow />
          </effect>
       </Pane>
-      <Label layoutX="348.0" layoutY="99.0" prefHeight="47.0" prefWidth="339.0" text="Sales Report" textFill="WHITE" AnchorPane.rightAnchor="1103.0" AnchorPane.topAnchor="99.0">
+      <ScrollPane layoutY="182.0" prefHeight="831.0" prefWidth="281.0">
+         <content>
+            <VBox prefHeight="838.0" prefWidth="267.0" style="-fx-background-color: #222831;">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="267.0" style="-fx-background-color: #30475E;" text="DAILY SUMMARIES" textFill="#f5f5f5" />
+                  <Button mnemonicParsing="false" prefHeight="73.0" prefWidth="267.0" style="-fx-background-color: #30475E;" text="OPERATION LOGS" textFill="#f5f5f5" />
+                  <Button mnemonicParsing="false" prefHeight="72.0" prefWidth="267.0" style="-fx-background-color: #DBD5D5;" text="SALES">
+                     <font>
+                        <Font name="System Bold" size="17.0" />
+                     </font>
+                  </Button>
+                  <Button mnemonicParsing="false" prefHeight="74.0" prefWidth="267.0" style="-fx-background-color: #30475E;" text="GROUP SALES" textFill="#f5f5f5" />
+                  <Button mnemonicParsing="false" prefHeight="71.0" prefWidth="267.0" style="-fx-background-color: #30475E;" text="ITEM SALES" textFill="#f5f5f5" />
+                  <Button mnemonicParsing="false" prefHeight="72.0" prefWidth="267.0" style="-fx-background-color: #30475E;" text="REPRINT" textFill="#f5f5f5" />
+                  <Button mnemonicParsing="false" prefHeight="74.0" prefWidth="267.0" style="-fx-background-color: #30475E;" text="REORDER" textFill="#f5f5f5" />
+                  <Button mnemonicParsing="false" prefHeight="72.0" prefWidth="267.0" style="-fx-background-color: #30475E;" text="OUT OF STOCK" textFill="#f5f5f5" />
+                  <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="267.0" style="-fx-background-color: #30475E;" text="DEBTORS" textFill="#f5f5f5" />
+                  <Button mnemonicParsing="false" prefHeight="75.0" prefWidth="267.0" style="-fx-background-color: #30475E;" text="INVENTORY PRINT" textFill="#f5f5f5" />
+                  <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="267.0" style="-fx-background-color: #30475E;" text="CUSTOMER PRINT" textFill="#f5f5f5" />
+                  <Button mnemonicParsing="false" prefHeight="70.0" prefWidth="267.0" style="-fx-background-color: #30475E;" text="CUSTOMER STATEMENT" textFill="#f5f5f5" />
+                  <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="267.0" style="-fx-background-color: #30475E;" text="CUSTOMER PURCHASE" textFill="#f5f5f5" />
+               </children></VBox>
+         </content>
+      </ScrollPane>
+      <Label layoutX="348.0" layoutY="99.0" prefHeight="35.0" prefWidth="502.0" text="Sales Report" textFill="WHITE" AnchorPane.rightAnchor="940.0" AnchorPane.topAnchor="99.0">
          <font>
             <Font name="System Bold" size="32.0" />
          </font>
@@ -439,7 +452,7 @@
          </font>
       </Label>
       <DatePicker layoutX="864.0" layoutY="204.0" prefHeight="38.0" prefWidth="194.0" AnchorPane.rightAnchor="732.0" AnchorPane.topAnchor="204.0" />
-      <Button id="btnRed" fx:id="displayBtn" layoutX="1238.0" layoutY="200.0" mnemonicParsing="false" onAction="#viewButtonClicked" prefHeight="47.0" prefWidth="132.0" stylesheets="@../CSS/salesreport.css" text="DISPLAY" textFill="#fcfcfc" AnchorPane.rightAnchor="551.0" AnchorPane.topAnchor="200.0">
+      <Button layoutX="1103.0" layoutY="200.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="132.0" style="-fx-background-color: #F05454;" text="DISPLAY" textFill="#fcfcfc" AnchorPane.rightAnchor="555.0" AnchorPane.topAnchor="200.0">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>
@@ -448,6 +461,11 @@
          <children>
             <AnchorPane nodeOrientation="LEFT_TO_RIGHT" prefHeight="68.0" prefWidth="2034.0" style="-fx-border-color: grey;" HBox.hgrow="ALWAYS">
                <children>
+                  <ImageView fitHeight="64.0" fitWidth="93.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="1855.0" AnchorPane.topAnchor="2.0">
+                     <image>
+                        <Image url="@../Icons/Logo.png" />
+                     </image>
+                  </ImageView>
                   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="405.0" layoutY="22.0" text="Time" textFill="WHITE" />
                   <Label layoutX="207.0" layoutY="22.0" text="Date" textAlignment="CENTER" textFill="WHITE" />
                   <HBox alignment="CENTER_RIGHT" layoutX="1080.0" layoutY="12.0" prefHeight="64.0" prefWidth="210.0" spacing="29.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -484,7 +502,7 @@
             </AnchorPane>
          </children>
       </HBox>
-      <Label layoutX="89.0" layoutY="103.0" prefHeight="47.0" prefWidth="103.0" text="Reports" textFill="#f5f5f5" AnchorPane.rightAnchor="1727.0" AnchorPane.topAnchor="103.0">
+      <Label layoutX="166.0" layoutY="100.0" prefHeight="47.0" prefWidth="103.0" text="Reports" textFill="#f5f5f5" AnchorPane.rightAnchor="1650.0" AnchorPane.topAnchor="100.0">
          <font>
             <Font size="29.0" />
          </font>
@@ -494,178 +512,25 @@
             <Image url="@../Icons/backward.png" />
          </image>
       </ImageView>
-      <Button id="btnRed" layoutX="1279.0" layoutY="907.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="182.0" stylesheets="@../CSS/salesreport.css" text="PRINT REPORT" textFill="#fcfcfc" AnchorPane.rightAnchor="460.0" AnchorPane.topAnchor="907.0">
+      <Button layoutX="402.0" layoutY="911.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="182.0" style="-fx-background-color: #F05454;" text="PRINT REPORT" textFill="#fcfcfc" AnchorPane.rightAnchor="1337.0" AnchorPane.topAnchor="911.0">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>
       </Button>
-      <Button id="btn" layoutX="397.0" layoutY="907.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="265.0" stylesheets="@../CSS/salesreport.css" text="EXPORT XML TRANSACTIONS" textFill="#111010" AnchorPane.rightAnchor="1259.0" AnchorPane.topAnchor="907.0">
+      <Button layoutX="617.0" layoutY="911.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="265.0" style="-fx-background-color: #F05454;" text="EXPORT XML TRANSACTIONS" textFill="#fcfcfc" AnchorPane.rightAnchor="1039.0" AnchorPane.topAnchor="911.0">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>
       </Button>
-      <Button id="btn" layoutX="689.0" layoutY="907.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="265.0" stylesheets="@../CSS/salesreport.css" text="EXPORT XML LIST OF ITEMS" textFill="#0d0d0d" AnchorPane.rightAnchor="967.0" AnchorPane.topAnchor="907.0">
+      <Button layoutX="911.0" layoutY="911.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="265.0" style="-fx-background-color: #F05454;" text="EXPORT XML LIST OF ITEMS" textFill="#fcfcfc" AnchorPane.rightAnchor="745.0" AnchorPane.topAnchor="911.0">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>
       </Button>
-      <Button id="btn" layoutX="986.0" layoutY="907.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="265.0" stylesheets="@../CSS/salesreport.css" text="EXPORT CSV LIST OF ITEMS" textFill="#0d0d0d" AnchorPane.rightAnchor="670.0" AnchorPane.topAnchor="907.0">
+      <Button layoutX="1208.0" layoutY="911.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="265.0" style="-fx-background-color: #F05454;" text="EXPORT CSV LIST OF ITEMS" textFill="#fcfcfc" AnchorPane.rightAnchor="448.0" AnchorPane.topAnchor="911.0">
          <font>
             <Font name="System Bold" size="17.0" />
          </font>
       </Button>
-      <VBox layoutX="-1.0" layoutY="182.0" prefHeight="831.0" prefWidth="288.0" style="-fx-background-color: #222831; -fx-border-color: grey;">
-         <children>
-            <Label prefHeight="45.0" prefWidth="109.0" text="Sales" textFill="WHITE" VBox.vgrow="ALWAYS">
-               <font>
-                  <Font size="18.0" />
-               </font>
-               <VBox.margin>
-                  <Insets left="11.0" top="12.0" />
-               </VBox.margin>
-               <padding>
-                  <Insets left="20.0" />
-               </padding>
-            </Label>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="45.0" prefWidth="279.0" stylesheets="@../CSS/salesreport.css" text="Sales Report" textFill="WHITE" VBox.vgrow="ALWAYS">
-               <opaqueInsets>
-                  <Insets />
-               </opaqueInsets>
-               <VBox.margin>
-                  <Insets bottom="5.0" left="3.0" right="4.0" />
-               </VBox.margin>
-               <padding>
-                  <Insets left="20.0" />
-               </padding>
-            </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="45.0" prefWidth="279.0" stylesheets="@../CSS/salesreport.css" text="Group Sales" textFill="WHITE" VBox.vgrow="ALWAYS">
-               <opaqueInsets>
-                  <Insets />
-               </opaqueInsets>
-               <VBox.margin>
-                  <Insets bottom="5.0" left="3.0" right="4.0" />
-               </VBox.margin>
-               <padding>
-                  <Insets left="20.0" />
-               </padding>
-            </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="45.0" prefWidth="279.0" stylesheets="@../CSS/salesreport.css" text="Item Sales" textFill="WHITE" VBox.vgrow="ALWAYS">
-               <opaqueInsets>
-                  <Insets />
-               </opaqueInsets>
-               <VBox.margin>
-                  <Insets bottom="5.0" left="3.0" right="4.0" />
-               </VBox.margin>
-               <padding>
-                  <Insets left="20.0" />
-               </padding>
-            </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="45.0" prefWidth="279.0" stylesheets="@../CSS/salesreport.css" text="Daily Summaries" textFill="WHITE" VBox.vgrow="ALWAYS">
-               <opaqueInsets>
-                  <Insets />
-               </opaqueInsets>
-               <VBox.margin>
-                  <Insets bottom="5.0" left="3.0" right="4.0" />
-               </VBox.margin>
-               <padding>
-                  <Insets left="20.0" />
-               </padding>
-            </Button>
-            <Label prefHeight="27.0" prefWidth="183.0" text="Customer Reports" textFill="WHITE" VBox.vgrow="ALWAYS">
-               <font>
-                  <Font size="18.0" />
-               </font>
-               <VBox.margin>
-                  <Insets left="11.0" top="12.0" />
-               </VBox.margin>
-               <padding>
-                  <Insets left="20.0" />
-               </padding>
-            </Label>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="45.0" prefWidth="279.0" stylesheets="@../CSS/salesreport.css" text="Customer Print" textFill="WHITE" VBox.vgrow="ALWAYS">
-               <VBox.margin>
-                  <Insets bottom="5.0" left="3.0" right="4.0" top="8.0" />
-               </VBox.margin>
-               <padding>
-                  <Insets left="20.0" />
-               </padding>
-            </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="45.0" prefWidth="279.0" stylesheets="@../CSS/salesreport.css" text="Customer Statement" textFill="WHITE" VBox.vgrow="ALWAYS">
-               <VBox.margin>
-                  <Insets bottom="5.0" left="3.0" right="4.0" />
-               </VBox.margin>
-               <padding>
-                  <Insets left="20.0" />
-               </padding>
-            </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="45.0" prefWidth="279.0" stylesheets="@../CSS/salesreport.css" text="Customer Purchase" textFill="WHITE" VBox.vgrow="ALWAYS">
-               <VBox.margin>
-                  <Insets bottom="5.0" left="3.0" right="4.0" />
-               </VBox.margin>
-               <padding>
-                  <Insets left="20.0" />
-               </padding>
-            </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="45.0" prefWidth="279.0" stylesheets="@../CSS/salesreport.css" text="Debtors" textFill="WHITE">
-               <VBox.margin>
-                  <Insets bottom="5.0" left="3.0" right="4.0" />
-               </VBox.margin>
-               <padding>
-                  <Insets left="20.0" />
-               </padding>
-            </Button>
-            <Label prefHeight="27.0" prefWidth="159.0" text="Other Reports" textFill="WHITE" VBox.vgrow="ALWAYS">
-               <font>
-                  <Font size="18.0" />
-               </font>
-               <VBox.margin>
-                  <Insets left="11.0" top="12.0" />
-               </VBox.margin>
-               <padding>
-                  <Insets left="20.0" />
-               </padding>
-            </Label>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="45.0" prefWidth="279.0" stylesheets="@../CSS/salesreport.css" text="Operation Logs" textFill="WHITE" VBox.vgrow="ALWAYS">
-               <VBox.margin>
-                  <Insets bottom="5.0" left="3.0" right="4.0" top="8.0" />
-               </VBox.margin>
-               <padding>
-                  <Insets left="20.0" />
-               </padding>
-            </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="45.0" prefWidth="279.0" stylesheets="@../CSS/salesreport.css" text="Inventory Print" textFill="WHITE" VBox.vgrow="ALWAYS">
-               <VBox.margin>
-                  <Insets bottom="5.0" left="3.0" right="4.0" />
-               </VBox.margin>
-               <padding>
-                  <Insets left="20.0" />
-               </padding>
-            </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="45.0" prefWidth="279.0" stylesheets="@../CSS/salesreport.css" text="Reprint" textFill="WHITE" VBox.vgrow="ALWAYS">
-               <VBox.margin>
-                  <Insets bottom="5.0" left="3.0" right="4.0" />
-               </VBox.margin>
-               <padding>
-                  <Insets left="20.0" />
-               </padding>
-            </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="45.0" prefWidth="279.0" stylesheets="@../CSS/salesreport.css" text="Reorder" textFill="WHITE">
-               <VBox.margin>
-                  <Insets bottom="5.0" left="3.0" right="4.0" />
-               </VBox.margin>
-               <padding>
-                  <Insets left="20.0" />
-               </padding>
-            </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="45.0" prefWidth="279.0" stylesheets="@../CSS/salesreport.css" text="Out of Stock" textFill="WHITE">
-               <VBox.margin>
-                  <Insets bottom="5.0" left="3.0" right="4.0" />
-               </VBox.margin>
-               <padding>
-                  <Insets left="20.0" />
-               </padding>
-            </Button>
-         </children>
-      </VBox>
    </children>
 </AnchorPane>

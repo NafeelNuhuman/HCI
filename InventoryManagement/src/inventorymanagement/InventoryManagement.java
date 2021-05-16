@@ -23,8 +23,10 @@ import javafx.stage.Stage;
     
     @Override
     public void start(Stage stage) throws Exception {
-
-        Parent root = FXMLLoader.load(getClass().getResource("FXML/Home.fxml"));    
+        
+      // Parent root = FXMLLoader.load(getClass().getResource("FXML/salesReport.fxml"));
+      // Parent root = FXMLLoader.load(getClass().getResource("FXML/inventoryitem.fxml"));    
+        Parent root = FXMLLoader.load(getClass().getResource("FXML/InventoryGroups.fxml"));    
         Scene scene = new Scene(root);
         
         stage.setScene(scene);

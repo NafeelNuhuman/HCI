@@ -10,7 +10,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1280.0" style="-fx-background-color: #222831;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller=".OptionsController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1280.0" style="-fx-background-color: #222831;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller=".OptionsTaxController">
    <children>
       <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="43.0" prefWidth="1300.0" style="-fx-background-color: #222831;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
@@ -115,12 +115,12 @@
                   <Insets bottom="5.0" left="3.0" right="4.0" />
                </VBox.margin>
             </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="226.0" style="-fx-background-color: grey;" text="STORE" textFill="WHITE" VBox.vgrow="ALWAYS">
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="226.0" style="-fx-background-color: #30475E;" text="STORE" textFill="WHITE" VBox.vgrow="ALWAYS">
                <VBox.margin>
                   <Insets bottom="5.0" left="3.0" right="4.0" />
                </VBox.margin>
             </Button>
-            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="226.0" style="-fx-background-color: #30475E;" text="TAX" textFill="WHITE">
+            <Button alignment="BASELINE_LEFT" mnemonicParsing="false" prefHeight="50.0" prefWidth="226.0" style="-fx-background-color: grey;" text="TAX" textFill="WHITE">
                <VBox.margin>
                   <Insets bottom="5.0" left="3.0" right="4.0" />
                </VBox.margin>
@@ -135,6 +135,16 @@
                   <Insets bottom="5.0" left="3.0" right="4.0" />
                </VBox.margin>
             </Button>
+            <Pane prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: grey;">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="3.0" right="4.0" />
+               </VBox.margin>
+               <children>
+                  <Text layoutX="14.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Groups: 3" />
+                  <Text layoutX="14.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inventory:  10" />
+                  <Text layoutX="14.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customers: 5" />
+               </children>
+            </Pane>
          </children>
       </VBox>
       <TextField layoutX="383.0" layoutY="331.0" prefHeight="31.0" prefWidth="304.0" />
@@ -143,13 +153,13 @@
       <TextField layoutX="381.0" layoutY="219.0" prefHeight="31.0" prefWidth="304.0" />
       <TextField layoutX="382.0" layoutY="275.0" prefHeight="31.0" prefWidth="304.0" />
       <TextField layoutX="382.0" layoutY="163.0" prefHeight="31.0" prefWidth="304.0" />
-      <Text fill="WHITE" layoutX="239.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telephone number" wrappingWidth="341.6708984375" />
-      <Text fill="WHITE" layoutX="239.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" wrappingWidth="341.6708984375" />
-      <Text fill="WHITE" layoutX="237.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address line 3" wrappingWidth="341.6708984375" />
-      <Text fill="WHITE" layoutX="237.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address line 2" wrappingWidth="341.6708984375" />
-      <Text fill="WHITE" layoutX="237.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address line 1" wrappingWidth="341.6708984375" />
-      <Text fill="WHITE" layoutX="237.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Store name" wrappingWidth="341.6708984375" />
-      <Label layoutX="217.0" layoutY="85.0" prefHeight="45.0" prefWidth="375.0" text="Store Information" textFill="WHITE">
+      <Text fill="WHITE" layoutX="239.0" layoutY="465.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item price limit" wrappingWidth="341.6708984375" />
+      <Text fill="WHITE" layoutX="239.0" layoutY="408.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currency symbol" wrappingWidth="341.6708984375" />
+      <Text fill="WHITE" layoutX="237.0" layoutY="358.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tax 2 rate (0 to 1)" wrappingWidth="341.6708984375" />
+      <Text fill="WHITE" layoutX="237.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tax 2 description" wrappingWidth="341.6708984375" />
+      <Text fill="WHITE" layoutX="237.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tax 1 rate (0 to 1)" wrappingWidth="341.6708984375" />
+      <Text fill="WHITE" layoutX="237.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tax 1 description" wrappingWidth="341.6708984375" />
+      <Label layoutX="217.0" layoutY="85.0" prefHeight="45.0" prefWidth="375.0" text="Tax" textFill="WHITE">
          <font>
             <Font size="18.0" />
          </font>
@@ -157,10 +167,13 @@
             <Insets left="20.0" />
          </padding>
       </Label>
-      <Button alignment="CENTER" layoutX="566.0" layoutY="525.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="120.0" style="-fx-background-color: #F05454;" text="Save" textFill="WHITE">
+      <Button alignment="CENTER" layoutX="567.0" layoutY="671.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="120.0" style="-fx-background-color: #F05454;" text="Save" textFill="WHITE">
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
       </Button>
+      <Text fill="WHITE" layoutX="239.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sale item linit" wrappingWidth="341.6708984375" />
+      <TextField layoutX="383.0" layoutY="498.0" prefHeight="31.0" prefWidth="304.0" />
+      <CheckBox layoutX="237.0" layoutY="557.0" mnemonicParsing="false" text="Use percentage discount for trade sales" textFill="WHITE" />
    </children>
 </AnchorPane>
