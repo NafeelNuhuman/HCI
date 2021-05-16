@@ -25,7 +25,7 @@ import javafx.stage.Stage;
     public void start(Stage stage) throws Exception {
 
         //Nuhuman M N
-        Parent root = FXMLLoader.load(getClass().getResource("FXML/Home.fxml"));    
+        //Parent root = FXMLLoader.load(getClass().getResource("FXML/Home.fxml"));    
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/AddGroup.fxml"));    
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/AmendGroup.fxml"));    
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/CategoryList.fxml"));    
@@ -36,9 +36,9 @@ import javafx.stage.Stage;
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/AdCu.fxml"));    
         
         //Rajapaksha R M D D
-        //Parent root = FXMLLoader.load(getClass().getResource("FXML/OptionsTax.fxml")); 
+        //Parent root = FXMLLoader.load(getClass().getResource("FXML/OptionsTa.fxml")); 
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/OptionsStore.fxml")); 
-        //Parent root = FXMLLoader.load(getClass().getResource("FXML/OptionsPrint.fxml")); 
+        //Parent root = FXMLLoader.load(getClass().getResource("FXML/OptionsPrin.fxml")); 
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/OptionsPoleDisplay.fxml"));  
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/OptionsInventory.fxml"));    
             
@@ -48,7 +48,7 @@ import javafx.stage.Stage;
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/SearchInventory.fxml")); 
         
         //Gunawaradhana S D
-        //Parent root = FXMLLoader.load(getClass().getResource("FXML/SalesReport.fxml"));
+        //Parent root = FXMLLoader.load(getClass().getResource("FXML/salesReport.fxml"));
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/InventoryItem.fxml")); 
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/InventoryGroups.fxml")); 
 
