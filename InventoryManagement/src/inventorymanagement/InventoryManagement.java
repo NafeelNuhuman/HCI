@@ -31,8 +31,11 @@ import javafx.stage.Stage;
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/OptionsTax.fxml")); 
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/OptionsStore.fxml")); 
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/OptionsPrint.fxml")); 
-        //Parent root = FXMLLoader.load(getClass().getResource("FXML/OptionsPoleDisplay.fxml")); 
+        //Parent root = FXMLLoader.load(getClass().getResource("FXML/OptionsPoleDisplay.fxml"));  
         Parent root = FXMLLoader.load(getClass().getResource("FXML/OptionsInventory.fxml"));    
+       
+        
+        //Parent root = FXMLLoader.load(getClass().getResource("FXML/AddInventory.fxml"));    
 
         Scene scene = new Scene(root);
         
