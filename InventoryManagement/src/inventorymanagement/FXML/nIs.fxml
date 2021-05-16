@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="1291.0" style="-fx-background-color: #222831;" styleClass="mainFxmlClass" stylesheets="@../CSS/noninvsale.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inventorymanagement.Controllers.NISaleController">
+   <children>
+      <Text fill="WHITE" layoutX="74.0" layoutY="135.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Non Inventory Sale" wrappingWidth="261.50390625">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Text>
+      <HBox alignment="CENTER_LEFT" prefHeight="43.0" prefWidth="1300.0" style="-fx-background-color: #222831;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="103.0" prefWidth="800.0" HBox.hgrow="ALWAYS">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="405.0" layoutY="22.0" text="Time" textFill="WHITE" />
+                  <Label layoutX="207.0" layoutY="22.0" text="Date" textAlignment="CENTER" textFill="WHITE" />
+                  <HBox alignment="CENTER_RIGHT" layoutX="1080.0" layoutY="12.0" prefHeight="64.0" prefWidth="210.0" spacing="29.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                        <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/info.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/settings.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icons/profile.png" />
+                           </image>
+                           <HBox.margin>
+                              <Insets right="25.0" />
+                           </HBox.margin>
+                        </ImageView>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+      <Pane layoutX="65.0" layoutY="167.0" prefHeight="596.0" prefWidth="1169.0" style="-fx-background-color: #30475E;">
+         <children>
+            <TextField layoutX="284.0" layoutY="28.0" prefHeight="31.0" prefWidth="354.0" />
+            <TextField layoutX="284.0" layoutY="105.0" prefHeight="31.0" prefWidth="354.0" />
+            <Text fill="WHITE" layoutX="30.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="30.0" layoutY="131.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Price">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="33.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nett">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Button id="add" fx:id="addbtn" layoutX="836.0" layoutY="388.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="132.0" style="-fx-background-color: #3d84b8;" stylesheets="@../CSS/noninvsale.css" text="Add" textFill="#fcfcfc">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="comboBox" layoutX="682.0" layoutY="28.0" prefHeight="31.0" prefWidth="354.0" promptText="select description" style="-fx-background-color: #3d84b8;" />
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#e8e8e8" height="4.0" layoutX="4.0" layoutY="223.0" stroke="BLACK" strokeType="INSIDE" width="1163.0" />
+            <Text fill="WHITE" layoutX="30.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <TextField layoutX="326.0" layoutY="168.0" prefHeight="31.0" prefWidth="74.0" />
+            <CheckBox layoutX="682.0" layoutY="110.0" mnemonicParsing="false" text="VAT 1" textFill="WHITE" />
+            <CheckBox layoutX="893.0" layoutY="112.0" mnemonicParsing="false" text="VAT 2" textFill="WHITE" />
+            <TextField layoutX="282.0" layoutY="357.0" prefHeight="31.0" prefWidth="354.0" style="-fx-background-color: #DBD5D5;" text="XX" />
+            <TextField layoutX="282.0" layoutY="280.0" prefHeight="31.0" prefWidth="354.0" style="-fx-background-color: #DBD5D5;" text="XXXX" />
+            <TextField layoutX="282.0" layoutY="503.0" prefHeight="31.0" prefWidth="354.0" style="-fx-background-color: #DBD5D5;" text="XXXX" />
+            <TextField layoutX="282.0" layoutY="426.0" prefHeight="31.0" prefWidth="354.0" style="-fx-background-color: #DBD5D5;" text="-" />
+            <Text fill="WHITE" layoutX="30.0" layoutY="522.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="30.0" layoutY="459.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VAT 2">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="30.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VAT 1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+            <Button layoutX="836.0" layoutY="469.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="132.0" style="-fx-background-color: #cf0000;" text="Cancel" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <Button layoutX="282.0" layoutY="165.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="40.0" style="-fx-background-color: #cf0000;" text="-" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Button>
+            <Button layoutX="406.0" layoutY="165.0" mnemonicParsing="false" prefHeight="21.0" prefWidth="40.0" style="-fx-background-color: #3d84b8;" text="+" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font></Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
