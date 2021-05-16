@@ -3,5 +3,42 @@
  */
 
 .mainFxmlClass {
-
 }
+.button{
+    -fx-background-color:  #30475E;
+    -fx-text-fill: white;
+    border: 1px;
+}
+
+.button:hover{
+
+        -fx-background-color: #222831;
+        -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+        -fx-text-alignment: center;
+}
+#btn{
+    -fx-background-color:  #ffd369;
+    -fx-text-fill: black;
+    border: 1px;
+}
+
+#btn:hover{
+     -fx-background-color: #393e46;
+     -fx-text-fill: white;
+        -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+        -fx-text-alignment: center;
+}
+#btnRed{
+    -fx-background-color:   #F05454;
+    -fx-text-fill: white;
+    border: 1px;
+}
+
+#btnRed:hover{
+     -fx-background-color: #393e46;
+     -fx-text-fill: white;
+     -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+     -fx-text-alignment: center;
+}
+
+
