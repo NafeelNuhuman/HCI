@@ -25,12 +25,12 @@
                   <Font size="19.0" />
                </font>
             </Label>
-            <ImageView fitHeight="180.0" fitWidth="151.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="158.0" fitWidth="250.0" pickOnBounds="true" preserveRatio="true">
                <HBox.margin>
-                  <Insets left="-110.0" top="120.0" />
+                  <Insets left="-150.0" top="120.0" />
                </HBox.margin>
                <image>
-                  <Image url="@../Icons/test%20image.png" />
+                  <Image url="@../Icons/stationary.png" />
                </image>
             </ImageView>
          </children>
@@ -44,9 +44,9 @@
                      <children>
                         <Pane layoutX="6.0" layoutY="6.0" prefHeight="138.0" prefWidth="826.0" style="-fx-background-color: #30475E;" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="6.0">
                            <children>
-                              <ImageView fitHeight="131.0" fitWidth="128.0" layoutX="21.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="85.0" fitWidth="160.0" layoutX="14.0" layoutY="30.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../Icons/test%20image.png" />
+                                    <Image url="@../Icons/computer.png" />
                                  </image>
                               </ImageView>
                               <Label layoutX="204.0" layoutY="14.0" text="Description" textFill="WHITE">
@@ -66,11 +66,11 @@
                               </Label>
                            </children>
                         </Pane>
-                        <Pane layoutX="5.0" layoutY="153.0" prefHeight="138.0" prefWidth="807.0" style="-fx-background-color: #30475E;">
+                        <Pane layoutX="5.0" layoutY="153.0" prefHeight="138.0" prefWidth="830.0" style="-fx-background-color: #30475E;">
                            <children>
-                              <ImageView fitHeight="137.0" fitWidth="128.0" layoutX="22.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="97.0" fitWidth="154.0" layoutX="12.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../Icons/test%20image.png" />
+                                    <Image url="@../Icons/stationary.png" />
                                  </image>
                               </ImageView>
                               <Label layoutX="204.0" layoutY="14.0" text="Description" textFill="WHITE">
@@ -92,9 +92,9 @@
                         </Pane>
                         <Pane layoutX="5.0" layoutY="302.0" prefHeight="138.0" prefWidth="817.0" style="-fx-background-color: #30475E;">
                            <children>
-                              <ImageView fitHeight="137.0" fitWidth="128.0" layoutX="23.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="105.0" fitWidth="154.0" layoutX="11.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../Icons/test%20image.png" />
+                                    <Image url="@../Icons/food.png" />
                                  </image>
                               </ImageView>
                               <Label layoutX="204.0" layoutY="14.0" text="Description" textFill="WHITE">
@@ -116,9 +116,9 @@
                         </Pane>
                         <Pane layoutX="6.0" layoutY="453.0" prefHeight="138.0" prefWidth="826.0" style="-fx-background-color: #30475E;">
                            <children>
-                              <ImageView fitHeight="137.0" fitWidth="128.0" layoutX="23.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="108.0" fitWidth="160.0" layoutX="14.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../Icons/test%20image.png" />
+                                    <Image url="@../Icons/electrical.jpg" />
                                  </image>
                               </ImageView>
                               <Label layoutX="204.0" layoutY="14.0" text="Description" textFill="WHITE">
