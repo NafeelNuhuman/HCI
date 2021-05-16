@@ -24,15 +24,33 @@ import javafx.stage.Stage;
     @Override
     public void start(Stage stage) throws Exception {
 
-        //Parent root = FXMLLoader.load(getClass().getResource("FXML/Home.fxml"));    
-        //Parent root = FXMLLoader.load(getClass().getResource("FXML/nIs.fxml"));    
+        //Nuhuman M N
+        Parent root = FXMLLoader.load(getClass().getResource("FXML/Home.fxml"));    
+        //Parent root = FXMLLoader.load(getClass().getResource("FXML/AddGroup.fxml"));    
+        //Parent root = FXMLLoader.load(getClass().getResource("FXML/AmendGroup.fxml"));    
+        //Parent root = FXMLLoader.load(getClass().getResource("FXML/CategoryList.fxml"));    
+        
+        //Atchuthan S
+        //Parent root = FXMLLoader.load(getClass().getResource("FXML/NIS.fxml"));    
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/DS.fxml"));    
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/AdCu.fxml"));    
+        
+        //Rajapaksha R M D D
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/OptionsTax.fxml")); 
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/OptionsStore.fxml")); 
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/OptionsPrint.fxml")); 
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/OptionsPoleDisplay.fxml")); 
-        Parent root = FXMLLoader.load(getClass().getResource("FXML/OptionsInventory.fxml"));    
+        //Parent root = FXMLLoader.load(getClass().getResource("FXML/OptionsInventory.fxml"));    
+        
+        //Hassan H M N
+        //Parent root = FXMLLoader.load(getClass().getResource("FXML/AddInventory.fxml"));
+        //Parent root = FXMLLoader.load(getClass().getResource("FXML/InventoryPrint.fxml"));
+        //Parent root = FXMLLoader.load(getClass().getResource("FXML/SearchInventory.fxml")); 
+        
+        //Gunawaradhana S D
+        //Parent root = FXMLLoader.load(getClass().getResource("FXML/SalesReport.fxml"));
+        //Parent root = FXMLLoader.load(getClass().getResource("FXML/InventoryItem.fxml")); 
+        //Parent root = FXMLLoader.load(getClass().getResource("FXML/InventoryGroups.fxml")); 
 
         Scene scene = new Scene(root);
         
