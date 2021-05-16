@@ -10,20 +10,15 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="623.0" prefWidth="1338.0" style="-fx-background-color: #222831;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller=".InventoryPrintController">
+<AnchorPane id="AnchorPane" prefHeight="623.0" prefWidth="1338.0" style="-fx-background-color: #222831;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inventorymanagement.Controllers.InventoryPrintController">
     <stylesheets>
         <URL value="@inventoryprint.css" />
     </stylesheets>
    <children>
       <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="68.0" prefWidth="1321.0" style="-fx-background-color: #222831;">
          <children>
-            <AnchorPane prefHeight="103.0" prefWidth="1210.0" HBox.hgrow="ALWAYS">
+            <AnchorPane prefHeight="84.0" prefWidth="1321.0" HBox.hgrow="ALWAYS">
                <children>
-                  <ImageView fitHeight="64.0" fitWidth="93.0" layoutX="8.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="4.0" AnchorPane.topAnchor="4.0">
-                     <image>
-                        <Image url="@../Icons/Logo.png" />
-                     </image>
-                  </ImageView>
                   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="405.0" layoutY="22.0" text="Time" textFill="WHITE" />
                   <Label layoutX="207.0" layoutY="22.0" text="Date" textAlignment="CENTER" textFill="WHITE" />
                   <HBox alignment="CENTER_RIGHT" layoutX="1080.0" layoutY="12.0" prefHeight="64.0" prefWidth="219.0" spacing="29.0" AnchorPane.rightAnchor="-9.0" AnchorPane.topAnchor="0.0">
@@ -62,6 +57,14 @@
       </HBox>
       <VBox layoutX="-3.0" layoutY="78.0" prefHeight="507.0" prefWidth="1336.0">
          <children>
+            <Label text="PRINT INVENTORY" textFill="WHITE">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="500.0" />
+               </VBox.margin>
+            </Label>
             <Label text="SELECT ITEMS TO PRINT" textFill="WHITE">
                <font>
                   <Font size="18.0" />
@@ -70,101 +73,86 @@
                   <Insets left="25.0" />
                </VBox.margin>
             </Label>
-            <ScrollPane prefHeight="279.0" prefWidth="1331.0">
+            <TextField prefHeight="14.0" prefWidth="1306.0" promptText="Search">
+               <VBox.margin>
+                  <Insets left="1100.0" right="10.0" top="-40.0" />
+               </VBox.margin>
+            </TextField>
+            <ScrollPane prefHeight="318.0" prefWidth="1331.0">
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="278.0" prefWidth="1314.0">
                      <padding>
                         <Insets left="10.0" />
                      </padding>
                      <children>
-                        <Pane prefHeight="279.0" prefWidth="1321.0">
+                        <Pane layoutY="-18.0" prefHeight="328.0" prefWidth="1321.0">
                            <children>
-                              <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="8.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="170.0" fitWidth="174.0" layoutX="8.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../Icons/test%20image.png" />
                                  </image>
                               </ImageView>
-                              <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="154.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="170.0" fitWidth="174.0" layoutX="199.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../Icons/test%20image.png" />
                                  </image>
                               </ImageView>
-                              <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="300.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="170.0" fitWidth="174.0" layoutX="393.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../Icons/test%20image.png" />
                                  </image>
                               </ImageView>
-                              <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="450.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="170.0" fitWidth="174.0" layoutX="578.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../Icons/test%20image.png" />
                                  </image>
                               </ImageView>
-                              <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="597.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="170.0" fitWidth="174.0" layoutX="780.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../Icons/test%20image.png" />
                                  </image>
                               </ImageView>
-                              <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="754.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="170.0" fitWidth="174.0" layoutX="970.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../Icons/test%20image.png" />
                                  </image>
                               </ImageView>
-                              <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="903.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="170.0" fitWidth="174.0" layoutX="1155.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../Icons/test%20image.png" />
                                  </image>
                               </ImageView>
-                              <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="1044.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="170.0" fitWidth="174.0" layoutX="8.0" layoutY="194.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../Icons/test%20image.png" />
                                  </image>
                               </ImageView>
-                              <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="1186.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="170.0" fitWidth="174.0" layoutX="199.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../Icons/test%20image.png" />
                                  </image>
                               </ImageView>
-                              <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="8.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="170.0" fitWidth="174.0" layoutX="393.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../Icons/test%20image.png" />
                                  </image>
                               </ImageView>
-                              <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="154.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="170.0" fitWidth="174.0" layoutX="578.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../Icons/test%20image.png" />
                                  </image>
                               </ImageView>
-                              <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="300.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="170.0" fitWidth="174.0" layoutX="772.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../Icons/test%20image.png" />
                                  </image>
                               </ImageView>
-                              <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="450.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="170.0" fitWidth="174.0" layoutX="970.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../Icons/test%20image.png" />
                                  </image>
                               </ImageView>
-                              <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="597.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../Icons/test%20image.png" />
-                                 </image>
-                              </ImageView>
-                              <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="754.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../Icons/test%20image.png" />
-                                 </image>
-                              </ImageView>
-                              <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="903.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../Icons/test%20image.png" />
-                                 </image>
-                              </ImageView>
-                              <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="1044.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
-                                 <image>
-                                    <Image url="@../Icons/test%20image.png" />
-                                 </image>
-                              </ImageView>
-                              <ImageView fitHeight="130.0" fitWidth="151.0" layoutX="1186.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+                              <ImageView fitHeight="170.0" fitWidth="174.0" layoutX="1155.0" layoutY="205.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@../Icons/test%20image.png" />
                                  </image>

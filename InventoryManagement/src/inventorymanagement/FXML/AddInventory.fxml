@@ -10,25 +10,25 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="655.0" prefWidth="1081.0" style="-fx-background-color: #222831;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inventorymanagement.SearchInventoryController">
+<AnchorPane id="AnchorPane" prefHeight="781.0" prefWidth="1427.0" style="-fx-background-color: #222831;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inventorymanagement.Controllers.SearchInventoryController">
     <stylesheets>
         <URL value="@searchinventory.css" />
     </stylesheets>
    <children>
-      <ImageView fitHeight="181.0" fitWidth="192.0" layoutX="808.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: FFFFFF;" AnchorPane.rightAnchor="96.65428161621094" AnchorPane.topAnchor="87.0">
+      <ImageView fitHeight="229.0" fitWidth="209.0" layoutX="1118.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true" style="-fx-image: FFFFFF;" AnchorPane.rightAnchor="101.0" AnchorPane.topAnchor="86.0">
          <image>
             <Image url="@../Icons/test%20image.png" />
          </image>
       </ImageView>
-      <Button layoutX="837.0" layoutY="290.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="106.0" style="-fx-background-color: #F05454;" text="UPLOAD IMAGE" textFill="WHITE" AnchorPane.rightAnchor="138.0" AnchorPane.topAnchor="290.0" />
+      <Button layoutX="1156.0" layoutY="345.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="132.0" style="-fx-background-color: #F05454;" text="UPLOAD IMAGE" textFill="WHITE" AnchorPane.rightAnchor="139.0" AnchorPane.topAnchor="345.0" />
       <Text fill="WHITE" layoutX="14.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ADD INVENTORY" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="67.78515625">
          <font>
             <Font size="28.0" />
          </font>
       </Text>
-      <Button layoutX="837.0" layoutY="459.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="158.0" style="-fx-background-color: #F05454;" text="ADD" textFill="WHITE" AnchorPane.bottomAnchor="151.0" AnchorPane.rightAnchor="86.0" />
-      <Button layoutX="837.0" layoutY="579.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="158.0" style="-fx-background-color: #A72121;" text="DISCARD" textFill="WHITE" AnchorPane.bottomAnchor="31.0" AnchorPane.rightAnchor="86.0" />
-      <HBox layoutX="6.0" layoutY="229.0" prefHeight="172.0" prefWidth="802.0" style="-fx-background-color: #222831;" AnchorPane.bottomAnchor="254.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="273.0" AnchorPane.topAnchor="229.0">
+      <Button layoutX="1143.0" layoutY="585.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="158.0" style="-fx-background-color: #F05454;" text="ADD" textFill="WHITE" AnchorPane.bottomAnchor="151.0" AnchorPane.rightAnchor="126.0" />
+      <Button layoutX="1143.0" layoutY="688.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="158.0" style="-fx-background-color: #A72121;" text="DISCARD" textFill="WHITE" AnchorPane.bottomAnchor="48.0" AnchorPane.rightAnchor="126.0" />
+      <HBox layoutX="6.0" layoutY="213.0" prefHeight="192.0" prefWidth="1006.0" style="-fx-background-color: #222831;" AnchorPane.bottomAnchor="376.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="415.0" AnchorPane.topAnchor="213.0">
          <children>
             <VBox prefHeight="213.0" prefWidth="236.0">
                <children>
@@ -46,7 +46,7 @@
             </VBox>
             <VBox prefHeight="208.0" prefWidth="249.0">
                <children>
-                  <Label text="XOST PRICE" textFill="WHITE">
+                  <Label text="COST PRICE" textFill="WHITE">
                      <VBox.margin>
                         <Insets left="10.0" top="60.0" />
                      </VBox.margin>
@@ -57,6 +57,9 @@
                      </VBox.margin>
                   </TextField>
                </children>
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
             </VBox>
             <VBox prefHeight="213.0" prefWidth="278.0">
                <children>
@@ -71,26 +74,28 @@
                      </VBox.margin>
                   </TextField>
                </children>
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
             </VBox>
          </children>
       </HBox>
-      <HBox layoutX="6.0" layoutY="370.0" prefHeight="235.0" prefWidth="831.0" style="-fx-background-color: #222831;" AnchorPane.bottomAnchor="6.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="244.0">
+      <HBox layoutX="6.0" layoutY="370.0" prefHeight="240.0" prefWidth="1006.0" style="-fx-background-color: #222831;" AnchorPane.bottomAnchor="124.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="415.0">
          <children>
-            <VBox prefHeight="204.0" prefWidth="228.0">
+            <VBox prefHeight="154.0" prefWidth="228.0">
                <children>
-                  <Label text="QUANTITY" textFill="WHITE">
+                  <Label text="Group" textFill="WHITE">
                      <VBox.margin>
                         <Insets left="10.0" top="25.0" />
                      </VBox.margin>
                   </Label>
-                  <TextField prefHeight="19.0" prefWidth="154.0">
+                  <ComboBox prefHeight="29.0" prefWidth="229.0">
                      <VBox.margin>
                         <Insets left="10.0" />
-                     </VBox.margin>
-                  </TextField>
+                     </VBox.margin></ComboBox>
                </children>
             </VBox>
-            <VBox prefHeight="204.0" prefWidth="257.0">
+            <VBox prefHeight="170.0" prefWidth="257.0">
                <children>
                   <Label text="TAX" textFill="WHITE">
                      <VBox.margin>
@@ -103,10 +108,13 @@
                      </VBox.margin>
                   </TextField>
                </children>
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
             </VBox>
             <VBox prefHeight="204.0" prefWidth="274.0">
                <children>
-                  <Label text="GROUP" textFill="WHITE">
+                  <Label text="Quantity" textFill="WHITE">
                      <VBox.margin>
                         <Insets left="10.0" top="25.0" />
                      </VBox.margin>
@@ -117,10 +125,13 @@
                      </VBox.margin>
                   </TextField>
                </children>
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
             </VBox>
          </children>
       </HBox>
-      <HBox layoutX="6.0" layoutY="97.0" prefHeight="132.0" prefWidth="802.0" style="-fx-background-color: #222831;" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="273.0" AnchorPane.topAnchor="97.0">
+      <HBox layoutX="6.0" layoutY="97.0" prefHeight="132.0" prefWidth="1013.0" style="-fx-background-color: #222831;" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="408.0" AnchorPane.topAnchor="97.0">
          <children>
             <VBox prefHeight="132.0" prefWidth="239.0">
                <children>
@@ -152,6 +163,9 @@
                      </VBox.margin>
                   </TextField>
                </children>
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
             </VBox>
             <VBox prefHeight="132.0" prefWidth="272.0">
                <children>
@@ -163,7 +177,7 @@
                   <TextField prefHeight="25.0" prefWidth="264.0" />
                </children>
                <HBox.margin>
-                  <Insets left="10.0" />
+                  <Insets left="60.0" />
                </HBox.margin>
             </VBox>
          </children>
@@ -172,11 +186,6 @@
          <children>
             <AnchorPane prefHeight="68.0" prefWidth="1313.0" HBox.hgrow="ALWAYS">
                <children>
-                  <ImageView fitHeight="64.0" fitWidth="93.0" layoutX="8.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="4.0" AnchorPane.topAnchor="4.0">
-                     <image>
-                        <Image url="@../Icons/Logo.png" />
-                     </image>
-                  </ImageView>
                   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="405.0" layoutY="22.0" text="Time" textFill="WHITE" />
                   <Label layoutX="207.0" layoutY="22.0" text="Date" textAlignment="CENTER" textFill="WHITE" />
                   <HBox alignment="CENTER_RIGHT" layoutX="1080.0" layoutY="12.0" prefHeight="64.0" prefWidth="210.0" spacing="29.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -211,6 +220,55 @@
                   </HBox>
                </children>
             </AnchorPane>
+         </children>
+      </HBox>
+      <HBox layoutX="6.0" layoutY="560.0" prefHeight="94.0" prefWidth="831.0" style="-fx-background-color: #222831;">
+         <children>
+            <VBox prefHeight="154.0" prefWidth="228.0">
+               <children>
+                  <Label text="SKU(Stock keeping Unit)" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets left="10.0" top="25.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField prefHeight="19.0" prefWidth="154.0">
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox prefHeight="129.0" prefWidth="257.0">
+               <children>
+                  <Label text="Reorder level" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets left="10.0" top="25.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField prefHeight="25.0" prefWidth="160.0">
+                     <VBox.margin>
+                        <Insets left="10.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </VBox>
+            <VBox prefHeight="94.0" prefWidth="322.0">
+               <children>
+                  <Label text="Minimum Order" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets left="70.0" top="25.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextField prefHeight="31.0" prefWidth="256.0">
+                     <VBox.margin>
+                        <Insets left="70.0" />
+                     </VBox.margin>
+                  </TextField>
+               </children>
+            </VBox>
          </children>
       </HBox>
    </children>
