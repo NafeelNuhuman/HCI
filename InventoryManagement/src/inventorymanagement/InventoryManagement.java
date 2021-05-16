@@ -24,16 +24,18 @@ import javafx.stage.Stage;
     @Override
     public void start(Stage stage) throws Exception {
 
-        //Parent root = FXMLLoader.load(getClass().getResource("FXML/AddInventory.fxml"));    
-        Parent root = FXMLLoader.load(getClass().getResource("FXML/InventoryPrint.fxml"));    
-        //Parent root = FXMLLoader.load(getClass().getResource("FXML/SearchInventory.fxml"));    
-        //Parent root = FXMLLoader.load(getClass().getResource("FXML/CatergoryList.fxml"));    
-
+        //Parent root = FXMLLoader.load(getClass().getResource("FXML/OptionsTax.fxml")); 
+        //Parent root = FXMLLoader.load(getClass().getResource("FXML/OptionsStore.fxml")); 
+        //Parent root = FXMLLoader.load(getClass().getResource("FXML/OptionsPrint.fxml")); 
+        //Parent root = FXMLLoader.load(getClass().getResource("FXML/OptionsPoleDisplay.fxml")); 
+        Parent root = FXMLLoader.load(getClass().getResource("FXML/OptionsInventory.fxml"));    
         Scene scene = new Scene(root);
         
         stage.setScene(scene);
         stage.show();
     }
+    
+    
 
     /**
      * @param args the command line arguments

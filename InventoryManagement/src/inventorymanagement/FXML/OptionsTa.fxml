@@ -10,26 +10,29 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1040.0" style="-fx-background-color: #222831;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inventorymanagement.Controllers.OptionsStoreController">
-   <stylesheets>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="780.0" prefWidth="1040.0" style="-fx-background-color: #222831;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inventorymanagement.Controllers.OptionsTaxController">
+     <stylesheets>
         <URL value="@../CSS/optionstax.css" />
     </stylesheets>
     <children>
-      <Pane layoutX="374.0" layoutY="190.0" prefHeight="465.0" prefWidth="505.0" style="-fx-border-color: #F05454; -fx-background-color: #30475E;">
+      <Pane layoutX="365.0" layoutY="148.0" prefHeight="579.0" prefWidth="507.0" style="-fx-border-color: #F05454; -fx-background-color: #30475E;">
          <children>
-            <Text fill="WHITE" layoutX="31.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Telephone number" wrappingWidth="341.6708984375" />
-            <Text fill="WHITE" layoutX="31.0" layoutY="295.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Email" wrappingWidth="341.6708984375" />
-            <Text fill="WHITE" layoutX="29.0" layoutY="245.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address line 3" wrappingWidth="341.6708984375" />
-            <Text fill="WHITE" layoutX="29.0" layoutY="184.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address line 2" wrappingWidth="341.6708984375" />
-            <Text fill="WHITE" layoutX="29.0" layoutY="128.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address line 1" wrappingWidth="341.6708984375" />
-            <Text fill="WHITE" layoutX="29.0" layoutY="71.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Store name" wrappingWidth="341.6708984375" />
-            <TextField layoutX="181.0" layoutY="223.0" prefHeight="31.0" prefWidth="304.0" />
-            <TextField layoutX="181.0" layoutY="335.0" prefHeight="31.0" prefWidth="304.0" />
-            <TextField layoutX="180.0" layoutY="279.0" prefHeight="31.0" prefWidth="304.0" />
-            <TextField layoutX="179.0" layoutY="111.0" prefHeight="31.0" prefWidth="304.0" />
-            <TextField layoutX="180.0" layoutY="167.0" prefHeight="31.0" prefWidth="304.0" />
-            <TextField layoutX="180.0" layoutY="55.0" prefHeight="31.0" prefWidth="304.0" />
-            <Button alignment="CENTER" layoutX="366.0" layoutY="402.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="120.0" style="-fx-background-color: #F05454; -fx-text-fill: black;" text="Save" textFill="WHITE">
+            <TextField layoutX="175.0" layoutY="207.0" prefHeight="31.0" prefWidth="304.0" />
+            <TextField layoutX="175.0" layoutY="319.0" prefHeight="31.0" prefWidth="304.0" />
+            <TextField layoutX="174.0" layoutY="263.0" prefHeight="31.0" prefWidth="304.0" />
+            <TextField layoutX="173.0" layoutY="95.0" prefHeight="31.0" prefWidth="304.0" />
+            <TextField layoutX="174.0" layoutY="151.0" prefHeight="31.0" prefWidth="304.0" />
+            <TextField layoutX="174.0" layoutY="39.0" prefHeight="31.0" prefWidth="304.0" />
+            <Text fill="WHITE" layoutX="31.0" layoutY="341.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Item price limit" wrappingWidth="341.6708984375" />
+            <Text fill="WHITE" layoutX="31.0" layoutY="284.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Currency symbol" wrappingWidth="341.6708984375" />
+            <Text fill="WHITE" layoutX="29.0" layoutY="234.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tax 2 rate (0 to 1)" wrappingWidth="341.6708984375" />
+            <Text fill="WHITE" layoutX="29.0" layoutY="173.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tax 2 description" wrappingWidth="341.6708984375" />
+            <Text fill="WHITE" layoutX="29.0" layoutY="117.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tax 1 rate (0 to 1)" wrappingWidth="341.6708984375" />
+            <Text fill="WHITE" layoutX="29.0" layoutY="60.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tax 1 description" wrappingWidth="341.6708984375" />
+            <Text fill="WHITE" layoutX="31.0" layoutY="396.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sale item linit" wrappingWidth="341.6708984375" />
+            <CheckBox layoutX="29.0" layoutY="433.0" mnemonicParsing="false" text="Use percentage discount for trade sales" textFill="WHITE" />
+            <TextField layoutX="174.0" layoutY="374.0" prefHeight="31.0" prefWidth="304.0" />
+            <Button alignment="CENTER" layoutX="359.0" layoutY="527.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="120.0" style="-fx-background-color: #F05454; -fx-text-fill: black;" text="Save" textFill="WHITE">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
@@ -75,7 +78,7 @@
             </AnchorPane>
          </children>
       </HBox>
-      <Label layoutX="374.0" layoutY="129.0" prefHeight="45.0" prefWidth="375.0" text="Store Information" textFill="#f05454">
+      <Label layoutX="373.0" layoutY="91.0" prefHeight="45.0" prefWidth="375.0" text="Tax" textFill="#f05454">
          <font>
             <Font size="26.0" />
          </font>
