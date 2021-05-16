@@ -12,17 +12,12 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="921.0" prefWidth="1496.0" style="-fx-background-color: #222831;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inventorymanagement.Controllers.AddCustomerController">
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="885.0" prefWidth="1409.0" style="-fx-background-color: #222831;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inventorymanagement.Controllers.AddCustomerController">
     <stylesheets>
         <URL value="@/inventorymanagement/CSS/addcustomer.css" />
     </stylesheets>
    <children>
-      <ImageView id="logo" fitHeight="53.0" fitWidth="65.0" layoutX="7.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="337.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="625.0" AnchorPane.topAnchor="10.0">
-         <image>
-            <Image url="@../CSS/logo.png" />
-         </image>
-      </ImageView>
-      <AnchorPane id="acBody" layoutY="76.0" prefHeight="635.0" prefWidth="1100.0" AnchorPane.bottomAnchor="-11.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="76.0">
+      <AnchorPane id="acBody" layoutY="76.0" prefHeight="820.0" prefWidth="1399.0" AnchorPane.bottomAnchor="-11.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="76.0">
          <children>
             <Label layoutX="50.0" layoutY="8.0" prefHeight="65.0" prefWidth="577.0" text="Add Customer" textAlignment="CENTER" textFill="WHITE" AnchorPane.leftAnchor="50.0" AnchorPane.topAnchor="8.0">
                <font>
@@ -32,7 +27,7 @@
                   <Insets left="15.0" top="5.0" />
                </padding>
             </Label>
-            <SplitPane dividerPositions="0.5" layoutX="27.0" layoutY="91.0" prefHeight="523.0" prefWidth="1045.0" style="-fx-background-color: #30475E;" AnchorPane.bottomAnchor="21.0" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="91.0">
+            <SplitPane dividerPositions="0.5" layoutX="27.0" layoutY="91.0" prefHeight="683.0" prefWidth="1337.0" style="-fx-background-color: #30475E;" AnchorPane.bottomAnchor="46.0" AnchorPane.leftAnchor="27.0" AnchorPane.rightAnchor="18.0" AnchorPane.topAnchor="91.0">
               <items>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
@@ -97,7 +92,7 @@
                   </AnchorPane>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="464.0" prefWidth="408.0">
                      <children>
-                        <Pane layoutX="5.0" layoutY="34.0" prefHeight="733.0" prefWidth="732.0" AnchorPane.bottomAnchor="-25.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="34.0">
+                        <Pane layoutX="5.0" layoutY="34.0" prefHeight="653.0" prefWidth="647.0" AnchorPane.bottomAnchor="19.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="29.0" AnchorPane.topAnchor="34.0">
                            <children>
                               <Text fill="WHITE" layoutX="14.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Contact Name">
                                  <font>
@@ -119,23 +114,28 @@
                                     <Font size="28.0" />
                                  </font>
                               </Text>
-                              <Text fill="WHITE" layoutX="266.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Upload Image">
-                                 <font>
-                                    <Font size="28.0" />
-                                 </font>
-                              </Text>
                               <TextField layoutX="235.0" layoutY="17.0" prefHeight="31.0" prefWidth="358.0" />
                               <TextField layoutX="235.0" layoutY="66.0" prefHeight="31.0" prefWidth="358.0" />
                               <TextField layoutX="235.0" layoutY="116.0" prefHeight="31.0" prefWidth="358.0" />
                               <TextField layoutX="235.0" layoutY="171.0" prefHeight="31.0" prefWidth="358.0" />
-                              <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="35.0" layoutY="346.0" pickOnBounds="true" preserveRatio="true" >
-                     <image>
-                        <Image url="@../CSS/Profile.jpg" />
-                     </image>
-                  </ImageView>
-                              <Button layoutX="386.0" layoutY="367.0" mnemonicParsing="false" style="-fx-background-color: #F05454;" text="Select image file" textFill="WHITE" />
-                              <Button layoutX="386.0" layoutY="458.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="128.0" style="-fx-background-color: #F05454;" text="Use Camera" textFill="WHITE" />
-                              <Button layoutX="235.0" layoutY="570.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="174.0" style="-fx-background-color: #F05454;" text="Add" textFill="WHITE" />
+                              <Button layoutX="156.0" layoutY="544.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="174.0" style="-fx-background-color: #3d84b8;" text="Add" textFill="WHITE" />
+                              <Button layoutX="361.0" layoutY="544.0" mnemonicParsing="false" prefHeight="53.0" prefWidth="174.0" style="-fx-background-color: #cf0000;" text="Cancel" textFill="WHITE" />
+                              <Pane layoutX="40.0" layoutY="292.0" prefHeight="220.0" prefWidth="562.0" style="-fx-background-color: #222831;">
+                                 <children>
+                                    <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="38.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../CSS/Profile.jpg" />
+                           </image>
+                        </ImageView>
+                                    <Button layoutX="366.0" layoutY="117.0" mnemonicParsing="false" style="-fx-background-color: #F05454;" text="Select image file" textFill="WHITE" />
+                                    <Button layoutX="185.0" layoutY="117.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="128.0" style="-fx-background-color: #F05454;" text="Use Camera" textFill="WHITE" />
+                                 </children>
+                              </Pane>
+                              <Text fill="WHITE" layoutX="15.0" layoutY="270.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Upload Image">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Text>
                            </children>
                         </Pane>
                      </children>
@@ -144,5 +144,34 @@
             </SplitPane>
          </children>
       </AnchorPane>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="103.0" prefWidth="1391.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="405.0" layoutY="22.0" text="Time" textFill="WHITE" />
+            <Label layoutX="207.0" layoutY="22.0" text="Date" textAlignment="CENTER" textFill="WHITE" />
+            <HBox alignment="CENTER_RIGHT" layoutX="1080.0" layoutY="12.0" prefHeight="64.0" prefWidth="210.0" spacing="29.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/info.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="options" fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/settings.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/profile.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="25.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      
    </children>
 </AnchorPane>

@@ -1,0 +1,692 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="940.0" prefWidth="1807.0" style="-fx-background-color: #222831;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inventorymanagement.Controllers.DsummariesController">
+    <stylesheets>
+        <URL value="@/inventorymanagement/CSS/dsummaries.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="1531.0" layoutY="198.0" prefHeight="26.0" prefWidth="281.0" text="Transactions Details" textFill="#fcfcfc" AnchorPane.rightAnchor="109.0" AnchorPane.topAnchor="198.0">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#30475e" height="855.0" layoutX="1385.0" layoutY="121.0" stroke="#30475e" strokeType="INSIDE" width="6.0" AnchorPane.rightAnchor="399.0" AnchorPane.topAnchor="121.0" />
+      <ScrollPane layoutY="182.0" prefHeight="831.0" prefWidth="281.0">
+         <content>
+            <VBox prefHeight="838.0" prefWidth="267.0" style="-fx-background-color: #222831;">
+               <children>
+                  <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="267.0" style="-fx-background-color: #DBD5D5;" text="DAILY SUMMARIES">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Button>
+                  <Button id="btn" mnemonicParsing="false" prefHeight="73.0" prefWidth="267.0" style="-fx-background-color: #30475E;" stylesheets="@../CSS/dsummaries.css" text="OPERATION LOGS" textFill="#f5f5f5" />
+                  <Button mnemonicParsing="false" prefHeight="72.0" prefWidth="267.0" style="-fx-background-color: #30475E;" text="SALES" textFill="WHITE" />
+                  <Button mnemonicParsing="false" prefHeight="74.0" prefWidth="267.0" style="-fx-background-color: #30475E;" text="GROUP SALES" textFill="#f5f5f5" />
+                  <Button mnemonicParsing="false" prefHeight="71.0" prefWidth="267.0" style="-fx-background-color: #30475E;" text="ITEM SALES" textFill="#f5f5f5" />
+                  <Button mnemonicParsing="false" prefHeight="72.0" prefWidth="267.0" style="-fx-background-color: #30475E;" text="REPRINT" textFill="#f5f5f5" />
+                  <Button mnemonicParsing="false" prefHeight="74.0" prefWidth="267.0" style="-fx-background-color: #30475E;" text="REORDER" textFill="#f5f5f5" />
+                  <Button mnemonicParsing="false" prefHeight="72.0" prefWidth="267.0" style="-fx-background-color: #30475E;" text="OUT OF STOCK" textFill="#f5f5f5" />
+                  <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="267.0" style="-fx-background-color: #30475E;" text="DEBTORS" textFill="#f5f5f5" />
+                  <Button mnemonicParsing="false" prefHeight="75.0" prefWidth="267.0" style="-fx-background-color: #30475E;" text="INVENTORY PRINT" textFill="#f5f5f5" />
+                  <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="267.0" style="-fx-background-color: #30475E;" text="CUSTOMER PRINT" textFill="#f5f5f5" />
+                  <Button mnemonicParsing="false" prefHeight="70.0" prefWidth="267.0" style="-fx-background-color: #30475E;" text="CUSTOMER STATEMENT" textFill="#f5f5f5" />
+                  <Button mnemonicParsing="false" prefHeight="69.0" prefWidth="267.0" style="-fx-background-color: #30475E;" text="CUSTOMER PURCHASE" textFill="#f5f5f5" />
+               </children></VBox>
+         </content>
+      </ScrollPane>
+      <Label layoutX="348.0" layoutY="99.0" prefHeight="35.0" prefWidth="502.0" text="Daily Summaries" textFill="WHITE" AnchorPane.rightAnchor="940.0" AnchorPane.topAnchor="99.0">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Line endX="600.0" layoutX="583.0" layoutY="147.0" startX="-100.0" stroke="#30475e" AnchorPane.rightAnchor="737.5" AnchorPane.topAnchor="146.5" />
+      <Button layoutX="985.0" layoutY="175.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="132.0" style="-fx-background-color: #F05454;" text="DISPLAY" textFill="#fcfcfc" AnchorPane.rightAnchor="779.0" AnchorPane.topAnchor="175.0">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <HBox alignment="CENTER_LEFT" layoutX="5.0" prefHeight="68.0" prefWidth="1781.0" style="-fx-background-color: #222831;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+      <Label layoutX="166.0" layoutY="100.0" prefHeight="47.0" prefWidth="103.0" text="Reports" textFill="#f5f5f5" AnchorPane.rightAnchor="1650.0" AnchorPane.topAnchor="100.0">
+         <font>
+            <Font size="29.0" />
+         </font>
+      </Label>
+      <Button layoutX="290.0" layoutY="911.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="168.0" style="-fx-background-color: #F05454;" text="PRINT REPORT" textFill="#fcfcfc" AnchorPane.rightAnchor="1438.0" AnchorPane.topAnchor="911.0">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="676.0" layoutY="911.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="265.0" style="-fx-background-color: #F05454;" text="EXPORT XML TRANSACTIONS" textFill="#fcfcfc" AnchorPane.rightAnchor="955.0" AnchorPane.topAnchor="911.0">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="956.0" layoutY="911.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="256.0" style="-fx-background-color: #F05454;" text="EXPORT XML LIST OF ITEMS" textFill="#fcfcfc" AnchorPane.rightAnchor="684.0" AnchorPane.topAnchor="911.0">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="1223.0" layoutY="911.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="256.0" style="-fx-background-color: #F05454;" text="EXPORT CSV LIST OF ITEMS" textFill="#fcfcfc" AnchorPane.rightAnchor="417.0" AnchorPane.topAnchor="911.0">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+      <DatePicker layoutX="577.0" layoutY="184.0" />
+      <Pane layoutX="322.0" layoutY="243.0" prefHeight="653.0" prefWidth="1173.0" style="-fx-background-color: #30475E;">
+         <children>
+            <ScrollBar layoutX="1150.0" layoutY="8.0" orientation="VERTICAL" prefHeight="636.0" prefWidth="18.0" />
+            <Pane layoutX="8.0" layoutY="8.0" prefHeight="79.0" prefWidth="1131.0" />
+            <TabPane layoutX="8.0" layoutY="8.0" prefHeight="636.0" prefWidth="1139.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab style="-fx-background-color: #3d84b8;" text="All Details">
+                     <content>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <SplitPane dividerPositions="0.5146666666666667" layoutX="14.0" layoutY="14.0" orientation="VERTICAL" prefHeight="578.0" prefWidth="589.0">
+                                <items>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="292.0" prefWidth="759.0" style="-fx-background-color: #222831;">
+                                       <children>
+                                          <Text fill="WHITE" layoutX="244.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Transaction Number" wrappingWidth="157.7900390625">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <ChoiceBox layoutX="425.0" layoutY="23.0" prefHeight="31.0" prefWidth="121.0" />
+                                          <Text fill="WHITE" layoutX="27.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Items">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="WHITE" layoutX="26.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Transaction">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="#d3c7c7" layoutX="129.0" layoutY="48.0" strokeType="OUTSIDE" strokeWidth="0.0" text="128" wrappingWidth="132.0">
+                                             <font>
+                                                <Font size="29.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="#d3c7c7" layoutX="132.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="469" wrappingWidth="132.0">
+                                             <font>
+                                                <Font size="29.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="#d3c7c7" layoutX="130.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="14587.52" textAlignment="RIGHT" wrappingWidth="132.0">
+                                             <font>
+                                                <Font size="29.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="WHITE" layoutX="26.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Non Taxable">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="#d3c7c7" layoutX="130.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7895.48" textAlignment="RIGHT" wrappingWidth="132.0">
+                                             <font>
+                                                <Font size="29.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="WHITE" layoutX="26.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Taxable">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="#d3c7c7" layoutX="395.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2246.30" textAlignment="RIGHT" wrappingWidth="132.0">
+                                             <font>
+                                                <Font size="29.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="WHITE" layoutX="296.0" layoutY="163.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VAT 01">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="#d3c7c7" layoutX="395.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4492.60" textAlignment="RIGHT" wrappingWidth="132.0">
+                                             <font>
+                                                <Font size="29.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="WHITE" layoutX="296.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VAT 02">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="#d3c7c7" layoutX="130.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="22463.00" textAlignment="RIGHT" wrappingWidth="132.0">
+                                             <font>
+                                                <Font size="29.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="WHITE" layoutX="26.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sub total">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="#d3c7c7" layoutX="396.0" layoutY="263.0" strokeType="OUTSIDE" strokeWidth="0.0" text="29221.9" textAlignment="RIGHT" wrappingWidth="132.0">
+                                             <font>
+                                                <Font size="29.0" />
+                                             </font>
+                                          </Text>
+                                          <Text fill="WHITE" layoutX="297.0" layoutY="257.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                       </children>
+                                    </AnchorPane>
+                                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="258.0" prefWidth="582.0" style="-fx-background-color: #222831;">
+                                       <children>
+                                          <TextArea layoutX="28.0" layoutY="29.0" prefHeight="231.0" prefWidth="543.0" promptText="Activity">
+                                             <font>
+                                                <Font size="27.0" />
+                                             </font>
+                                          </TextArea>
+                                       </children>
+                                    </AnchorPane>
+                                </items>
+                              </SplitPane>
+                              <Pane layoutX="610.0" layoutY="14.0" prefHeight="578.0" prefWidth="249.0" style="-fx-background-color: #222831;">
+                                 <children>
+                                    <Text fill="WHITE" layoutX="23.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Credit">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="23.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EFT">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="24.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Loyalty">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="23.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Voucher">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="26.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cash">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#d3c7c7" layoutX="98.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="49545" textAlignment="RIGHT" wrappingWidth="132.0">
+                                       <font>
+                                          <Font size="29.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#d3c7c7" layoutX="98.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="982" textAlignment="RIGHT" wrappingWidth="132.0">
+                                       <font>
+                                          <Font size="29.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#d3c7c7" layoutX="98.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="25000" textAlignment="RIGHT" wrappingWidth="132.0">
+                                       <font>
+                                          <Font size="29.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#d3c7c7" layoutX="98.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="18000" textAlignment="RIGHT" wrappingWidth="132.0">
+                                       <font>
+                                          <Font size="29.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#d3c7c7" layoutX="98.0" layoutY="409.0" strokeType="OUTSIDE" strokeWidth="0.0" text="850" textAlignment="RIGHT" wrappingWidth="132.0">
+                                       <font>
+                                          <Font size="29.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#d3c7c7" layoutX="98.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4500" textAlignment="RIGHT" wrappingWidth="132.0">
+                                       <font>
+                                          <Font size="29.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="23.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sales" wrappingWidth="132.0">
+                                       <font>
+                                          <Font size="29.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="876.0" layoutY="15.0" prefHeight="578.0" prefWidth="249.0" style="-fx-background-color: #222831;">
+                                 <children>
+                                    <Text fill="WHITE" layoutX="23.0" layoutY="404.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Credit">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="23.0" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EFT">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="24.0" layoutY="324.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Loyalty">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="23.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Voucher">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="26.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cash">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#d3c7c7" layoutX="101.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3000" textAlignment="RIGHT" wrappingWidth="132.0">
+                                       <font>
+                                          <Font size="29.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#d3c7c7" layoutX="101.0" layoutY="192.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" textAlignment="RIGHT" wrappingWidth="132.0">
+                                       <font>
+                                          <Font size="29.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#d3c7c7" layoutX="101.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10000" textAlignment="RIGHT" wrappingWidth="132.0">
+                                       <font>
+                                          <Font size="29.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#d3c7c7" layoutX="101.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2500" textAlignment="RIGHT" wrappingWidth="132.0">
+                                       <font>
+                                          <Font size="29.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#d3c7c7" layoutX="101.0" layoutY="409.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" textAlignment="RIGHT" wrappingWidth="132.0">
+                                       <font>
+                                          <Font size="29.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="#d3c7c7" layoutX="101.0" layoutY="460.0" strokeType="OUTSIDE" strokeWidth="0.0" text="128" textAlignment="RIGHT" wrappingWidth="132.0">
+                                       <font>
+                                          <Font size="29.0" />
+                                       </font>
+                                    </Text>
+                                    <Text fill="WHITE" layoutX="24.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Refunds" wrappingWidth="132.0">
+                                       <font>
+                                          <Font size="29.0" />
+                                       </font>
+                                    </Text>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </Pane>
+                     </content>
+                  </Tab>
+                <Tab style="-fx-background-color: #3d84b8;" text="Transactions">
+                     <content>
+                        <Pane prefHeight="446.0" prefWidth="1095.0">
+                           <children>
+                              <Text fill="WHITE" layoutX="30.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Transactions">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="WHITE" layoutX="30.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Items">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Text>
+                              <ChoiceBox fx:id="comboBox" layoutX="201.0" layoutY="201.0" prefHeight="31.0" prefWidth="186.0" />
+                              <Text fill="WHITE" layoutX="30.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Transaction">
+                                 <font>
+                                    <Font size="24.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="WHITE" layoutX="628.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#d3c7c7" layoutX="861.0" layoutY="388.0" strokeType="OUTSIDE" strokeWidth="0.0" text="29221.9" textAlignment="RIGHT" wrappingWidth="132.0">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="WHITE" layoutX="622.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sub total">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#d3c7c7" layoutX="860.0" layoutY="162.0" strokeType="OUTSIDE" strokeWidth="0.0" text="22463.00" textAlignment="RIGHT" wrappingWidth="132.0">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="WHITE" layoutX="627.0" layoutY="264.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VAT 02">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#d3c7c7" layoutX="860.0" layoutY="266.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4492.60" textAlignment="RIGHT" wrappingWidth="132.0">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="WHITE" layoutX="625.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VAT 01">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#d3c7c7" layoutX="860.0" layoutY="215.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2246.30" textAlignment="RIGHT" wrappingWidth="132.0">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="WHITE" layoutX="622.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Taxable">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#d3c7c7" layoutX="860.0" layoutY="114.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7895.48" textAlignment="RIGHT" wrappingWidth="132.0">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="WHITE" layoutX="622.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Non Taxable">
+                                 <font>
+                                    <Font size="28.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#d3c7c7" layoutX="860.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="14587.52" textAlignment="RIGHT" wrappingWidth="132.0">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#d3c7c7" layoutX="242.0" layoutY="62.0" strokeType="OUTSIDE" strokeWidth="0.0" text="14587.52" textAlignment="RIGHT" wrappingWidth="132.0">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#d3c7c7" layoutX="242.0" layoutY="151.0" strokeType="OUTSIDE" strokeWidth="0.0" text="7895.48" textAlignment="RIGHT" wrappingWidth="132.0">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                     </content>
+                  </Tab>
+                  <Tab style="-fx-background-color: #3d84b8;" text="Sales">
+                     <content>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="WHITE" layoutX="46.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sales" wrappingWidth="132.0">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#d3c7c7" layoutX="332.0" layoutY="508.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4500" textAlignment="RIGHT" wrappingWidth="132.0">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#d3c7c7" layoutX="332.0" layoutY="457.0" strokeType="OUTSIDE" strokeWidth="0.0" text="850" textAlignment="RIGHT" wrappingWidth="132.0">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#d3c7c7" layoutX="332.0" layoutY="378.0" strokeType="OUTSIDE" strokeWidth="0.0" text="18000" textAlignment="RIGHT" wrappingWidth="132.0">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#d3c7c7" layoutX="332.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="25000" textAlignment="RIGHT" wrappingWidth="132.0">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#d3c7c7" layoutX="332.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="982" textAlignment="RIGHT" wrappingWidth="132.0">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#d3c7c7" layoutX="332.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="49545" textAlignment="RIGHT" wrappingWidth="132.0">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="WHITE" layoutX="49.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cash">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="WHITE" layoutX="46.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Voucher">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="WHITE" layoutX="47.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Loyalty">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="WHITE" layoutX="46.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EFT">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="WHITE" layoutX="46.0" layoutY="453.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Credit">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                     </content>
+                  </Tab>
+                  <Tab style="-fx-background-color: #3d84b8;" text="Refunds">
+                     <content>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Text fill="WHITE" layoutX="28.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Refunds" wrappingWidth="132.0">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#d3c7c7" layoutX="315.0" layoutY="497.0" strokeType="OUTSIDE" strokeWidth="0.0" text="128" wrappingWidth="132.0">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#d3c7c7" layoutX="315.0" layoutY="446.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" wrappingWidth="132.0">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#d3c7c7" layoutX="315.0" layoutY="367.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2500" wrappingWidth="132.0">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#d3c7c7" layoutX="315.0" layoutY="301.0" strokeType="OUTSIDE" strokeWidth="0.0" text="10000" wrappingWidth="132.0">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#d3c7c7" layoutX="315.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="-" wrappingWidth="132.0">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="#d3c7c7" layoutX="315.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3000" wrappingWidth="132.0">
+                                 <font>
+                                    <Font size="29.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="WHITE" layoutX="30.0" layoutY="139.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cash">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="WHITE" layoutX="27.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Voucher">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="WHITE" layoutX="28.0" layoutY="357.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Loyalty">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="WHITE" layoutX="27.0" layoutY="219.0" strokeType="OUTSIDE" strokeWidth="0.0" text="EFT">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="WHITE" layoutX="27.0" layoutY="437.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Credit">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </Pane>
+                     </content>
+                  </Tab>
+                  <Tab style="-fx-background-color: #3d84b8;" text="Activity">
+                     <content>
+                        <Pane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <TextArea layoutX="30.0" layoutY="72.0" prefHeight="480.0" prefWidth="1064.0" />
+                              <Label layoutX="30.0" layoutY="25.0" prefHeight="35.0" prefWidth="502.0" text="Activity" textFill="WHITE">
+                                 <font>
+                                    <Font name="System Bold" size="32.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </Pane>
+      <Label layoutX="476.0" layoutY="180.0" prefHeight="31.0" prefWidth="92.0" text="Date" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="27.0" />
+         </font>
+      </Label>
+      <Pane layoutX="1531.0" layoutY="244.0" prefHeight="720.0" prefWidth="365.0" style="-fx-background-color: #30475E;">
+         <children>
+            <ScrollBar layoutX="342.0" orientation="VERTICAL" prefHeight="720.0" prefWidth="18.0" />
+            <TextField layoutX="14.0" layoutY="45.0" prefHeight="35.0" prefWidth="314.0" />
+            <TextField layoutX="14.0" layoutY="114.0" prefHeight="35.0" prefWidth="314.0" />
+            <TextField layoutX="14.0" layoutY="252.0" prefHeight="35.0" prefWidth="168.0" />
+            <TextField layoutX="14.0" layoutY="183.0" prefHeight="35.0" prefWidth="314.0" />
+            <TextField layoutX="8.0" layoutY="391.0" prefHeight="35.0" prefWidth="314.0" />
+            <TextField layoutX="8.0" layoutY="323.0" prefHeight="35.0" prefWidth="256.0" />
+            <TextField layoutX="8.0" layoutY="450.0" prefHeight="35.0" prefWidth="314.0" />
+            <TextField layoutX="8.0" layoutY="588.0" prefHeight="35.0" prefWidth="314.0" />
+            <TextField layoutX="8.0" layoutY="520.0" prefHeight="35.0" prefWidth="314.0" />
+            <Text fill="WHITE" layoutX="14.0" layoutY="29.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Transaction">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="14.0" layoutY="172.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Associate">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="14.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="202.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Items" wrappingWidth="33.7900390625">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="14.0" layoutY="103.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Time">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <ChoiceBox layoutX="204.0" layoutY="254.0" prefHeight="31.0" prefWidth="121.0" />
+            <Text fill="WHITE" layoutX="14.0" layoutY="311.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <ChoiceBox layoutX="268.0" layoutY="325.0" prefHeight="31.0" prefWidth="58.0" />
+            <Text fill="WHITE" layoutX="10.0" layoutY="383.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="11.0" layoutY="442.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VAT 1">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="9.0" layoutY="510.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VAT 2">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="11.0" layoutY="580.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="11.0" layoutY="646.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Note">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Text>
+            <TextField layoutX="8.0" layoutY="654.0" prefHeight="35.0" prefWidth="314.0" />
+         </children>
+      </Pane>
+      <AnchorPane layoutX="10.0" layoutY="10.0" prefHeight="103.0" prefWidth="1884.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="405.0" layoutY="22.0" text="Time" textFill="WHITE" />
+            <Label layoutX="207.0" layoutY="22.0" text="Date" textAlignment="CENTER" textFill="WHITE" />
+            <HBox alignment="CENTER_RIGHT" layoutX="1080.0" layoutY="12.0" prefHeight="64.0" prefWidth="210.0" spacing="29.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/info.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="options" fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/settings.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icons/profile.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets right="25.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <Button layoutX="474.0" layoutY="911.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="186.0" style="-fx-background-color: #F05454;" text="EMAIL SUMMARY" textFill="#fcfcfc">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
