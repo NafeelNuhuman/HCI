@@ -10,7 +10,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: #222831;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inventorymanagement.Controllers.AddGroupController">
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="800.0" prefWidth="1280.0" style="-fx-background-color: #222831;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inventorymanagement.Controllers.AddGroupController">
     <stylesheets>
         <URL value="@../CSS/addgroup.css" />
     </stylesheets>
@@ -21,8 +21,8 @@
                <children>
                   <AnchorPane prefHeight="103.0" prefWidth="1210.0" HBox.hgrow="ALWAYS">
                      <children>
-                        <Label alignment="CENTER" contentDisplay="CENTER" layoutX="405.0" layoutY="22.0" text="Time" textFill="WHITE" />
-                        <Label layoutX="207.0" layoutY="22.0" text="Date" textAlignment="CENTER" textFill="WHITE" />
+                        <Label fx:id="time" alignment="CENTER" contentDisplay="CENTER" layoutX="405.0" layoutY="22.0" text="Time" textFill="WHITE" />
+                        <Label fx:id="date" layoutX="207.0" layoutY="22.0" text="Date" textAlignment="CENTER" textFill="WHITE" />
                         <HBox alignment="CENTER_RIGHT" layoutX="1080.0" layoutY="12.0" prefHeight="64.0" prefWidth="210.0" spacing="29.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                            <children>
                               <ImageView fitHeight="35.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
@@ -138,7 +138,7 @@
                         <Font size="18.0" />
                      </font>
                   </Label>
-                  <Label alignment="BASELINE_RIGHT" layoutX="456.0" layoutY="74.0" prefHeight="27.0" prefWidth="77.0" text="XXX" textAlignment="RIGHT" textFill="WHITE">
+                  <Label alignment="BASELINE_RIGHT" layoutX="456.0" layoutY="74.0" prefHeight="27.0" prefWidth="77.0" text="01" textAlignment="RIGHT" textFill="WHITE">
                      <font>
                         <Font size="18.0" />
                      </font>
@@ -190,7 +190,7 @@
                         </HBox>
                      </content>
                   </ScrollPane>
-                  <Button layoutX="199.0" layoutY="546.0" mnemonicParsing="false" style="-fx-border-color: grey;" text="Upload Custom Picture" />
+                  <Button fx:id="btnUploadPic" layoutX="199.0" layoutY="546.0" mnemonicParsing="false" onAction="#uploadPic" style="-fx-border-color: grey;" text="Upload Custom Picture" />
                   <Button layoutX="117.0" layoutY="640.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="339.0" styleClass="orangeBtn" text="Save" />
                </children>
             </AnchorPane>

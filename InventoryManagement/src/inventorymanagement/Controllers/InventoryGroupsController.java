@@ -8,7 +8,9 @@ package inventorymanagement.Controllers;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
+import javafx.scene.control.ComboBox;
 
 /**
  * FXML Controller class
@@ -16,13 +18,13 @@ import javafx.fxml.Initializable;
  * @author Dil
  */
 public class InventoryGroupsController implements Initializable {
-
+    @FXML private ComboBox sortComboBox;
     /**
      * Initializes the controller class.
      */
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+       sortComboBox.getItems().addAll("Sort by Name", "Sort by group NO", "Sort by quantity");
     }    
     
 }

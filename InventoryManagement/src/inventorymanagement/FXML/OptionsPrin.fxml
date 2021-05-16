@@ -10,17 +10,15 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1280.0" style="-fx-background-color: #222831;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
-   <children>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1317.0" style="-fx-background-color: #222831;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="inventorymanagement.Controllers.OptionsPrintController">
+   <stylesheets>
+        <URL value="@../CSS/optionstax.css" />
+    </stylesheets>
+    <children>
       <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="10.0" prefHeight="43.0" prefWidth="1300.0" style="-fx-background-color: #222831;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
             <AnchorPane prefHeight="103.0" prefWidth="1210.0" style="-fx-border-color: grey;" HBox.hgrow="ALWAYS">
                <children>
-                  <ImageView fitHeight="64.0" fitWidth="93.0" layoutX="8.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="4.0" AnchorPane.topAnchor="4.0">
-                     <image>
-                        <Image url="@../Icons/Logo.png" />
-                     </image>
-                  </ImageView>
                   <Label alignment="CENTER" contentDisplay="CENTER" layoutX="405.0" layoutY="22.0" text="Time" textFill="WHITE" />
                   <Label layoutX="207.0" layoutY="22.0" text="Date" textAlignment="CENTER" textFill="WHITE" />
                   <HBox alignment="CENTER_RIGHT" layoutX="1080.0" layoutY="12.0" prefHeight="64.0" prefWidth="210.0" spacing="29.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -65,8 +63,9 @@
                      <children>
                         <VBox layoutX="-2.0" prefHeight="900.0" prefWidth="1072.0" style="-fx-background-color: #222831;">
                            <children>
-                              <AnchorPane prefHeight="1000.0" prefWidth="1072.0" style="-fx-background-color: #222831;">
+                              <AnchorPane prefHeight="900.0" prefWidth="1106.0" style="-fx-background-color: #222831;">
                                  <children>
+                                    <Pane layoutX="20.0" layoutY="69.0" prefHeight="824.0" prefWidth="1041.0" style="-fx-background-color: #30475E; -fx-border-color: #f05454;" />
                                     <Text fill="WHITE" layoutX="31.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Associate" wrappingWidth="341.6708984375" AnchorPane.leftAnchor="560.0" />
                                     <Text fill="WHITE" layoutX="31.0" layoutY="209.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Change" wrappingWidth="341.6708984375" AnchorPane.leftAnchor="560.0" />
                                     <Text fill="WHITE" layoutX="31.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer" wrappingWidth="341.6708984375" AnchorPane.leftAnchor="560.0" />
@@ -74,7 +73,7 @@
                                     <Text fill="WHITE" layoutX="33.0" layoutY="376.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Invoice" wrappingWidth="341.6708984375" AnchorPane.leftAnchor="560.0" />
                                     <Text fill="WHITE" layoutX="33.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment cash" wrappingWidth="341.6708984375" AnchorPane.leftAnchor="560.0" />
                                     <Text fill="WHITE" layoutX="33.0" layoutY="488.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment card" wrappingWidth="341.6708984375" AnchorPane.leftAnchor="560.0" />
-                                    <Button alignment="CENTER" layoutX="928.0" layoutY="841.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="120.0" style="-fx-background-color: #F05454;" text="Save" textFill="WHITE" AnchorPane.leftAnchor="928.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="841.0">
+                                    <Button alignment="CENTER" layoutX="928.0" layoutY="841.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="120.0" style="-fx-background-color: #F05454; -fx-text-fill: black;" text="Save" textFill="WHITE" AnchorPane.leftAnchor="928.0" AnchorPane.rightAnchor="30.0" AnchorPane.topAnchor="841.0">
                                        <opaqueInsets>
                                           <Insets />
                                        </opaqueInsets>
@@ -104,7 +103,7 @@
                                     <Text fill="WHITE" layoutX="121.0" layoutY="693.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Till" AnchorPane.leftAnchor="118.0" />
                                     <ImageView fitHeight="110.0" fitWidth="102.0" layoutX="76.0" layoutY="183.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="76.0" AnchorPane.rightAnchor="894.0" AnchorPane.topAnchor="183.0">
                                        <image>
-                                          <Image url="@../Icons/Logo.png" />
+                                          <Image url="@../Icons/Photos-new-icon.png" />
                                        </image>
                                     </ImageView>
                                     <CheckBox layoutX="47.0" layoutY="416.0" mnemonicParsing="false" text="Customer details" textFill="WHITE" AnchorPane.leftAnchor="50.0" />
@@ -113,9 +112,9 @@
                                     <CheckBox layoutX="49.0" layoutY="360.0" mnemonicParsing="false" text="Items inclusive of tax (with sub total)" textFill="WHITE" AnchorPane.leftAnchor="50.0" />
                                     <CheckBox layoutX="51.0" layoutY="472.0" mnemonicParsing="false" text="Ntx total" textFill="WHITE" AnchorPane.leftAnchor="50.0" />
                                     <CheckBox layoutX="53.0" layoutY="748.0" mnemonicParsing="false" text="Bye line" textFill="WHITE" AnchorPane.leftAnchor="53.0" />
-                                    <Label layoutY="259.0" prefHeight="45.0" prefWidth="375.0" text="Reciept &amp; Invoice Print Settings" textFill="WHITE" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="349.0" AnchorPane.topAnchor="24.0">
+                                    <Label layoutY="259.0" prefHeight="45.0" prefWidth="375.0" text="Reciept &amp; Invoice Print Settings" textFill="#f05454" AnchorPane.leftAnchor="17.0" AnchorPane.rightAnchor="349.0" AnchorPane.topAnchor="24.0">
                                        <font>
-                                          <Font size="18.0" />
+                                          <Font size="26.0" />
                                        </font>
                                        <padding>
                                           <Insets left="20.0" />
@@ -126,7 +125,7 @@
                                     <TextField layoutX="209.0" layoutY="713.0" prefHeight="31.0" prefWidth="100.0" AnchorPane.leftAnchor="209.0" AnchorPane.topAnchor="713.0" />
                                     <TextField layoutX="81.0" layoutY="789.0" prefHeight="31.0" prefWidth="304.0" AnchorPane.leftAnchor="81.0" AnchorPane.topAnchor="789.0" />
                                     <Text fill="WHITE" layoutX="118.0" layoutY="734.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Store" AnchorPane.leftAnchor="118.0" />
-                                    <Button alignment="CENTER" layoutX="217.0" layoutY="219.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="120.0" style="-fx-background-color: #30475E;" text="Browse" textFill="WHITE" AnchorPane.leftAnchor="217.0" AnchorPane.topAnchor="219.0">
+                                    <Button alignment="CENTER" layoutX="217.0" layoutY="219.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="120.0" style="-fx-background-color: #30475E; -fx-border-color: grey;" text="Browse" textFill="WHITE" AnchorPane.leftAnchor="217.0" AnchorPane.topAnchor="219.0">
                                        <opaqueInsets>
                                           <Insets />
                                        </opaqueInsets>
@@ -148,23 +147,17 @@
             </AnchorPane>
          </children>
       </HBox>
-      <VBox fillWidth="false" layoutX="50.0" layoutY="114.0" prefHeight="736.0" prefWidth="210.0" style="-fx-background-color: #222831; -fx-border-color: grey;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="70.0">
+      <VBox fillWidth="false" layoutX="50.0" layoutY="114.0" prefHeight="812.0" prefWidth="210.0" style="-fx-background-color: #222831; -fx-border-color: grey;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="65.0">
          <children>
-            <HBox alignment="CENTER" prefHeight="52.0" prefWidth="208.0" spacing="90.0">
-               <children>
-                  <ImageView fitHeight="35.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Icons/backward.png" />
-                     </image>
-                  </ImageView>
-                  <Label prefHeight="45.0" prefWidth="72.0" text="Options" textFill="WHITE">
-                     <font>
-                        <Font size="18.0" />
-                     </font>
-                  </Label>
-               </children>
-            </HBox>
-            <Button id="btnBackup" alignment="BASELINE_LEFT" defaultButton="true" mnemonicParsing="false" prefHeight="50.0" prefWidth="235.0" style="-fx-background-color: #30475E;" text="BACKUP" textFill="WHITE" VBox.vgrow="ALWAYS">
+            <Label prefHeight="45.0" prefWidth="72.0" text="Options" textFill="WHITE" VBox.vgrow="ALWAYS">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="125.0" top="12.0" />
+               </VBox.margin>
+            </Label>
+            <Button fx:id="buttonBackup" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="235.0" style="" text="BACKUP" textFill="WHITE" VBox.vgrow="ALWAYS">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
@@ -172,7 +165,7 @@
                   <Insets bottom="5.0" left="3.0" right="4.0" />
                </VBox.margin>
             </Button>
-            <Button id="btnGroups" fx:id="btnGroups" alignment="BASELINE_LEFT" defaultButton="true" mnemonicParsing="false" prefHeight="50.0" prefWidth="235.0" style="-fx-background-color: #30475E;" text="GROUPS" textFill="WHITE" VBox.vgrow="ALWAYS">
+            <Button fx:id="buttonGroups" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="235.0" style="" text="GROUPS" textFill="WHITE" VBox.vgrow="ALWAYS">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
@@ -180,7 +173,7 @@
                   <Insets bottom="5.0" left="3.0" right="4.0" />
                </VBox.margin>
             </Button>
-            <Button id="btnInventory" alignment="BASELINE_LEFT" defaultButton="true" mnemonicParsing="false" prefHeight="50.0" prefWidth="235.0" style="-fx-background-color: #30475E;" text="INVENTORY" textFill="WHITE" VBox.vgrow="ALWAYS">
+            <Button id="button1" fx:id="buttonInventory" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="235.0" style="" text="INVENTORY" textFill="WHITE" VBox.vgrow="ALWAYS">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
@@ -188,7 +181,7 @@
                   <Insets bottom="5.0" left="3.0" right="4.0" />
                </VBox.margin>
             </Button>
-            <Button id="btnNonInventory" alignment="BASELINE_LEFT" defaultButton="true" mnemonicParsing="false" prefHeight="50.0" prefWidth="235.0" style="-fx-background-color: #30475E;" text="NON INVENTORY" textFill="WHITE" VBox.vgrow="ALWAYS">
+            <Button fx:id="buttonNun" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="235.0" style="" text="NON INVENTORY" textFill="WHITE" VBox.vgrow="ALWAYS">
                <opaqueInsets>
                   <Insets />
                </opaqueInsets>
@@ -196,32 +189,32 @@
                   <Insets bottom="5.0" left="3.0" right="4.0" />
                </VBox.margin>
             </Button>
-            <Button id="btnPoleDisplay" fx:id="btnPoleDisplay" alignment="BASELINE_LEFT" defaultButton="true" mnemonicParsing="false" prefHeight="50.0" prefWidth="226.0" style="-fx-background-color: #30475E;" text="POLE DISPLAY SETTINGS" textFill="WHITE" VBox.vgrow="ALWAYS">
+            <Button fx:id="buttonPole" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="226.0" style="" text="POLE DISPLAY SETTINGS" textFill="WHITE" VBox.vgrow="ALWAYS">
                <VBox.margin>
                   <Insets bottom="5.0" left="3.0" right="4.0" />
                </VBox.margin>
             </Button>
-            <Button id="btnPrint" fx:id="btnPrint" alignment="BASELINE_LEFT" defaultButton="true" mnemonicParsing="false" prefHeight="50.0" prefWidth="226.0" style="-fx-background-color: grey;" text="RECIEPTS &amp; INVOICES" textFill="WHITE" VBox.vgrow="ALWAYS">
+            <Button fx:id="buttonPrint" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="226.0" style="" text="RECIEPTS &amp; INVOICES" textFill="WHITE" VBox.vgrow="ALWAYS">
                <VBox.margin>
                   <Insets bottom="5.0" left="3.0" right="4.0" />
                </VBox.margin>
             </Button>
-            <Button id="btnStore" fx:id="btnStore" alignment="BASELINE_LEFT" defaultButton="true" mnemonicParsing="false" prefHeight="50.0" prefWidth="226.0" style="-fx-background-color: #30475E;" text="STORE" textFill="WHITE" VBox.vgrow="ALWAYS">
+            <Button fx:id="buttonStore" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="226.0" style="" text="STORE" textFill="WHITE" VBox.vgrow="ALWAYS">
                <VBox.margin>
                   <Insets bottom="5.0" left="3.0" right="4.0" />
                </VBox.margin>
             </Button>
-            <Button fx:id="btnTax" alignment="BASELINE_LEFT" defaultButton="true" mnemonicParsing="false" prefHeight="50.0" prefWidth="226.0" style="-fx-background-color: #30475E;" styleClass="btnTax" text="TAX" textFill="WHITE">
+            <Button fx:id="buttonTax" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="226.0" style="" text="TAX" textFill="WHITE">
                <VBox.margin>
                   <Insets bottom="5.0" left="3.0" right="4.0" />
                </VBox.margin>
             </Button>
-            <Button fx:id="btnTheme" alignment="BASELINE_LEFT" defaultButton="true" mnemonicParsing="false" prefHeight="50.0" prefWidth="226.0" style="-fx-background-color: #30475E;" styleClass="btnTheme" text="THEME" textFill="WHITE">
+            <Button fx:id="buttonTheme" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="226.0" style="" text="THEME" textFill="WHITE">
                <VBox.margin>
                   <Insets bottom="5.0" left="3.0" right="4.0" />
                </VBox.margin>
             </Button>
-            <Button id="btnUsers" fx:id="btnUsers" alignment="BASELINE_LEFT" defaultButton="true" mnemonicParsing="false" prefHeight="50.0" prefWidth="226.0" style="-fx-background-color: #30475E;" text="USERS" textFill="WHITE">
+            <Button fx:id="buttonUsers" alignment="BASELINE_LEFT" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="50.0" prefWidth="226.0" style="" text="USERS" textFill="WHITE">
                <VBox.margin>
                   <Insets bottom="5.0" left="3.0" right="4.0" />
                </VBox.margin>
@@ -229,7 +222,7 @@
             <Pane prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: grey;">
                <children>
                   <Text layoutX="14.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Groups: 3" />
-                  <Text layoutX="14.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inventory:  10" />
+                  <Text layoutX="14.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Inventory:  10" />
                   <Text layoutX="14.0" layoutY="85.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customers: 5" />
                </children>
                <VBox.margin>

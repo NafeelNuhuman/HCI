@@ -28,12 +28,19 @@ import javafx.stage.Stage;
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/nIs.fxml"));    
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/DS.fxml"));    
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/AdCu.fxml"));    
+        //Parent root = FXMLLoader.load(getClass().getResource("FXML/OptionsTax.fxml")); 
+        //Parent root = FXMLLoader.load(getClass().getResource("FXML/OptionsStore.fxml")); 
+        //Parent root = FXMLLoader.load(getClass().getResource("FXML/OptionsPrint.fxml")); 
+        //Parent root = FXMLLoader.load(getClass().getResource("FXML/OptionsPoleDisplay.fxml")); 
+        Parent root = FXMLLoader.load(getClass().getResource("FXML/OptionsInventory.fxml"));    
 
         Scene scene = new Scene(root);
         
         stage.setScene(scene);
         stage.show();
     }
+    
+    
 
     /**
      * @param args the command line arguments

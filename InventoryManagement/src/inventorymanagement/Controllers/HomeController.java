@@ -8,47 +8,37 @@ package inventorymanagement.Controllers;
 
 import inventorymanagement.Models.Group;
 import inventorymanagement.Models.Item;
-import java.awt.Insets;
 import java.io.IOException;
 import java.net.URL;
-import java.text.SimpleDateFormat;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.time.LocalTime;
-import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
+import java.util.Optional;
 import java.util.ResourceBundle;
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.event.ActionEvent;
 import javafx.event.EventHandler;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
-import javafx.scene.control.ListView;
 import javafx.scene.layout.GridPane;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Alert;
+import javafx.scene.control.ButtonType;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.Background;
-import javafx.scene.layout.BackgroundFill;
-import javafx.scene.layout.CornerRadii;
+import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
-import javafx.scene.layout.Pane;
 import javafx.scene.layout.VBox;
-import javafx.scene.paint.Color;
-import javafx.scene.paint.Paint;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.util.Duration;
@@ -95,6 +85,12 @@ public class HomeController implements Initializable {
     
     @FXML
     private VBox basket;
+    
+    @FXML 
+    private Button btnEmptyBasket,btnAdd;
+    
+    @FXML 
+    private AnchorPane anchorPane;
             
     Group group1,group2;
     
@@ -133,6 +129,9 @@ public class HomeController implements Initializable {
         // TODO
         loadData();
         
+        //btnEmptyBasket.addEventHandler(MouseEvent.MOUSE_CLICKED, emptyBasket);
+        btnAdd.addEventHandler(MouseEvent.MOUSE_CLICKED, addToBasket2);
+        
         cbSortBy.getItems().addAll("Barcode","Description","Unique ID");
         cbSortBy.setValue("Barcode");
         
@@ -153,7 +152,6 @@ public class HomeController implements Initializable {
             Parent root = FXMLLoader.load(getClass().getResource(fxml));
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
-            //stage.getIcons().add(new Image("/home/icons/icon.png"));
             stage.initModality(Modality.APPLICATION_MODAL);
             stage.show();
         } catch (IOException e) {
@@ -210,18 +208,18 @@ public class HomeController implements Initializable {
         btn.setMaxWidth(264);
         btn.setMaxHeight(344);
         itemGrid.add(btn,col,row);
-        btn.addEventHandler(MouseEvent.MOUSE_CLICKED, addToBasket);
+        btn.addEventHandler(MouseEvent.MOUSE_CLICKED, addToBasket1);
         ++col;
         if (col == 3){
             col = 0;
             row += 1; 
         }
+        }
     }
-    }
     
     
     
-    EventHandler<MouseEvent> addToBasket = new EventHandler<MouseEvent>() {
+    EventHandler<MouseEvent> addToBasket1 = new EventHandler<MouseEvent>() {
         @Override
         public void handle(MouseEvent event) {
             HBox hbox = new HBox();
@@ -229,21 +227,90 @@ public class HomeController implements Initializable {
             Label lblQty =  new Label();
             Label lblPrice = new Label();
             Button btnRemove = new Button();
+            EventHandler<MouseEvent> removeItem = new EventHandler<MouseEvent>() {
+                @Override
+                public void handle(MouseEvent event) {
+                    basket.getChildren().remove(hbox);
+                }
+            };
             
-            lblName.setText("hi");
-            lblQty.setText("X2");
-            lblPrice.setText("21.00");
+            lblName.setText("Mars");
+            lblName.setStyle("-fx-text-fill: white;");
+            lblQty.setText("X1");
+            lblQty.setStyle("-fx-text-fill: white;");
+            lblPrice.setText("Rs.21.00");
+            lblPrice.setStyle("-fx-text-fill: white;");
             btnRemove.setText("X");
+            btnRemove.setStyle("-fx-text-fill: white;-fx-background-color:  red; ");
+            btnRemove.addEventFilter(MouseEvent.MOUSE_CLICKED, removeItem);
             
             hbox.setStyle("-fx-background-color:  #30475E;");
-            hbox.setSpacing(21);
+            hbox.setAlignment(Pos.BASELINE_LEFT);
+            hbox.setSpacing(50);
+            hbox.setPadding(new javafx.geometry.Insets(3));
+            hbox.getChildren().addAll(lblName,lblQty,lblPrice,btnRemove);
+            
+           
+
+            basket.getChildren().add(hbox);
+        }
+    };
+    
+    EventHandler<MouseEvent> addToBasket2 = new EventHandler<MouseEvent>() {
+        @Override
+        public void handle(MouseEvent event) {
+            HBox hbox = new HBox();
+            Label lblName = new Label();
+            Label lblQty =  new Label();
+            Label lblPrice = new Label();
+            Button btnRemove = new Button();
+            EventHandler<MouseEvent> removeItem = new EventHandler<MouseEvent>() {
+                @Override
+                public void handle(MouseEvent event) {
+                    basket.getChildren().remove(hbox);
+                }
+            };
+            
+            lblName.setText("Snickers");
+            lblName.setStyle("-fx-text-fill: white;");
+            lblQty.setText("X2");
+            lblQty.setStyle("-fx-text-fill: white;");
+            lblPrice.setText("Rs.21.00");
+            lblPrice.setStyle("-fx-text-fill: white;");
+            btnRemove.setText("X");
+            btnRemove.setStyle("-fx-text-fill: white;-fx-background-color:  red; ");
+            btnRemove.addEventHandler(MouseEvent.MOUSE_CLICKED, removeItem);
+            hbox.setStyle("-fx-background-color:  #30475E;");
+            hbox.setAlignment(Pos.BASELINE_LEFT);
+            hbox.setSpacing(42);
             hbox.setPadding(new javafx.geometry.Insets(3));
             hbox.getChildren().addAll(lblName,lblQty,lblPrice,btnRemove);
 
             basket.getChildren().add(hbox);
         }
     };
+    
+    @FXML 
+    private void empty(ActionEvent event){
+        Stage stage = (Stage) anchorPane.getScene().getWindow();
+        Alert.AlertType type;
+        type = Alert.AlertType.CONFIRMATION;
+        Alert alert = new Alert(type,"");
+        
+        alert.initModality(Modality.APPLICATION_MODAL);
+        alert.initOwner(stage);
+        
+        alert.getDialogPane().setContentText("Do you want remove all the items in the basket?");
+        alert.getDialogPane().setHeaderText("Confirm");
+        
+        Optional<ButtonType> result = alert.showAndWait();
+        
+        if(result.get() == ButtonType.OK){
+            basket.getChildren().clear();
+            alert.close();
+        } else if (result.get() == ButtonType.CANCEL){
+            alert.close();
+        }    
+    }
 
 }
-
-//width 264 height 344
