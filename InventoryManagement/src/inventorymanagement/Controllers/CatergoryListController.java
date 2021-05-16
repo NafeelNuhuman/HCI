@@ -28,14 +28,11 @@ public class CatergoryListController implements Initializable {
      * Initializes the controller class.
      */
     
-    @FXML
-    ComboBox cbSortBy;
-            
+ 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
-        cbSortBy.getItems().addAll("Barcode","Unique ID","Description");
-        
+              
     }    
    
     private void loadStage(String fxml) {
