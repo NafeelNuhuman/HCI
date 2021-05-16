@@ -5,3 +5,17 @@
 .mainFxmlClass {
 
 }
+
+
+.button{
+    -fx-background-color:  #30475E;
+    -fx-text-fill: white;
+    border: 1px;
+}
+
+.button:hover{
+
+        -fx-background-color: #222831;
+        -fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.4) , 5, 0.0 , 0 , 1 );
+        -fx-text-alignment: center;
+}
