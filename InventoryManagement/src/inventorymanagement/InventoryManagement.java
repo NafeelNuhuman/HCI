@@ -31,7 +31,7 @@ import javafx.stage.Stage;
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/CategoryList.fxml"));    
         
         //Atchuthan S
-        //Parent root = FXMLLoader.load(getClass().getResource("FXML/NIS.fxml"));    
+        //Parent root = FXMLLoader.load(getClass().getResource("FXML/nIs.fxml"));    
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/DS.fxml"));    
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/AdCu.fxml"));    
         
