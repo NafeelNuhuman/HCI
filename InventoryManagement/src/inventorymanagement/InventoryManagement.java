@@ -25,7 +25,7 @@ import javafx.stage.Stage;
     public void start(Stage stage) throws Exception {
 
         //Nuhuman M N
-        //Parent root = FXMLLoader.load(getClass().getResource("FXML/Home.fxml"));    
+        Parent root = FXMLLoader.load(getClass().getResource("FXML/Home.fxml"));    
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/AddGroup.fxml"));    
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/AmendGroup.fxml"));    
         //Parent root = FXMLLoader.load(getClass().getResource("FXML/CategoryList.fxml"));    
